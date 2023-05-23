@@ -1,0 +1,87 @@
+Relaunching install.sh with /usr/bin/yash...
+/usr/bin/yash: cannot execute `\
+\
+\#\ \f\i\n\d\ \m\y\ \o\w\n\ \a\b\s\o\l\u\t\e\ \a\n\d\ \p\h\y\s\i\c\a\l\ \d\i\r\e\c\t\o\r\y\ \p\a\t\h\
+\u\n\s\e\t\ \-\v\ \C\D\P\A\T\H\
+\c\a\s\e\ \$\0\ \i\n\
+\(\ \*\/\*\ \)\	\M\S\H\_\P\R\E\F\I\X\=\$\{\0\%\/\*\}\ \;\;\
+\(\ \*\ \)\	\M\S\H\_\P\R\E\F\I\X\=\.\ \;\;\
+\e\s\a\c\
+\c\a\s\e\ \$\M\S\H\_\P\R\E\F\I\X\ \i\n\
+\(\ \*\/\*\ \|\ \[\!\+\-\]\*\ \|\ \[\+\-\]\*\[\!\0\1\2\3\4\5\6\7\8\9\]\*\ \)\
+\	\M\S\H\_\P\R\E\F\I\X\=\$\(\c\d\ \-\P\ \-\-\ \"\$\P\W\D\"\ \&\&\ \c\d\ \-\-\ \"\$\M\S\H\_\P\R\E\F\I\X\"\ \&\&\ \p\w\d\ \-\P\ \&\&\ \e\c\h\o\ \X\)\ \;\;\
+\(\ \*\ \)\	\M\S\H\_\P\R\E\F\I\X\=\$\(\c\d\ \-\P\ \-\-\ \"\$\P\W\D\"\ \&\&\ \c\d\ \"\.\/\$\M\S\H\_\P\R\E\F\I\X\"\ \&\&\ \p\w\d\ \-\P\ \&\&\ \e\c\h\o\ \X\)\ \;\;\
+\e\s\a\c\ \|\|\ \e\x\i\t\
+\M\S\H\_\P\R\E\F\I\X\=\$\{\M\S\H\_\P\R\E\F\I\X\%\?\X\}\
+\
+\#\ \p\u\t\ \t\h\e\ \s\h\e\l\l\ \i\n\ \s\t\a\n\d\a\r\d\s\ \m\o\d\e\
+\.\ \"\$\M\S\H\_\P\R\E\F\I\X\/\l\i\b\/\m\o\d\e\r\n\i\s\h\/\a\u\x\/\s\t\d\.\s\h\"\
+\
+\#\ \e\n\s\u\r\e\ \s\a\n\e\ \d\e\f\a\u\l\t\ \p\e\r\m\i\s\s\i\o\n\s\
+\u\m\a\s\k\ \0\2\2\
+\
+\#\ \d\i\s\a\b\l\e\ \c\o\r\e\ \d\u\m\p\s\ \(\s\o\m\e\ \t\e\s\t\e\d\ \s\h\e\l\l\s\ \m\a\y\ \c\r\a\s\h\)\
+\u\l\i\m\i\t\ \-\c\ \0\ \2\>\/\d\e\v\/\n\u\l\l\
+\
+\s\h\o\w\u\s\a\g\e\(\)\ \{\
+\	\e\c\h\o\ \"\u\s\a\g\e\:\ \$\0\ \[\ \-\n\f\ \]\ \[\ \-\s\ \S\H\E\L\L\ \]\ \[\ \-\P\ \P\A\T\H\ \]\ \\\\\"\
+\	\e\c\h\o\ \"\	\[\ \-\d\ \I\N\S\T\A\L\L\R\O\O\T\ \]\ \[\ \-\D\ \P\R\E\F\I\X\ \]\ \[\ \-\B\ \]\ \[\ \S\C\R\I\P\T\F\I\L\E\ \.\.\.\ \]\"\
+\	\e\c\h\o\ \"\	\-\n\:\ \n\o\n\-\i\n\t\e\r\a\c\t\i\v\e\ \o\p\e\r\a\t\i\o\n\"\
+\	\e\c\h\o\ \"\	\-\s\:\ \s\p\e\c\i\f\y\ \d\e\f\a\u\l\t\ \s\h\e\l\l\ \t\o\ \e\x\e\c\u\t\e\ \m\o\d\e\r\n\i\s\h\"\
+\	\e\c\h\o\ \"\	\-\f\:\ \f\o\r\c\e\ \u\n\c\o\n\d\i\t\i\o\n\a\l\ \i\n\s\t\a\l\l\a\t\i\o\n\ \o\n\ \s\p\e\c\i\f\i\e\d\ \s\h\e\l\l\"\
+\	\e\c\h\o\ \"\	\-\P\:\ \s\p\e\c\i\f\y\ \a\l\t\e\r\n\a\t\i\v\e\ \D\E\F\P\A\T\H\ \(\b\e\ \c\a\r\e\f\u\l\!\)\"\
+\	\e\c\h\o\ \"\	\-\d\:\ \s\p\e\c\i\f\y\ \r\o\o\t\ \d\i\r\e\c\t\o\r\y\ \f\o\r\ \i\n\s\t\a\l\l\a\t\i\o\n\"\
+\	\e\c\h\o\ \"\	\-\D\:\ \e\x\t\r\a\ \d\e\s\t\i\n\a\t\i\o\n\ \d\i\r\e\c\t\o\r\y\ \p\r\e\f\i\x\ \(\f\o\r\ \p\a\c\k\a\g\e\r\s\)\"\
+\	\e\c\h\o\ \"\	\-\B\:\ \b\u\n\d\l\e\ \m\o\d\e\r\n\i\s\h\ \w\i\t\h\ \y\o\u\r\ \s\c\r\i\p\t\s\ \(\-\D\ \r\e\q\u\i\r\e\d\,\ \-\n\ \i\m\p\l\i\e\d\)\"\
+\}\ \1\>\&\2\
+\
+\#\ \p\a\r\s\e\ \o\p\t\i\o\n\s\
+\u\n\s\e\t\ \-\v\ \o\p\t\_\r\e\l\a\u\n\c\h\ \o\p\t\_\n\ \o\p\t\_\f\ \o\p\t\_\B\ \o\p\t\_\s\ \D\E\F\P\A\T\H\ \o\p\t\_\d\ \o\p\t\_\D\
+\c\a\s\e\ \$\{\1\-\}\ \i\n\
+\(\ \-\-\r\e\l\a\u\n\c\h\ \)\
+\	\o\p\t\_\r\e\l\a\u\n\c\h\=\
+\	\s\h\i\f\t\ \;\;\
+\(\ \*\ \)\	\u\n\s\e\t\ \-\v\ \M\S\H\_\S\H\E\L\L\ \;\;\
+\e\s\a\c\
+\w\h\i\l\e\ \g\e\t\o\p\t\s\ nfs:P:d:D:B\ \o\p\t\;\ \d\o\
+\	\c\a\s\e\ \$\o\p\t\ \i\n\
+\	\(\ \\\?\ \)\	\s\h\o\w\u\s\a\g\e\;\ \e\x\i\t\ \1\ \;\;\
+\	\(\ \n\ \)\	\o\p\t\_\n\=\ \;\;\
+\	\(\ \f\ \)\	\o\p\t\_\f\=\ \;\;\
+\	\(\ \s\ \)\	\o\p\t\_\s\=\$\O\P\T\A\R\G\ \;\;\
+\	\(\ \P\ \)\	\D\E\F\P\A\T\H\=\$\O\P\T\A\R\G\ \;\;\
+\	\(\ \d\ \)\	\o\p\t\_\d\=\$\O\P\T\A\R\G\ \;\;\
+\	\(\ \D\ \)\	\o\p\t\_\D\=\$\O\P\T\A\R\G\ \;\;\
+\	\(\ \B\ \)\	\o\p\t\_\B\=\ \;\;\
+\	\e\s\a\c\
+\d\o\n\e\
+\
+\#\ \i\f\ \-\s\ \g\i\v\e\n\,\ \r\e\l\a\u\n\c\h\
+\c\a\s\e\ \$\{\o\p\t\_\s\+\s\}\ \i\n\
+\(\ \s\ \)\	\O\P\T\A\R\G\=\$\o\p\t\_\s\
+\	\o\p\t\_\s\=\$\(\c\o\m\m\a\n\d\ \-\v\ \"\$\o\p\t\_\s\"\)\
+\	\i\f\ \!\ \t\e\s\t\ \-\x\ \"\$\o\p\t\_\s\"\;\ \t\h\e\n\
+\	\	\e\c\h\o\ \"\$\0\:\ \s\h\e\l\l\ \n\o\t\ \f\o\u\n\d\:\ \$\O\P\T\A\R\G\"\ \>\&\2\
+\	\	\e\x\i\t\ \1\
+\	\f\i\
+\	\c\a\s\e\ \$\{\M\S\H\_\S\H\E\L\L\-\}\ \i\n\
+\	\(\ \"\$\o\p\t\_\s\"\ \)\ \;\;\
+\	\(\ \*\ \)\	\M\S\H\_\S\H\E\L\L\=\$\o\p\t\_\s\
+\	\	\e\x\p\o\r\t\ \M\S\H\_\S\H\E\L\L\
+\	\	\e\c\h\o\ \"\R\e\l\a\u\n\c\h\i\n\g\ \$\{\0\#\#\*\/\}\ \w\i\t\h\ \$\M\S\H\_\S\H\E\L\L\.\.\.\"\ \>\&\2\
+\	\	\e\x\e\c\ \"\$\M\S\H\_\S\H\E\L\L\"\ \"\$\M\S\H\_\P\R\E\F\I\X\/\$\{\0\#\#\*\/\}\"\ \-\-\r\e\l\a\u\n\c\h\ \"\$\@\"\ \;\;\
+\	\e\s\a\c\ \;\;\
+\e\s\a\c\
+\
+\#\ \d\e\t\e\r\m\i\n\e\ \a\n\d\/\o\r\ \v\a\l\i\d\a\t\e\ \D\E\F\P\A\T\H\
+\.\ \"\$\M\S\H\_\P\R\E\F\I\X\/\l\i\b\/\m\o\d\e\r\n\i\s\h\/\a\u\x\/\d\e\f\p\a\t\h\.\s\h\"\ \|\|\ \e\x\i\t\
+\e\x\p\o\r\t\ \D\E\F\P\A\T\H\
+\
+\#\ \f\i\n\d\ \a\ \c\o\m\p\l\i\a\n\t\ \P\O\S\I\X\ \s\h\e\l\l\
+\c\a\s\e\ \$\{\M\S\H\_\S\H\E\L\L\-\}\ \i\n\
+\(\ \ \)\	\M\S\H\_\S\H\E\L\L\=\$\(\P\A\T\H\=\$\D\E\F\P\A\T\H\;\ \c\o\m\m\a\n\d\ \-\v\ \s\h\)\	\#\ \f\o\r\ \i\n\s\t\a\l\l\a\t\i\o\n\,\ \d\e\f\a\u\l\t\ \t\o\ \s\h\
+\	\.\ \"\$\M\S\H\_\P\R\E\F\I\X\/\l\i\b\/\m\o\d\e\r\n\i\s\h\/\a\u\x\/\g\o\o\d\s\h\.\s\h\"\ \|\|\ \e\x\i\t\
+\	\c\a\s\e\ \$\{\o\p\t\_\n\+\n\}\$\{\o\p\t\_\B\+\B\}\ \i\n\
+\	\(\ \n\ \)\	\#\ \I\f\ \w\ere': Filename too long
+\R\e\l\a\u\n\c\h\i\n\g\ \i\n\s\t\a\l\l\.\s\h\ \w\i\t\h\ \/\u\s\r\/\b\i\n\/\y\a\s\h\.\.\.
+/opt/clones/modernish/install.sh:140: syntax error: `;' or `&' missing

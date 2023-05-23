@@ -1,0 +1,108 @@
+Relaunching install.sh with /usr/bin/ash...
++ [L44,e0] command ulimit -c 0
++ [L47,e0] IFS=
++ [L47,e0] set +e -fCu
++ [L54,e0] eval ': || $( : # "
+)'
++ [L1,e0] :
++ [L59,e0] eval ': || for i;
+do :; done'
++ [L1,e0] :
++ [L77,e0] t=ok
++ [L78,e0] t=bug command -@
+/opt/clones/modernish/install.sh: command: line 78: illegal option -@
++ [L87,e0] :
++ [L113,e0] PATH=/dev/null
++ [L114,e0] t=x
++ [L115,e0] command -v unset
++ [L116,e0] command -V unset
++ [L117,e0] command -v 'if'
++ [L118,e0] command unset t
++ [L121,e0] PATH=/bin:/usr/bin
++ [L125,e0] readonly 'CC01=' 'CC7F=' 'RO=ok'
++ [L132,e0] RO1=1 RO2=2 RO3=3
++ [L133,e0] readonly RO1 RO2 RO3
++ [L137,e0] command set +o braceexpand
+/opt/clones/modernish/install.sh: set: line 137: illegal option +o braceexpand
++ [L138,e1] PATH=/dev/null command -v typeset
++ [L139,e127] command unset -v RO1 RO2 RO3
+/opt/clones/modernish/install.sh: unset: line 139: RO1: is read only
++ [L142,e2] alias 'test=test'
++ [L146,e0] alias 'fn=:'
++ [L147,e0] eval fn
++ [L1,e0] :
++ [L150,e0] unalias -a
++ [L153,e0] unset -f echo
++ [L156,e0] kill -s 0 11181
++ [L164,e0] command eval '('
+/opt/clones/modernish/install.sh: eval: line 1: syntax error: unexpected end of file (expecting ")")
++ [L170,e0] fn
++ [L1,e0] :
++ [L1,e0] eval 'return 0'
++ [L-167,e0] return 0
++ [L180,e0] eval 'command continue
+		exit'
++ [L1,e0] command continue
++ [L184,e0] eval 'command break
+		exit'
++ [L1,e0] command break
++ [L196,e0] unset -v FTL_UNSETFAIL_D7CDE27B_C03A_4B45_8050_30A9292BDE74
++ [L204,e0] unset -f FTL_UNSFNFAIL_574C63CD_8D52_4DCF_AD22_00B9AC29AFF7
++ [L209,e0] command test foo '=~' bar
+ash: =~: unknown operand
++ [L213,e2] command test 123 -eq 1XX
+ash: 1XX: bad number
++ [L216,e2] PATH=/dev/null command -v let
++ [L216,e0] let --
+/opt/clones/modernish/install.sh: let: line 216: arithmetic syntax error
++ [L223,e2] set -- '   \on\e' '\tw'"'"'o' ' \th\'"'"'re\e' ' \'"'"'fo\u\r '
++ [L224,e0] IFS=
++ [L225,e0] set -- '   \on\e' '\tw'"'"'o' ' \th\'"'"'re\e' ' \'"'"'fo\u\r '
++ [L243,e0] set -u --
++ [L243,e0] set --
++ [L243,e0] t=
++ [L247,e0] t='1 2 3'
++ [L248,e0] IFS='x '
++ [L249,e0] t='1 2 3 4 5'
++ [L250,e0] IFS=
++ [L263,e0] t=barbarfoo
++ [L272,e0] t='a${t2=BUG}'
++ [L273,e0] unset -v t2
++ [L274,e0] t=a
++ [L282,e0] t=abcdefghij
++ [L283,e0] t2=efg
++ [L291,e0] t=
++ [L299,e0] set ' foo -> bar' foo
++ [L307,e0] t=11181
++ [L315,e0] t='okok'
++ [L336,e0] set +u _1_
++ [L341,e0] set -u
++ [L354,e0] t='  ::  \on\e :\tw'"'"'o \th\'"'"'re\e :\\'"'"'fo\u\r:   : :  '
++ [L355,e0] IFS=': '
++ [L356,e0] set --   '\on\e' '\tw'"'"'o' '\th\'"'"'re\e' '\\'"'"'fo\u\r'  
++ [L357,e0] IFS=
++ [L358,e0] t='8,,,\on\e,\tw'"'"'o,\th\'"'"'re\e,\\'"'"'fo\u\r,,,U,U,U,U'
++ [L371,e0] IFS=/
++ [L372,e0] set -- /root
++ [L373,e0] IFS=
++ [L384,e0] i=7
++ [L385,e0] j=0
++ [L410,e0] unset -v t2
++ [L411,e0] command -v typeset
++ [L412,e127] t2=1000005
++ [L413,e0] t='foo\bar'
++ [L414,e0] : 1000005
++ [L419,e0] unset -v t2
++ [L426,e0] unset -v t
++ [L427,e0] : 1
++ [L428,e0] t=128/32
++ [L439,e0] eval 'case '"'"'abcd'"'"' in
+( \a\b\\c\\d ) ;;
+( * )	exit ;;
+esac'
++ [L447,e0] _Msh_test_1234=x
++ [L460,e0] t=ab]cd
++ [L467,e0] exit
++ [L1,e0] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

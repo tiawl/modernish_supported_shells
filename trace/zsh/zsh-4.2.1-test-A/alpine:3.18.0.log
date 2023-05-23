@@ -1,0 +1,4 @@
+Relaunching install.sh with /usr/bin/zsh...
+/opt/clones/modernish/lib/modernish/aux/std.sh:setopt:48: no such option: POSIX_ARGZERO
+/opt/clones/modernish/install.sh:69: failed to load module: zsh/rlimits
+/opt/clones/modernish/install.sh: shell not found: /usr/bin/zsh

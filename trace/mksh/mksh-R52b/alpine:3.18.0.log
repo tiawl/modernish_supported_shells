@@ -1,0 +1,52 @@
+Relaunching install.sh with /usr/bin/mksh...
++ [866.969934s|P2837,L44,e0] ulimit -c 0
++ [866.969977s|P2837,L47,e0] IFS= 
++ [866.969999s|P2837,L47,e0] set +e -fCu
++ [866.970026s|P2837,L54,e0] eval $': || $( : # "\n)'
++ [866.970047s|P2837,L0,e0] :
++ [866.970071s|P2837,L59,e0] eval $': || for i;\ndo :; done'
++ [866.970090s|P2837,L0,e0] :
++ [866.970128s|P2837,L77,e0] t=ok 
++ [866.970160s|P2837,L78,e0] t=bug command -@
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[78]: command: -@: unknown option
++ [866.970238s|P2837,L87,e0] :
++ [866.970328s|P2837,L113,e0] PATH=/dev/null 
++ [866.970383s|P2837,L113,e0] >/dev/null 
++ [866.970430s|P2837,L114,e0] t=x 
++ [866.970476s|P2837,L115,e0] command -v unset
++ [866.970512s|P2837,L116,e0] command -V unset
++ [866.970546s|P2837,L117,e0] command -v if
++ [866.970583s|P2837,L118,e0] unset t
++ [866.970632s|P2837,L121,e0] PATH=/bin:/usr/bin 
++ [866.970688s|P2837,L125,e0] readonly $'CC01=\001' 'CC7F=' 'RO=ok'
++ [866.970751s|P2837,L132,e0] RO1=1 RO2=2 RO3=3 
++ [866.970801s|P2837,L133,e0] readonly RO1 RO2 RO3
++ [866.970851s|P2837,L137,e0] set +o braceexpand
++ [866.970900s|P2837,L138,e0] >|/dev/null 
++ [866.970947s|P2837,L138,e0] PATH=/dev/null command -v typeset
++ [866.970997s|P2837,L138,e0] typeset -@ foo
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[138]: typeset: -@: unknown option
++ [866.971053s|P2837,L139,e1] unset -v RO1 RO2 RO3
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[139]: read-only: RO1
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[139]: read-only: RO2
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[139]: read-only: RO3
++ [866.971123s|P2837,L142,e1] alias 'test=test'
++ [866.971172s|P2837,L146,e0] alias 'fn=:'
++ [866.971210s|P2837,L147,e0] eval fn
++ [866.971242s|P2837,L0,e0] :
++ [866.971281s|P2837,L150,e0] unalias -a
++ [866.971330s|P2837,L153,e0] unset -f echo
++ [866.971379s|P2837,L156,e0] kill -s 0 2825
++ [866.971685s|P2838,L164,e0] eval '('
+/opt/clones/modernish/install.sh: syntax error: '(' unmatched
++ [866.971937s|P2837,L170,e0] fn
++ [866.971971s|P2837,L169,e0] :
++ [866.972003s|P2837,L169,e0] eval 'return 0'
++ [866.972034s|P2837,L0,e0] return 0
++ [866.972093s|P2837,L180,e0] eval $'command continue\n\t\texit'
++ [866.972127s|P2837,L0,e0] continue
+/opt/clones/modernish/install.sh: continue: can't continue
++ [866.972168s|P2837,L0,e0] exit
++ [866.972199s|P2837,L0,e0] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

@@ -1,0 +1,13 @@
+Relaunching install.sh with /usr/bin/zsh...
+/opt/clones/modernish/lib/modernish/aux/std.sh:setopt:48: no such option: POSIX_ARGZERO
+/opt/clones/modernish/lib/modernish/aux/std.sh:setopt:48: no such option: POSIX_ARGZERO
++ [0.012027s|S1,bin/modernish:157,aux/fatal.sh,L44,e0] ulimit -c 0
++ [0.012217s|S1,bin/modernish:157,aux/fatal.sh,L47,e0] IFS='' 
++ [0.012302s|S1,bin/modernish:157,aux/fatal.sh,L47,e0] set +e -fCu
++ [0.012398s|S1,bin/modernish:157,aux/fatal.sh,L54,e0] eval ': || $( : # "
+)'
+/opt/clones/modernish/lib/modernish/aux/fatal.sh:2: parse error near `$( : # "'
++ [0.012483s|S1,bin/modernish:157,aux/fatal.sh,L55,e1] exit
++ [0.012564s|S1,bin/modernish:157,aux/fatal.sh,L55,e1] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

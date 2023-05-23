@@ -1,0 +1,22 @@
+Relaunching install.sh with /usr/bin/mksh...
++ [181.568303s|P1560,L44,e0] ulimit -c 0
++ [181.568356s|P1560,L47,e0] IFS= 
++ [181.568389s|P1560,L47,e0] set +e -fCu
++ [181.568432s|P1560,L54,e0] eval $': || $( : # "\n)'
++ [181.568464s|P1560,L0,e0] :
++ [181.568677s|P1560,L59,e0] eval $': || for i;\ndo :; done'
++ [181.568717s|P1560,L0,e0] :
++ [181.568780s|P1560,L77,e0] t=ok 
++ [181.568817s|P1560,L78,e0] t=bug command -@
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[78]: command: -@: unknown option
++ [181.568895s|P1560,L87,e0] :
++ [181.568993s|P1560,L113,e0] PATH=/dev/null 
++ [181.569055s|P1560,L113,e0] >/dev/null 
++ [181.569108s|P1560,L114,e0] t=x 
++ [181.569147s|P1560,L115,e0] command -v unset
++ [181.569193s|P1560,L116,e0] command -V unset
++ [181.569227s|P1560,L117,e0] command -v if
++ [181.569345s|P1560,L120,e1] exit
++ [181.569376s|P1560,L120,e1] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

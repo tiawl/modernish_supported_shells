@@ -1,0 +1,14 @@
+Relaunching install.sh with /usr/bin/dash...
++ [L44,e0] command ulimit -c 0
++ [L47,e0] IFS=
++ [L47,e0] set +e -fCu
++ [L54,e0] eval : || $( : # "
+)
++ [L1,e0] :
++ [L59,e0] eval : || for i;
+do :; done
++ [L1,e0] :
++ [L68,e0] exit
++ [L1,e0] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

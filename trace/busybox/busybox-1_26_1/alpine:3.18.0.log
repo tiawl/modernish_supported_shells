@@ -1,0 +1,41 @@
+Relaunching install.sh with /usr/bin/ash...
++ [e0] command ulimit -c 0
++ [e0] IFS=
++ [e0] set +e -fCu
++ [e0] eval : || $( : # "
+)
++ [e0] :
++ [e0] eval : || for i;
+do :; done
++ [e0] :
++ [e0] t=ok
++ [e0] t=bug command -@
+/opt/clones/modernish/install.sh: command: line 1: illegal option -@
++ [e0] :
++ [e0] PATH=/dev/null
++ [e0] t=x
++ [e0] command -v unset
++ [e0] command -V unset
++ [e0] command -v if
++ [e0] command unset t
++ [e0] PATH=/bin:/usr/bin
++ [e0] readonly CC01= CC7F= RO=ok
++ [e0] RO1=1 RO2=2 RO3=3
++ [e0] readonly RO1 RO2 RO3
++ [e0] command set +o braceexpand
+/opt/clones/modernish/install.sh: set: line 1: illegal option +o braceexpand
++ [e1] PATH=/dev/null command -v typeset
++ [e127] command unset -v RO1 RO2 RO3
++ [e1] alias test=test
++ [e0] alias fn=:
++ [e0] eval fn
++ [e0] :
++ [e0] unalias -a
++ [e0] unset -f echo
++ [e0] kill -s 0 10461
++ [e0] command eval (
+/opt/clones/modernish/install.sh: eval: line 1: syntax error: unexpected end of file (expecting ")")
++ [e0] exit
++ [e0] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

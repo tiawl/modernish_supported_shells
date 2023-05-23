@@ -1,0 +1,10 @@
+Relaunching install.sh with /usr/bin/yash...
+/usr/bin/yash: exec: no such command or function
+/usr/bin/yash: export: no such command or function
+/usr/bin/yash: exec: no such command or function
+/opt/clones/modernish/install.sh: Can't escape from obsolete shell. Run me with a POSIX shell.
+/usr/bin/yash: exit: no such command or function
+/usr/bin/yash: set: no such command or function
+/usr/bin/yash: non-interactive: no such command or function
+Relaunching install.sh with /usr/bin/yash...
+/opt/clones/modernish/install.sh:123: syntax error: `;' or `&' missing

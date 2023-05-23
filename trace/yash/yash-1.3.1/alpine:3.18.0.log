@@ -1,0 +1,14 @@
+Relaunching install.sh with /usr/bin/yash...
+/usr/bin/yash: /usr/bin/yash: --relaunch: invalid option
+/usr/bin/yash: /usr/bin/yash: -n: invalid option
+/usr/bin/yash: /usr/bin/yash: -s: invalid option
+Usage:  yash [-il] [-c command] [long options] [file]
+Long options:
+	--help
+	--version
+	--rcfile
+	--noprofile
+	--norc
+	--login
+	--interactive
+	--posix

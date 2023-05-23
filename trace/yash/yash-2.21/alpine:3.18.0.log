@@ -1,0 +1,53 @@
+Relaunching install.sh with /usr/bin/yash...
++ [L44,e0] command ulimit -c 0
+(B[m+ [L47,e0] IFS=
+(B[m+ [L47,e0] set +e -fCu
+(B[m+ [L54,e0] eval : || $( : # "
+)
+(B[m+ [L1,e0] :
+(B[m+ [L59,e0] eval : || for i;
+do :; done
+(B[m+ [L1,e0] :
+(B[m+ [L77,e0] t=ok
+(B[m+ [L78,e0] t=bug command -@
+(B[mcommand: -@: invalid option
+Usage:  command [-bBp] command [arg...]
+        command -v|-V [-bBp] command...
++ [L87,e0] :
+(B[m+ [L113,e0] PATH=/dev/null
+(B[m+ [L114,e0] t=x
+(B[m+ [L115,e0] command -v unset
+(B[m+ [L116,e0] command -V unset
+(B[m+ [L117,e0] command -v if
+(B[m+ [L118,e0] command unset t
+(B[m+ [L121,e0] PATH=/bin:/usr/bin
+(B[m+ [L125,e0] readonly CC01= CC7F= RO=ok
+(B[m+ [L132,e0] RO1=1 RO2=2 RO3=3
+(B[m+ [L133,e0] readonly RO1 RO2 RO3
+(B[m+ [L137,e0] command set +o braceexpand
+(B[m+ [L138,e0] PATH=/dev/null command -v typeset
+(B[m+ [L138,e0] command typeset -@ foo
+(B[mtypeset: -@: invalid option
+Usage:  typeset [-fgprxX] [name[=value]...]
++ [L139,e2] command unset -v RO1 RO2 RO3
+(B[munset: RO1: readonly
+unset: RO2: readonly
+unset: RO3: readonly
++ [L142,e1] alias test=test
+(B[m+ [L146,e0] alias fn=:
+(B[m+ [L147,e0] eval fn
+(B[m+ [L1,e0] :
+(B[m+ [L150,e0] unalias -a
+(B[m+ [L153,e0] unset -f echo
+(B[m+ [L156,e0] kill -s 0 470
+(B[m+ [L164,e0] command eval (
+(B[meval:1: syntax error: `)' missing
++ [L170,e0] fn
+(B[m+ [L169,e0] :
+(B[m+ [L169,e0] eval return 0
+(B[m+ [L1,e0] return 0
+(B[m+ [L169,e0] :
+(B[m+ [L170,e1] exit
+(B[m+ [L1,e1] echo fatalbug
+(B[mmodernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

@@ -1,0 +1,11 @@
+Relaunching install.sh with /usr/bin/mksh...
++ [L44,e0] command ulimit -c 0
++ [L47,e0] IFS=
++ [L47,e0] set +e -fCu
++ [L54,e0] eval : || $( : # "
+)
+/opt/clones/modernish/install.sh: no closing quote
++ [L0,e1] echo BUG
++ [L0,e0] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

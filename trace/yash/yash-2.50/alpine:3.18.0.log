@@ -1,0 +1,110 @@
+Relaunching install.sh with /usr/bin/yash...
++ [L44,e0] command ulimit -c 0
+(B[m+ [L47,e0] IFS=''
+(B[m+ [L47,e0] set '+e' -fCu
+(B[m+ [L54,e0] eval ': || $( : # "
+)'
+(B[m+ [L1,e0] ':'
+(B[m+ [L59,e0] eval ': || for i;
+do :; done'
+(B[m+ [L1,e0] ':'
+(B[m+ [L77,e0] t=ok
+(B[m+ [L78,e0] t=bug command '-@'
+(B[mcommand: `-@' is not a valid option
++ [L87,e0] ':'
+(B[m+ [L113,e0] PATH=/dev/null
+(B[m+ [L114,e0] t=x
+(B[m+ [L115,e0] command -v unset
+(B[m+ [L116,e0] command -V unset
+(B[m+ [L117,e0] command -v if
+(B[m+ [L118,e0] command unset t
+(B[m+ [L121,e0] PATH='/bin:/usr/bin'
+(B[m+ [L125,e0] readonly 'CC01=' 'CC7F=' 'RO=ok'
+(B[m+ [L132,e0] RO1=1 RO2=2 RO3=3
+(B[m+ [L133,e0] readonly RO1 RO2 RO3
+(B[m+ [L137,e0] command set '+o' braceexpand
+(B[m+ [L138,e0] PATH=/dev/null command -v typeset
+(B[m+ [L138,e0] command typeset '-@' foo
+(B[mtypeset: `-@' is not a valid option
++ [L139,e2] command unset -v RO1 RO2 RO3
+(B[munset: $RO1 is read-only
+unset: $RO2 is read-only
+unset: $RO3 is read-only
++ [L142,e1] alias 'test=test'
+(B[m+ [L146,e0] alias 'fn=:'
+(B[m+ [L147,e0] eval fn
+(B[m+ [L1,e0] ':'
+(B[m+ [L150,e0] unalias -a
+(B[m+ [L153,e0] unset -f echo
+(B[m+ [L156,e0] kill -s 0 1364
+(B[m+ [L164,e0] command eval '('
+(B[meval:1: syntax error: `)' is missing
++ [L170,e0] fn
+(B[m+ [L169,e0] ':'
+(B[m+ [L169,e0] eval 'return 0'
+(B[m+ [L1,e0] return 0
+(B[m+ [L180,e0] eval 'command continue
+		exit'
+(B[m+ [L1,e0] command continue
+(B[m+ [L184,e0] eval 'command break
+		exit'
+(B[m+ [L1,e0] command break
+(B[m+ [L196,e0] unset -v FTL_UNSETFAIL_D7CDE27B_C03A_4B45_8050_30A9292BDE74
+(B[m+ [L204,e0] unset -f FTL_UNSFNFAIL_574C63CD_8D52_4DCF_AD22_00B9AC29AFF7
+(B[m+ [L209,e0] command test foo '=~' bar
+(B[m+ [L213,e1] command test 123 -eq 1XX
+(B[mtest: `1XX' is not a valid integer
++ [L216,e2] PATH=/dev/null command -v let
+(B[m+ [L223,e1] set -- '   \on\e' '\tw'\'o ' \th\'\''re\e' ' \'\''fo\u\r '
+(B[m+ [L224,e0] IFS=''
+(B[m+ [L225,e0] set -- '   \on\e' '\tw'\'o ' \th\'\''re\e' ' \'\''fo\u\r '
+(B[m+ [L243,e0] set -u --
+(B[m+ [L243,e0] set --
+(B[m+ [L243,e0] t=''
+(B[m+ [L247,e0] t='1 2 3'
+(B[m+ [L248,e0] IFS='x '
+(B[m+ [L249,e0] t='1 2 3 4 5'
+(B[m+ [L250,e0] IFS=''
+(B[m+ [L263,e0] t=barbarfoo
+(B[m+ [L272,e0] t='a${t2=BUG}'
+(B[m+ [L273,e0] unset -v t2
+(B[m+ [L274,e0] t=a
+(B[m+ [L282,e0] t=abcdefghij
+(B[m+ [L283,e0] t2=efg
+(B[m+ [L291,e0] t=''
+(B[m+ [L299,e0] set ' foo -> bar' foo
+(B[m+ [L307,e0] t=1364
+(B[m+ [L315,e0] t='okok'
+(B[m+ [L336,e0] set '+u' _1_
+(B[m+ [L341,e0] set -u
+(B[m+ [L354,e0] t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  '
+(B[m+ [L355,e0] IFS=': '
+(B[m+ [L356,e0] set -- '' '' '\on\e' '\tw'\'o '\th\'\''re\e' '\\'\''fo\u\r' '' ''
+(B[m+ [L357,e0] IFS=''
+(B[m+ [L358,e0] t='8,,,\on\e,\tw'\''o,\th\'\''re\e,\\'\''fo\u\r,,,U,U,U,U'
+(B[m+ [L371,e0] IFS=/
+(B[m+ [L372,e0] set -- /root
+(B[m+ [L373,e0] IFS=''
+(B[m+ [L384,e0] i=7
+(B[m+ [L385,e0] j=0
+(B[m+ [L410,e0] unset -v t2
+(B[m+ [L411,e0] command -v typeset
+(B[m+ [L411,e0] typeset -i t2
+(B[mtypeset: `-i' is not a valid option
++ [L412,e0] t2=1000005
+(B[m+ [L413,e0] t='foo\bar'
+(B[m+ [L414,e0] ':' 1000005
+(B[m+ [L419,e0] unset -v t2
+(B[m+ [L426,e0] unset -v t
+(B[m+ [L427,e0] ':' 1
+(B[m+ [L428,e0] t=128/32
+(B[m+ [L439,e0] eval 'case '\''abcd'\'' in
+( \a\b\\c\\d ) ;;
+( * )	exit ;;
+esac'
+(B[m+ [L447,e0] _Msh_test_1234=x
+(B[m+ [L460,e0] t='ab]cd'
+(B[m+ [L467,e0] exit
+(B[m+ [L1,e0] echo fatalbug
+(B[mmodernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.
