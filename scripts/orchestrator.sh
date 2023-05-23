@@ -470,7 +470,7 @@ main ()
     putln '# Modernish supported shells' '' \
       'A detailed list of POSIX-compliant shells versions supported by the last [modernish](https://github.com/modernish/modernish) version' '' \
       '## Before going further' '' \
-      'If you achieve to install the last **modernish** version with a shell version marked as unsupported, we would be very grateful if you could an issue [here](https://github.com/tiawl/modernish_supported_shells/issues) to explain us how you make it works.' '' \
+      'If you achieve to install the last **modernish** version with a shell version marked as unsupported, we would be very grateful if you could open an issue [here](https://github.com/tiawl/modernish_supported_shells/issues) to explain us how you make it works.' '' \
       'If you do not achieve to install the last **modernish** version with a shell version marked as supported, you should consider the `scripts/runner.sh` script before opening an issue.' '' \
       'If you want to know if an unlisted shell or an unlisted shell version is supported with the last **modernish** version, please open an issue [here](https://github.com/tiawl/modernish_supported_shells/issues).' '' \
       'If your shell version is marked as (:grey_question:), there are 2 possibilities: we are working on it or this shell version is not intented to be supported.' '' \

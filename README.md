@@ -4,7 +4,7 @@ A detailed list of POSIX-compliant shells versions supported by the last [modern
 
 ## Before going further
 
-If you achieve to install the last **modernish** version with a shell version marked as unsupported, we would be very grateful if you could an issue [here](https://github.com/tiawl/modernish_supported_shells/issues) to explain us how you make it works.
+If you achieve to install the last **modernish** version with a shell version marked as unsupported, we would be very grateful if you could open an issue [here](https://github.com/tiawl/modernish_supported_shells/issues) to explain us how you make it works.
 
 If you do not achieve to install the last **modernish** version with a shell version marked as supported, you should consider the `scripts/runner.sh` script before opening an issue.
 
