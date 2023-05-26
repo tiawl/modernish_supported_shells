@@ -62,7 +62,7 @@ main ()
   pid=${!}
   readonly pid
 
-  while is dir /proc/${pid} > /dev/null 2>&1
+  while is dir /proc/${pid}
   do
     tree=$(pstree -p ${pid} 2> /dev/null | grep -o '([[:digit:]]*)' | grep -o '[[:digit:]]*')
     cpu=0
