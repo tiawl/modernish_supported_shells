@@ -26,6 +26,7 @@ main ()
   harden -X mv
   harden -X rm
 
+  harden -X pwd
   harden -X getconf
 
   if ! extern -v -p pstree > /dev/null 2>&1 || \
