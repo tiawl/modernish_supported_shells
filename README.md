@@ -4,15 +4,15 @@ A detailed list of POSIX-compliant shells versions supported by the last [modern
 
 ## Before going further
 
-If you achieve to install the last **modernish** version with a shell version marked as unsupported, we would be very grateful if you could open an issue [here](https://github.com/tiawl/modernish_supported_shells/issues) to explain us how you make it works.
+If you achieve to install the last **modernish** version with a shell version marked as unsupported, we would be very grateful if you could open an issue [here](https://github.com/tiawl/modernish_supported_shells/issues) to explain us how you make it works: let us know of any successes !
 
-If you do not achieve to install the last **modernish** version with a shell version marked as supported, you should consider the `scripts/runner.sh` script before opening an issue.
+If you do not achieve to install the last **modernish** version with a shell version marked as supported, you definitely should consider the [scripts/runner.sh script](https://github.com/tiawl/modernish_supported_shells/blob/main/scripts/runner.sh) before opening an issue.
 
 If you want to know if an unlisted shell or an unlisted shell version is supported with the last **modernish** version, please open an issue [here](https://github.com/tiawl/modernish_supported_shells/issues).
 
 If your shell version is marked as (:grey_question:), there are 2 possibilities: we are working on it or this shell version is not intented to be supported.
 
-If your shell is listed here, is marked as unsupported by the last **modernish** version and you want to know why, you should consider the `trace` directory of this repository before opening an issue into the [modernish main project](https://github.com/modernish/modernish). Run `less -R trace/<SHELL>/<LOGFILE>` for a better reading experience.
+If your shell is listed here, is marked as unsupported by the last **modernish** version and you want to know why, you definitely should consider the [trace directory](https://github.com/tiawl/modernish_supported_shells/blob/main/trace) before opening an issue into the [modernish main project](https://github.com/modernish/modernish) (**Useful tip**: Run `less -R trace/<SHELL>/<LOGFILE>` for a better reading experience).
 
 _The following tables are generated through script._
 
