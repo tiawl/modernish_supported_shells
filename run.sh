@@ -51,6 +51,13 @@ main ()
   elif is reg /proc/cpuinfo
   then
     harden -X grep
+
+    if not is reg /proc/cpuinfo
+    then
+      putln 'This script needs procfs to run' 1>&2
+      exit 1
+    fi
+
     nproc=$(grep -c ^processor /proc/cpuinfo)
   else
     nproc=1
