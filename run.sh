@@ -29,9 +29,9 @@ main ()
   harden -X pwd
   harden -X getconf
 
-  if ! extern -v -p pstree > /dev/null 2>&1 || \
-    ! extern -v -p grep > /dev/null 2>&1 || \
-    ! extern -v -p kill > /dev/null 2>&1
+  if not extern -v -p pstree > /dev/null 2>&1 || \
+    not extern -v -p grep > /dev/null 2>&1 || \
+    not extern -v -p kill > /dev/null 2>&1
   then
     putln 'This script needs pstree, grep and kill utilities to run' 1>&2
     exit 1
