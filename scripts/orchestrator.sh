@@ -219,13 +219,18 @@ main ()
   harden -X wget
   harden -X pandoc
 
+  if not extern -v -p grep > /dev/null 2>&1
+  then
+    putln 'This script needs grep utility to run' 1>&2
+    exit 1
+  fi
+
   if extern -v -p nproc > /dev/null 2>&1
   then
     harden -X nproc
     nproc=$(nproc --all)
   elif is reg /proc/cpuinfo
   then
-    harden -X grep
     nproc=$(grep -c ^processor /proc/cpuinfo)
   else
     nproc=1
