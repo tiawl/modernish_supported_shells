@@ -39,31 +39,33 @@ help ()
   _shells="${*}"
   pop IFS
 
-  printf '
-Usage:
+  printf 'Usage:
+
   ./%s [-f INDEX] [-l] [-s SHELLS] [-t INDEX]
 
 Description:
-  Schedule operations to test modernish for different shells
+
+  Schedule host and containers operations to test modernish installation for different shells
 
 Options:
-  -e, --error            -  Error mode: die if runner.sh execution fail
-  -f, --from   <INDEX>   -  Start tests from INDEX
-                            INDEX is coming from the descendant-sorted releases list of a shell repository
-                            Default: %s
-  -k, --keep             -  Do not clean Docker objects instanciated by AFTER the tests
-  -l, --list             -  Show the descendant-sorted releases list and matching INDEXes for the shells list and exit
-  -o, --os <OS>          -  An operating system list to test separated by commas
-                            Available values: all,%s
-                            all is an alias for %s
-                            Default: all
-  -s, --shells <SHELLS>  -  A shells list to test separated by commas
-                            Available values: all,%s
-                            all is an alias for %s
-                            Default: all
-  -t, --to     <INDEX>   -  End tests before INDEX
-                            INDEX is coming from the descendant-sorted releases list of a shell repository
-                            Default: %s
+
+  -e, --error                -  Error mode: die if runner.sh script execution fail on a container
+  -f, --from <INDEX>         -  Start tests from INDEX
+                                Use -l/--list option to show available INDEXes for selected shells repositories
+                                Default: %s
+  -k, --keep                 -  Do not clean Docker objects instanciated AFTER the tests
+  -l, --list                 -  Show available INDEXes for selected shells repositories then exit
+  -o, --os <OS_LIST>         -  An operating system list to test (use comma to separate elements)
+                                Available values: all,%s
+                                all is an alias for %s
+                                Default: all
+  -s, --shells <SHELL_LIST>  -  A shells list to test (use comma to separate elements)
+                                Available values: all,%s
+                                all is an alias for %s
+                                Default: all
+  -t, --to <INDEX>           -  End tests before INDEX
+                                Use -l/--list option to show available INDEXes for selected shells repositories
+                                Default: %s
 ' ${ME#"${REPLY}/"} ${default_from} ${_oss} ${_oss} ${_shells} ${_shells} ${default_to} 1>&2
 }
 
