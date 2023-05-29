@@ -66,6 +66,7 @@ _The following tables are generated through script._
 
 |Version|alpine:3.18.0|
 |:---|:---:|
+|busybox-1_36_1|:x:|
 |busybox-1_36_0|:x:|
 |busybox-1_35_0|:x:|
 |busybox-1_34_1|:x:|
