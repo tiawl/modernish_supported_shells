@@ -22,14 +22,15 @@ main ()
 {
   harden -X id
 
-  if not is eq $(id -u) 0
+  if not eq $(id -u) 0
   then
     die 'Run this script as root'
   fi
 
   harden -X mkdir
+  harden -X env
+  harden -X envsubst
   harden -X pwd
-  harden -X cat
   harden -X git
   harden -X systemctl
 
@@ -40,10 +41,16 @@ main ()
 
   if is dir /etc/systemd/system
   then
-    printf $(cat ${wd}/systemd/bot.timer) |> /etc/systemd/system/${repo}-bot.timer
-    printf $(cat ${wd}/systemd/bot.service) |> /etc/systemd/system/${repo}-bot.service
+    env repo=${repo} envsubst < ${wd}/systemd/bot.timer >| /etc/systemd/system/${repo}-bot.timer
+    env repo=${repo} envsubst < ${wd}/systemd/bot.service >| /etc/systemd/system/${repo}-bot.service
 
     mkdir -p /opt
+
+    if is dir /opt/${repo}
+    then
+      rm -r -f /opt/${repo}
+    fi
+
     git clone https://github.com/tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
     git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
     git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1

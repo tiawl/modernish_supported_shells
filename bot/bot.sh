@@ -30,12 +30,6 @@ _dirname ()
 
 bot ()
 {
-  harden -X date
-  harden -X grep
-  harden -X git
-  harden -X wget
-  harden -X pandoc
-
   PS4="[e\${?:-0}] "
   readonly PS4
 
@@ -108,6 +102,14 @@ main ()
   harden -X mv
   harden -X rm
 
+  harden -X date
+  harden -X grep
+  harden -X git
+  harden -X pandoc
+  harden -X pwd
+  harden -X truncate
+  harden -X wget
+
   wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)/..
   modernish_wd=/opt/modernish
   readonly wd modernish_wd
@@ -126,6 +128,8 @@ main ()
   mkdir -p ${log_dir}
 
   bot "${@}" >> ${log} 2>&1
+
+  truncate -s 10M ${log}
 }
 
 main "${@}"
