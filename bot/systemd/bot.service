@@ -1,0 +1,8 @@
+[Unit]
+Description=A bot service
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Service]
+Type=oneshot
+ExecStart=/opt/${repo}/bot/bot.sh
