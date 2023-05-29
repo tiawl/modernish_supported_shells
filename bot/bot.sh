@@ -81,7 +81,7 @@ bot ()
     update=modernish
   fi
 
-  if not str empty "$(git ls-files --other --directory --exclude-standard)$(git diff --name-only)"
+  if not str empty "$(git -C ${wd} ls-files --other --directory --exclude-standard)$(git -C ${wd} diff --name-only)"
   then
     git -C ${wd} add -A > /dev/null 2>&1
     if str eq ${update:-} modernish
