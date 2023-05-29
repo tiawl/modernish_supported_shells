@@ -33,7 +33,7 @@ do :; done
 + [L1,e0] :
 + [L150,e0] unalias -a
 + [L153,e0] unset -f echo
-+ [L156,e0] kill -s 0 1542
++ [L156,e0] kill -s 0 1541
 + [L164,e0] command eval (
 /opt/clones/modernish/install.sh: 1: eval: Syntax error: end of file unexpected (expecting ")")
 + [L170,e0] fn
@@ -71,7 +71,7 @@ do :; done
 + [L283,e0] t2=efg
 + [L291,e0] t=
 + [L299,e0] set  foo -> bar foo
-+ [L307,e0] t=1542
++ [L307,e0] t=1541
 + [L315,e0] t=okok
 + [L336,e0] set +u _1_
 + [L341,e0] set -u

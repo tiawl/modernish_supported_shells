@@ -20,4 +20,6 @@ RUN ${update} && ${install} ${pkgs}
 
 ARG repo
 
+ENV CONSTANTS /opt/${repo}/const.sh
+
 COPY . /opt/${repo}

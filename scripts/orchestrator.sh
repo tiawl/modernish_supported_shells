@@ -71,13 +71,7 @@ Options:
 
 list_indexes ()
 {
-  LOCAL bash_url='https://git.savannah.gnu.org/git/bash.git' \
-        busybox_url='https://git.busybox.net/busybox' \
-        dash_url='https://git.kernel.org/pub/scm/utils/dash/dash.git' \
-        mksh_url='http://www.mirbsd.org/MirOS/dist/mir/mksh/' \
-        yash_url='https://scm.osdn.net/gitroot/yash/yash.git' \
-        zsh_url='https://github.com/zsh-users/zsh.git' \
-        table index='-1' _from=${2} _to=${3} _break _continue --split=' ' -- ${1}
+  LOCAL table index='-1' _from=${2} _to=${3} _break _continue --split=' ' -- ${1}
   BEGIN
     push IFS
     IFS=':'
@@ -238,7 +232,8 @@ main ()
     nproc=1
   fi
 
-  repo='supported-shells'
+  . ${WD}/const.sh
+
   logs=${WD}/trace
   mount='/opt/clones'
   volume=${repo}-clones
@@ -254,7 +249,6 @@ main ()
   alpine_runner_pkgs='autoconf automake bison coreutils e2fsprogs-dev gcc gettext-dev git linux-headers make musl-dev ncurses ncurses-dev'
   ctnr_scripts=/opt/${repo}/scripts
   readme=${WD}/README.md
-  shells='bash busybox dash mksh yash zsh'
   ushells=${shells}
   oss='alpine:3.18.0'
   uoss=${oss}
@@ -263,13 +257,13 @@ main ()
   keep_docker_obj=
   list_mode=
   error_mode=
-  readonly WD nproc repo logs \
+  readonly WD nproc logs \
            mount volume \
            cloner_name cloner_img cloner_pkgs \
            runner_name runner_img \
            alpine_install alpine_update \
            alpine_runner_name alpine_runner_img alpine_runner_pkgs \
-           ctnr_scripts readme shells oss \
+           ctnr_scripts readme oss \
            default_from default_to
 
   while gt ${#} '0'
