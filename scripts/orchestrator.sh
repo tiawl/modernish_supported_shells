@@ -234,7 +234,6 @@ main ()
 
   . ${WD}/const.sh
 
-  logs=${WD}/trace
   mount='/opt/clones'
   volume=${repo}-clones
   cloner_name=${repo}_cloner
@@ -248,7 +247,6 @@ main ()
   cloner_pkgs='cpio git lynx'
   alpine_runner_pkgs='autoconf automake bison coreutils e2fsprogs-dev gcc gettext-dev git linux-headers make musl-dev ncurses ncurses-dev'
   ctnr_scripts=/opt/${repo}/scripts
-  readme=${WD}/README.md
   ushells=${shells}
   oss='alpine:3.18.0'
   uoss=${oss}
@@ -257,13 +255,13 @@ main ()
   keep_docker_obj=
   list_mode=
   error_mode=
-  readonly WD nproc logs \
+  readonly WD nproc \
            mount volume \
            cloner_name cloner_img cloner_pkgs \
            runner_name runner_img \
            alpine_install alpine_update \
            alpine_runner_name alpine_runner_img alpine_runner_pkgs \
-           ctnr_scripts readme oss \
+           ctnr_scripts oss \
            default_from default_to
 
   while gt ${#} '0'

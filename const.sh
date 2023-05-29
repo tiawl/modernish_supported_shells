@@ -2,6 +2,9 @@
 
 repo='supported-shells'
 
+logs=${WD:-${wd}}/trace
+readme=${WD:-${wd}}/README.md
+
 shells='bash busybox dash mksh yash zsh'
 
 bash_url='https://git.savannah.gnu.org/git/bash.git'
@@ -13,4 +16,5 @@ yash_url='https://scm.osdn.net/gitroot/yash/yash.git'
 zsh_url='https://github.com/zsh-users/zsh.git'
 
 readonly repo shells \
+         logs readme \
          bash_url busybox_url dash_url mksh_url modernish_url yash_url zsh_url

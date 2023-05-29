@@ -45,8 +45,11 @@ bot ()
     git clone ${modernish_url} ${modernish_wd} > /dev/null 2>&1
   fi
 
-  if lt $(git -C ${modernish_wd} log -1 --format=%ct) $(git -C ${wd} log -1 --format=%ct)
+  if gt $(git -C ${modernish_wd} log -1 --format=%ct) $(git -C ${wd} log -1 --format=%ct)
   then
+    MAX_CPU=75 ${wd}/cpulimiter.sh
+    update=modernish
+  else
     LOCAL _shell
     BEGIN
       LOOP for --split=' ' _shell in ${shells}
@@ -76,22 +79,24 @@ bot ()
         fi
       DONE
     END
-  else
-    MAX_CPU=75 ${wd}/cpulimiter.sh
-    update=modernish
   fi
 
   if not str empty "$(git -C ${wd} ls-files --other --directory --exclude-standard)$(git -C ${wd} diff --name-only)"
   then
-    git -C ${wd} add -A > /dev/null 2>&1
+    git -C ${wd} add ${logs} ${readme}
+    # > /dev/null 2>&1
     if str eq ${update:-} modernish
     then
-      git -C ${wd} commit -m '[update - trace] New modernish version' > /dev/null 2>&1
+      git -C ${wd} commit -m '[update - trace] New modernish version'
+      # > /dev/null 2>&1
     else
-      git -C ${wd} commit -m "[update] New trace for: $(for changed in $(git -C ${wd} diff --name-only --cached --diff-filter=AM); do _dirname ${changed}; _basename ${REPLY}; new="${REPLY}${new+,}${new:-}"; done; printf '%s' "${new}")" > /dev/null 2>&1
+      git -C ${wd} commit -m "[update] New trace for: $(for changed in $(git -C ${wd} diff --name-only --cached --diff-filter=AM); do _dirname ${changed}; _basename ${REPLY}; new="${REPLY}${new+,}${new:-}"; done; printf '%s' "${new}")"
+      # > /dev/null 2>&1
     fi
-    git -C ${wd} pull > /dev/null 2>&1
-    git -C ${wd} push > /dev/null 2>&1
+    git -C ${wd} pull
+    # > /dev/null 2>&1
+    git -C ${wd} push
+    # > /dev/null 2>&1
   fi
 }
 
@@ -116,9 +121,12 @@ main ()
 
   . ${wd}/const.sh
 
-  git -C ${wd} reset --hard > /dev/null 2>&1
-  git -C ${wd} clean -f -x -d :/ > /dev/null 2>&1
-  git -C ${wd} pull > /dev/null 2>&1
+  git -C ${wd} reset --hard
+  # > /dev/null 2>&1
+  git -C ${wd} clean -f -x -d :/
+  # > /dev/null 2>&1
+  git -C ${wd} pull
+  # > /dev/null 2>&1
 
   log_dir=/var/log/${repo}
   log=${log_dir}/bot.log
