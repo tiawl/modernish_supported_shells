@@ -54,6 +54,7 @@ main ()
     git clone https://github.com/tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
     git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
     git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
+    git config --global --add safe.directory /opt/${repo} > /dev/null 2>&1
 
     systemctl enable ${repo}-bot.timer
   else
