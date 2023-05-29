@@ -51,14 +51,19 @@ main ()
       rm -r -f /opt/${repo}
     fi
 
-    git clone git@github.com:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
-    git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
-    git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
-    git config --global --add safe.directory /opt/${repo} > /dev/null 2>&1
+    if is reg /etc/ssh/ssh_config.d/tiawl-bot.conf
+    then
+      git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
+      git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
+      git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
+      git config --global --add safe.directory /opt/${repo} > /dev/null 2>&1
 
-    systemctl enable ${repo}-bot.timer
+      systemctl enable ${repo}-bot.timer
+    else
+      die '/etc/ssh/ssh_config.d/tiawl-bot.conf does not exist'
+    fi
   else
-    die '/etc/systemd/system does not exists'
+    die '/etc/systemd/system does not exist'
   fi
 }
 
