@@ -1,5 +1,6 @@
 #! /usr/bin/env modernish
 #! use safe
+#! use sys/base/rev
 #! use sys/cmd/harden
 #! use sys/dir/countfiles
 #! use var/arith
@@ -102,12 +103,12 @@ main ()
   harden -X mv
   harden -X rm
 
+  harden -X cut
   harden -X date
   harden -X grep
   harden -X git
   harden -X pandoc
   harden -X pwd
-  harden -X truncate
   harden -X wget
 
   wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)/..
@@ -129,7 +130,7 @@ main ()
 
   bot "${@}" >> ${log} 2>&1
 
-  truncate -s 10M ${log}
+  rev ${log} | cut -b -10000000 | rev > ${log}
 }
 
 main "${@}"
