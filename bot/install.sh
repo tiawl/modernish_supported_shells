@@ -34,12 +34,15 @@ main ()
   fi
 
   harden -X mkdir
+  harden -X cp
+  harden -X rm
+  harden -X mv
+
   harden -X env
   harden -X envsubst
   harden -X pwd
   harden -X git
   harden -X systemctl
-  harden -f ssh_add -X ssh-add
 
   wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)
   readonly wd
@@ -58,32 +61,73 @@ main ()
       rm -r -f /opt/${repo}
     fi
 
-    if is reg /etc/ssh/ssh_config.d/tiawl-bot.conf
+    if not is reg /etc/ssh/ssh_config.d/tiawl-bot.conf
     then
-      LOCAL line key _break
-      BEGIN
-        while str empty ${_break:-} && read -r line
-        do
-          case ${line} in
-          ( IdentityFile* ) read -r key < ${line#IdentityFile }
-                            if not str in $(ssh_add -L) ${key}
-                            then
-                              ssh_add ${line#IdentityFile }
-                            fi
-                            _break=y ;;
-          ( * ) ;;
-          esac
-        done < /etc/ssh/ssh_config.d/tiawl-bot.conf
-      END
-      git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
-      git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
-      git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
-      git config --global --add safe.directory /opt/${repo} > /dev/null 2>&1
-
-      systemctl enable ${repo}-bot.timer
-    else
-      die '/etc/ssh/ssh_config.d/tiawl-bot.conf does not exist'
+      if str empty ${http_proxy:-}
+      then
+        cp -a -f ${wd}/bot/noproxy.conf /etc/ssh/ssh_config.d/tiawl-bot.conf
+      elif extern -v -p nc > /dev/null 2>&1
+      then
+        env http_proxy=${http_proxy#http://} envsubst < ${wd}/bot/proxy.conf >| /etc/ssh/ssh_config.d/tiawl-bot.conf
+      else
+        die 'This script nc utility to run bot when using a proxy.'
+      fi
     fi
+
+    LOCAL line key _break
+    BEGIN
+      push IFS
+      IFS="${CCn} "
+      while str empty ${_break:-} && read -r line
+      do
+        case ${line} in
+        ( IdentityFile* ) read -r key < ${line#IdentityFile }
+                          pop IFS
+                          if not str in $(ssh-add -L 2> /dev/null) ${key}
+                          then
+                            harden -f ssh_add -X ssh-add
+                            harden -f ssh_agent -X ssh-agent
+                            eval "$(ssh_agent -s)"
+                            ssh_add ${line#IdentityFile }
+                          fi
+                          _break=y ;;
+        ( * ) ;;
+        esac
+      done < /etc/ssh/ssh_config.d/tiawl-bot.conf
+      pop IFS
+    END
+    if str in $(git config --global --list) http.proxy=
+    then
+      git config --unset --global http.proxy > /dev/null 2>&1
+    fi
+    if str in $(git config --global --list) https.proxy=
+    then
+      git config --unset --global https.proxy > /dev/null 2>&1
+    fi
+    if str in $(git config --list) http.proxy=
+    then
+      git config --unset http.proxy > /dev/null 2>&1
+    fi
+    if str in $(git config --list) https.proxy=
+    then
+      git config --unset https.proxy > /dev/null 2>&1
+    fi
+    if not str empty ${http_proxy:-}
+    then
+      git config http.proxy ${http_proxy#http://} > /dev/null 2>&1
+      git config --global http.proxy ${http_proxy#http://} > /dev/null 2>&1
+    fi
+    if not str empty ${https_proxy:-}
+    then
+      git config https.proxy ${https_proxy#http://} > /dev/null 2>&1
+      git config --global https.proxy ${https_proxy#http://} > /dev/null 2>&1
+    fi
+    git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
+    git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
+    git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
+    git config --global --add safe.directory /opt/${repo} > /dev/null 2>&1
+
+    systemctl enable ${repo}-bot.timer
   else
     die '/etc/systemd/system does not exist'
   fi

@@ -117,8 +117,14 @@ main ()
 
   . ${wd}/const.sh
 
-  git -C ${wd} config --unset http.proxy > /dev/null 2>&1
-  git -C ${wd} config --unset https.proxy > /dev/null 2>&1
+  if str in $(git -C ${wd} config --list) http.proxy=
+  then
+    git -C ${wd} config --unset http.proxy > /dev/null 2>&1
+  fi
+  if str in $(git -C ${wd} config --list) https.proxy=
+  then
+    git -C ${wd} config --unset https.proxy > /dev/null 2>&1
+  fi
   if not is empty ${http_proxy:-}
   then
     git -C ${wd} config http.proxy ${http_proxy#http://} > /dev/null 2>&1
