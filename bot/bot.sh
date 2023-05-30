@@ -37,6 +37,23 @@ bot ()
   set -x
   date '+%F %T'
 
+  if str in $(git -C ${modernish_wd} config --list) http.proxy=
+  then
+    git -C ${modernish_wd} config --unset http.proxy > /dev/null 2>&1
+  fi
+  if str in $(git -C ${modernish_wd} config --list) https.proxy=
+  then
+    git -C ${modernish_wd} config --unset https.proxy > /dev/null 2>&1
+  fi
+  if not str empty ${http_proxy:-}
+  then
+    git -C ${modernish_wd} config http.proxy ${http_proxy#http://} > /dev/null 2>&1
+  fi
+  if not str empty ${https_proxy:-}
+  then
+    git -C ${modernish_wd} config https.proxy ${https_proxy#http://} > /dev/null 2>&1
+  fi
+
   if is dir ${modernish_wd}
   then
     git -C ${modernish_wd} reset --hard > /dev/null 2>&1
