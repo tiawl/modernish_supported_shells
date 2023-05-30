@@ -93,33 +93,8 @@ main ()
       done < /etc/ssh/ssh_config.d/tiawl-bot.conf
       pop IFS
     END
-    if str in $(git config --global --list) http.proxy=
-    then
-      git config --unset --global http.proxy > /dev/null 2>&1
-    fi
-    if str in $(git config --global --list) https.proxy=
-    then
-      git config --unset --global https.proxy > /dev/null 2>&1
-    fi
-    if str in $(git config --list) http.proxy=
-    then
-      git config --unset http.proxy > /dev/null 2>&1
-    fi
-    if str in $(git config --list) https.proxy=
-    then
-      git config --unset https.proxy > /dev/null 2>&1
-    fi
-    if not str empty ${http_proxy:-}
-    then
-      git config http.proxy ${http_proxy#http://} > /dev/null 2>&1
-      git config --global http.proxy ${http_proxy#http://} > /dev/null 2>&1
-    fi
-    if not str empty ${https_proxy:-}
-    then
-      git config https.proxy ${https_proxy#http://} > /dev/null 2>&1
-      git config --global https.proxy ${https_proxy#http://} > /dev/null 2>&1
-    fi
-    git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
+
+    http_proxy=${http_proxy:-} https_proxy=${https_proxy:-} git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
     git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
     git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
     git config --global --add safe.directory /opt/${repo} > /dev/null 2>&1
