@@ -20,6 +20,11 @@ _dirname ()
 
 main ()
 {
+  PS4="[e\${?:-0}] "
+  readonly PS4
+
+  set -x
+
   harden -X id
 
   if not eq $(id -u) 0
