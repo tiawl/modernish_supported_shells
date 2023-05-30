@@ -38,10 +38,14 @@ main ()
   harden -X rm
   harden -X mv
 
+  harden -X chown
   harden -X env
   harden -X envsubst
   harden -X pwd
   harden -X systemctl
+
+  ssh_config=/etc/ssh/ssh_config.d/tiawl-bot.conf
+  readonly ssh_config
 
   if not extern -v -p git > /dev/null 2>&1
   then
@@ -67,13 +71,15 @@ main ()
 
     if str empty ${http_proxy:-}
     then
-      cp -a -f ${wd}/bot/ssh/noproxy.conf /etc/ssh/ssh_config.d/tiawl-bot.conf
+      env HOME=${HOME} envsubst < ${wd}/bot/ssh/noproxy.conf >| ${ssh_config}
     elif extern -v -p nc > /dev/null 2>&1
     then
-      env http_proxy=${http_proxy#http://} envsubst < ${wd}/bot/ssh/proxy.conf >| /etc/ssh/ssh_config.d/tiawl-bot.conf
+      env http_proxy=${http_proxy#http://} HOME=${HOME} envsubst < ${wd}/bot/ssh/proxy.conf >| ${ssh_config}
     else
       die 'This script needs nc utility to run bot when using a proxy.'
     fi
+
+    chown root:root ${ssh_config}
 
     LOCAL line key file _break
     BEGIN
@@ -95,7 +101,7 @@ main ()
                           _break=y ;;
         ( * ) ;;
         esac
-      done < /etc/ssh/ssh_config.d/tiawl-bot.conf
+      done < ${ssh_config}
       pop IFS
     END
 
