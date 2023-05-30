@@ -39,7 +39,7 @@ main ()
   harden -X pwd
   harden -X git
   harden -X systemctl
-  harden -X ssh-add
+  harden -f ssh_add -X ssh-add
 
   wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)
   readonly wd
@@ -66,9 +66,9 @@ main ()
         do
           case ${line} in
           ( IdentityFile* ) read -r key < ${line#IdentityFile }
-                            if not str in $(ssh-add -L) ${key}
+                            if not str in $(ssh_add -L) ${key}
                             then
-                              ssh-add ${line#IdentityFile }
+                              ssh_add ${line#IdentityFile }
                             fi
                             _break=y ;;
           ( * ) ;;
