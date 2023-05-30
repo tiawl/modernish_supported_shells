@@ -75,21 +75,22 @@ main ()
       die 'This script needs nc utility to run bot when using a proxy.'
     fi
 
-    LOCAL line key _break
+    LOCAL line key file _break
     BEGIN
       push IFS
       IFS="${CCn} "
       while str empty ${_break:-} && read -r line
       do
         case ${line} in
-        ( IdentityFile* ) read -r key < ${line#IdentityFile }
+        ( IdentityFile* ) file=$(eval "printf '%s' \"${line#IdentityFile }\"")
+                          read -r key < ${file}
                           pop IFS
                           if not str in $(ssh-add -L 2> /dev/null) ${key}
                           then
                             harden -f ssh_add -X ssh-add
                             harden -f ssh_agent -X ssh-agent
                             eval "$(ssh_agent -s)"
-                            ssh_add ${line#IdentityFile }
+                            ssh_add ${file}
                           fi
                           _break=y ;;
         ( * ) ;;
