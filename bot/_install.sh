@@ -44,10 +44,6 @@ main ()
   harden -X pwd
   harden -X systemctl
 
-  ssh_config=/etc/ssh/ssh_config.d/tiawl-bot.conf
-  bot_wd=/opt/${repo}
-  readonly ssh_config bot_wd
-
   if not extern -v -p git > /dev/null 2>&1
   then
     die 'This script needs git utility to run bot when using a proxy.'
@@ -57,6 +53,10 @@ main ()
   readonly wd
 
   . ${wd}/const.sh
+
+  ssh_config=/etc/ssh/ssh_config.d/tiawl-bot.conf
+  bot_wd=/opt/${repo}
+  readonly ssh_config bot_wd
 
   if is dir /etc/systemd/system
   then
