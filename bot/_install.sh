@@ -72,10 +72,10 @@ main ()
 
     if str empty ${http_proxy:-}
     then
-      env HOME=~user envsubst < ${wd}/bot/ssh/noproxy.conf >| ${ssh_config}
+      env HOME=/home/user envsubst < ${wd}/bot/ssh/noproxy.conf >| ${ssh_config}
     elif extern -v -p nc > /dev/null 2>&1
     then
-      env http_proxy=${http_proxy#http://} HOME=~user envsubst < ${wd}/bot/ssh/proxy.conf >| ${ssh_config}
+      env http_proxy=${http_proxy#http://} HOME=/home/user envsubst < ${wd}/bot/ssh/proxy.conf >| ${ssh_config}
     else
       die 'This script needs nc utility to run bot when using a proxy.'
     fi
