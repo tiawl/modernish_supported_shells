@@ -117,6 +117,16 @@ main ()
 
   . ${wd}/const.sh
 
+  git -C ${wd} config --unset http.proxy > /dev/null 2>&1
+  git -C ${wd} config --unset https.proxy > /dev/null 2>&1
+  if not is empty ${http_proxy:-}
+  then
+    git -C ${wd} config http.proxy ${http_proxy#http://} > /dev/null 2>&1
+  fi
+  if not is empty ${https_proxy:-}
+  then
+    git -C ${wd} config https.proxy ${https_proxy#http://} > /dev/null 2>&1
+  fi
   git -C ${wd} reset --hard > /dev/null 2>&1
   git -C ${wd} clean -f -x -d :/ > /dev/null 2>&1
   git -C ${wd} pull > /dev/null 2>&1
