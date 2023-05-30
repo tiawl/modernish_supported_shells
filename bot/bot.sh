@@ -152,7 +152,7 @@ main ()
 
   bot "${@}" >> ${log} 2>&1
 
-  rev ${log} | cut -b -10000000 | rev > ${log}
+  rev ${log} | cut -b -10000000 | rev >| ${log}
 }
 
 main "${@}"
