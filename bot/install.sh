@@ -61,17 +61,14 @@ main ()
       rm -r -f /opt/${repo}
     fi
 
-    if not is reg /etc/ssh/ssh_config.d/tiawl-bot.conf
+    if str empty ${http_proxy:-}
     then
-      if str empty ${http_proxy:-}
-      then
-        cp -a -f ${wd}/bot/noproxy.conf /etc/ssh/ssh_config.d/tiawl-bot.conf
-      elif extern -v -p nc > /dev/null 2>&1
-      then
-        env http_proxy=${http_proxy#http://} envsubst < ${wd}/bot/proxy.conf >| /etc/ssh/ssh_config.d/tiawl-bot.conf
-      else
-        die 'This script nc utility to run bot when using a proxy.'
-      fi
+      cp -a -f ${wd}/bot/noproxy.conf /etc/ssh/ssh_config.d/tiawl-bot.conf
+    elif extern -v -p nc > /dev/null 2>&1
+    then
+      env http_proxy=${http_proxy#http://} envsubst < ${wd}/bot/proxy.conf >| /etc/ssh/ssh_config.d/tiawl-bot.conf
+    else
+      die 'This script nc utility to run bot when using a proxy.'
     fi
 
     LOCAL line key _break
