@@ -29,6 +29,11 @@ _dirname ()
   REPLY=${1:-/}
 }
 
+_git ()
+{
+  git -c include.path=~user/.gitconfig "${@}"
+}
+
 bot ()
 {
   PS4="[e\${?:-0}] "
@@ -37,33 +42,16 @@ bot ()
   set -x
   date '+%F %T'
 
-  if str in $(git -C ${modernish_wd} config --list) http.proxy=
-  then
-    git -C ${modernish_wd} config --unset http.proxy > /dev/null 2>&1
-  fi
-  if str in $(git -C ${modernish_wd} config --list) https.proxy=
-  then
-    git -C ${modernish_wd} config --unset https.proxy > /dev/null 2>&1
-  fi
-  if not str empty ${http_proxy:-}
-  then
-    git -C ${modernish_wd} config http.proxy ${http_proxy#http://} > /dev/null 2>&1
-  fi
-  if not str empty ${https_proxy:-}
-  then
-    git -C ${modernish_wd} config https.proxy ${https_proxy#http://} > /dev/null 2>&1
-  fi
-
   if is dir ${modernish_wd}
   then
-    git -C ${modernish_wd} reset --hard > /dev/null 2>&1
-    git -C ${modernish_wd} clean -f -x -d :/ > /dev/null 2>&1
-    git -C ${modernish_wd} pull > /dev/null 2>&1
+    _git -C ${modernish_wd} reset --hard > /dev/null 2>&1
+    _git -C ${modernish_wd} clean -f -x -d :/ > /dev/null 2>&1
+    _git -C ${modernish_wd} pull > /dev/null 2>&1
   else
-    git clone ${modernish_url} ${modernish_wd} > /dev/null 2>&1
+    _git clone ${modernish_url} ${modernish_wd} > /dev/null 2>&1
   fi
 
-  if gt $(git -C ${modernish_wd} log -1 --format=%ct) $(git -C ${wd} log -1 --format=%ct)
+  if gt $(_git -C ${modernish_wd} log -1 --format=%ct) $(_git -C ${wd} log -1 --format=%ct)
   then
     MAX_CPU=75 ${wd}/cpulimiter.sh
     update=modernish
@@ -78,12 +66,12 @@ bot ()
         IFS=${CCn}
 
         case ${_shell} in
-        ( bash )    set -- $(git ls-remote --tags --refs ${bash_url} 'refs/tags/bash-*') ;;
-        ( busybox ) set -- $(git ls-remote --tags --refs ${busybox_url}) ;;
-        ( dash )    set -- $(git ls-remote --tags --refs ${dash_url}) ;;
-        ( mksh )    set -- $(wget -q -O - ${mksh_url} | pandoc -f html -t plain | grep -o 'mksh-R.*gz') ;;
-        ( yash )    set -- $(git ls-remote --tags --refs ${yash_url}) ;;
-        ( zsh )     set -- $(git ls-remote --tags --refs ${zsh_url} 'refs/tags/zsh-*') ;;
+        ( bash )    set -- $(_git ls-remote --tags --refs ${bash_url} 'refs/tags/bash-*') ;;
+        ( busybox ) set -- $(_git ls-remote --tags --refs ${busybox_url}) ;;
+        ( dash )    set -- $(_git ls-remote --tags --refs ${dash_url}) ;;
+        ( mksh )    set -- $(http_proxy=$(_git config --get http.proxy) https_proxy=$(_git config --get https.proxy) wget -q -O - ${mksh_url} | pandoc -f html -t plain | grep -o 'mksh-R.*gz') ;;
+        ( yash )    set -- $(_git ls-remote --tags --refs ${yash_url}) ;;
+        ( zsh )     set -- $(_git ls-remote --tags --refs ${zsh_url} 'refs/tags/zsh-*') ;;
         ( * )       die "Unknow shell: ${_shell}" ;;
         esac
 
@@ -99,17 +87,17 @@ bot ()
     END
   fi
 
-  if not str empty "$(git -C ${wd} ls-files --other --directory --exclude-standard)$(git -C ${wd} diff --name-only)"
+  if not str empty "$(_git -C ${wd} ls-files --other --directory --exclude-standard)$(_git -C ${wd} diff --name-only)"
   then
-    git -C ${wd} add ${logs} ${readme} > /dev/null 2>&1
+    _git -C ${wd} add ${logs} ${readme} > /dev/null 2>&1
     if str eq ${update:-} modernish
     then
-      git -C ${wd} commit -m '[update - trace] New modernish version' > /dev/null 2>&1
+      _git -C ${wd} commit -m '[update - trace] New modernish version' > /dev/null 2>&1
     else
-      git -C ${wd} commit -m "[update] New trace for: $(for changed in $(git -C ${wd} diff --name-only --cached --diff-filter=AM); do _dirname ${changed}; _basename ${REPLY}; new="${REPLY}${new+,}${new:-}"; done; printf '%s' "${new}")" > /dev/null 2>&1
+      _git -C ${wd} commit -m "[update] New trace for: $(for changed in $(_git -C ${wd} diff --name-only --cached --diff-filter=AM); do _dirname ${changed}; _basename ${REPLY}; new="${REPLY}${new+,}${new:-}"; done; printf '%s' "${new}")" > /dev/null 2>&1
     fi
-    git -C ${wd} pull > /dev/null 2>&1
-    git -C ${wd} push > /dev/null 2>&1
+    _git -C ${wd} pull > /dev/null 2>&1
+    _git -C ${wd} push > /dev/null 2>&1
   fi
 }
 
@@ -134,25 +122,9 @@ main ()
 
   . ${wd}/const.sh
 
-  if str in $(git -C ${wd} config --list) http.proxy=
-  then
-    git -C ${wd} config --unset http.proxy > /dev/null 2>&1
-  fi
-  if str in $(git -C ${wd} config --list) https.proxy=
-  then
-    git -C ${wd} config --unset https.proxy > /dev/null 2>&1
-  fi
-  if not str empty ${http_proxy:-}
-  then
-    git -C ${wd} config http.proxy ${http_proxy#http://} > /dev/null 2>&1
-  fi
-  if not str empty ${https_proxy:-}
-  then
-    git -C ${wd} config https.proxy ${https_proxy#http://} > /dev/null 2>&1
-  fi
-  git -C ${wd} reset --hard > /dev/null 2>&1
-  git -C ${wd} clean -f -x -d :/ > /dev/null 2>&1
-  git -C ${wd} pull > /dev/null 2>&1
+  _git -C ${wd} reset --hard > /dev/null 2>&1
+  _git -C ${wd} clean -f -x -d :/ > /dev/null 2>&1
+  _git -C ${wd} pull > /dev/null 2>&1
 
   log_dir=/var/log/${repo}
   log=${log_dir}/bot.log
