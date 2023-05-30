@@ -1,7 +1,6 @@
 #! /usr/bin/env modernish
 #! use safe
 #! use sys/base/mktemp
-#! use sys/base/rev
 #! use sys/cmd/harden
 #! use sys/dir/countfiles
 #! use var/arith
@@ -108,6 +107,10 @@ bot ()
     git -C ${wd} pull > /dev/null 2>&1
     git -C ${wd} push > /dev/null 2>&1
   fi
+
+  mktemp -C -s
+
+  set +x
 }
 
 main ()
@@ -123,6 +126,7 @@ main ()
   harden -X grep
   harden -X pandoc
   harden -X pwd
+  harden -X rev
   harden -X wget
 
   if not extern -v -p git > /dev/null 2>&1
@@ -152,10 +156,6 @@ main ()
   mkdir -p ${log_dir}
 
   bot "${@}" >> ${log} 2>&1
-
-  mktemp -C -s
-
-  set +x
 
   rev ${log} | cut -b -10000000 | rev >| ${REPLY}
   mv ${REPLY} ${log}
