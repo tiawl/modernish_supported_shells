@@ -44,6 +44,7 @@ bot ()
 
   if is dir ${modernish_wd}
   then
+    _git config --global --add safe.directory ${modernish_wd} > /dev/null 2>&1
     _git -C ${modernish_wd} reset --hard > /dev/null 2>&1
     _git -C ${modernish_wd} clean -f -x -d :/ > /dev/null 2>&1
     _git -C ${modernish_wd} pull > /dev/null 2>&1
@@ -123,6 +124,7 @@ main ()
 
   . ${wd}/const.sh
 
+  _git config --global --add safe.directory ${wd} > /dev/null 2>&1
   _git -C ${wd} reset --hard > /dev/null 2>&1
   _git -C ${wd} clean -f -x -d :/ > /dev/null 2>&1
   _git -C ${wd} pull > /dev/null 2>&1
