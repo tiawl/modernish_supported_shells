@@ -77,7 +77,7 @@ bot ()
         ( bash )    set -- $(git ls-remote --tags --refs ${bash_url} 'refs/tags/bash-*') ;;
         ( busybox ) set -- $(git ls-remote --tags --refs ${busybox_url}) ;;
         ( dash )    set -- $(git ls-remote --tags --refs ${dash_url}) ;;
-        ( mksh )    set -- $(http_proxy=$(git config --includes --get http.proxy) https_proxy=$(git config --includes --get https.proxy) wget -q -O - ${mksh_url} | pandoc -f html -t plain | grep -o 'mksh-R.*gz') ;;
+        ( mksh )    set -- $(env http_proxy=$(git config --includes --get http.proxy) https_proxy=$(git config --includes --get https.proxy) wget -q -O - ${mksh_url} | pandoc -f html -t plain | grep -o 'mksh-R.*gz') ;;
         ( yash )    set -- $(git ls-remote --tags --refs ${yash_url}) ;;
         ( zsh )     set -- $(git ls-remote --tags --refs ${zsh_url} 'refs/tags/zsh-*') ;;
         ( * )       die "Unknow shell: ${_shell}" ;;
@@ -118,6 +118,7 @@ main ()
 
   harden -X cut
   harden -X date
+  harden -X env
   harden -X grep
   harden -X pandoc
   harden -X pwd
