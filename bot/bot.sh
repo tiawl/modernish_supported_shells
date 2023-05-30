@@ -120,7 +120,6 @@ main ()
   harden -X mv
   harden -X rm
 
-  harden -X cut
   harden -X date
   harden -X env
   harden -X grep
@@ -128,6 +127,7 @@ main ()
   harden -X pwd
   harden -X rev
   harden -X stat
+  harden -X tac
   harden -X wget
 
   if not extern -v -p git > /dev/null 2>&1
@@ -161,8 +161,9 @@ main ()
   if gt $(stat -c%s ${log}) 1000000
   then
     rev ${log} >| ${REPLY}
-    cut -b -1000000 ${REPLY} >| ${log}
-    REPLY=$(rev ${log})
+    printf '%.10000000s\n' "$(tac ${REPLY})" >| ${log}
+    tac ${log} >| ${REPLY}
+    REPLY=$(rev ${REPLY})
     printf '[e0] date+%F %T\n%s' "${REPLY#*[e0] date +%F %T}" >| ${log}
   fi
 }
