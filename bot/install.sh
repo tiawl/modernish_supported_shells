@@ -2,6 +2,7 @@
 #! use safe
 #! use sys/cmd/harden
 #! use var/arith
+#! use var/local
 
 _dirname ()
 {
@@ -38,6 +39,7 @@ main ()
   harden -X pwd
   harden -X git
   harden -X systemctl
+  harden -X ssh-add
 
   wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)
   readonly wd
@@ -58,6 +60,21 @@ main ()
 
     if is reg /etc/ssh/ssh_config.d/tiawl-bot.conf
     then
+      LOCAL line key _break
+      BEGIN
+        while is empty ${_break:-} && read -r line
+        do
+          case ${line} in
+          ( IdentityFile* ) read -r key < ${line#IdentityFile }
+                            if not str in $(ssh-add -L) ${key}
+                            then
+                              ssh-add ${line#IdentityFile }
+                            fi
+                            _break=y ;;
+          ( * ) ;;
+          esac
+        done < /etc/ssh/ssh_config.d/tiawl-bot.conf
+      END
       git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
       git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
       git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
