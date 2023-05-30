@@ -126,6 +126,7 @@ main ()
   harden -X pandoc
   harden -X pwd
   harden -X rev
+  harden -X sed
   harden -X stat
   harden -X tac
   harden -X wget
@@ -161,10 +162,10 @@ main ()
   if gt $(stat -c%s ${log}) 1000000
   then
     rev ${log} >| ${REPLY}
-    printf '%.1000000s\n' "$(tac ${REPLY})" >| ${log}
-    tac ${log} >| ${REPLY}
-    REPLY=$(rev ${REPLY})
-    printf '[e0] date+%F %T\n%s\n' "${REPLY#*[e0] date +%F %T}" >| ${log}
+    printf '%.1000000s\n' "$(tac ${REPLY})" >| ${REPLY}
+    tac ${REPLY} >| ${log}
+    rev ${log} >| ${REPLY}
+    sed '1,/\[e0\] date\+\%F \%T/d' ${REPLY} >| ${log}
   fi
 }
 
