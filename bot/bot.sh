@@ -49,6 +49,7 @@ bot ()
     _git -C ${modernish_wd} pull > /dev/null 2>&1
   else
     _git clone ${modernish_url} ${modernish_wd} > /dev/null 2>&1
+    _git config --global --add safe.directory ${modernish_wd} > /dev/null 2>&1
   fi
 
   if gt $(_git -C ${modernish_wd} log -1 --format=%ct) $(_git -C ${wd} log -1 --format=%ct)
