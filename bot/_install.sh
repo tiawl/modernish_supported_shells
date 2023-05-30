@@ -89,7 +89,7 @@ main ()
       while str empty ${_break:-} && read -r line
       do
         case ${line} in
-        ( IdentityFile* ) file=$(eval "printf '%s' \"${line#IdentityFile }\"")
+        ( IdentityFile* ) file=$(eval "printf '%s' \"${line#IdentityFile }\"").pub
                           read -r key < ${file}
                           pop IFS
                           if not str in $(ssh-add -L 2> /dev/null) ${key}
