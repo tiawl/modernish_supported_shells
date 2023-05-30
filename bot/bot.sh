@@ -124,7 +124,7 @@ main ()
   harden -X pwd
   harden -X wget
 
-  wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)/..
+  wd=$(_dirname ${ME}; chdir ${REPLY}/..; pwd -P)
   modernish_wd=/opt/modernish
   readonly wd modernish_wd
 

@@ -44,7 +44,7 @@ main ()
   harden -X git
   harden -X systemctl
 
-  wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)/..
+  wd=$(_dirname ${ME}; chdir ${REPLY}/..; pwd -P)
   readonly wd
 
   . ${wd}/const.sh
