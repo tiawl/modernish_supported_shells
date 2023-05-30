@@ -1,7 +1,0 @@
-lru_hsz lru_hsay lru_hsinredom lru_hskm lru_hsad lru_xobysub lru_hsab         
-\ emdaer sgol         
-\ sllehs oper ylnodaer
-
-'tig.hsz/sresu-hsz/moc.buhtig//:sptth'=lru_hsz
-'tig.hsay/hsay/toortig/ten.ndso.mcs//:sptth'=lru_hsay
-'tig.hsinredom/hsinredo
