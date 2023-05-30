@@ -45,7 +45,8 @@ main ()
   harden -X systemctl
 
   ssh_config=/etc/ssh/ssh_config.d/tiawl-bot.conf
-  readonly ssh_config
+  bot_wd=/opt/${repo}
+  readonly ssh_config bot_wd
 
   if not extern -v -p git > /dev/null 2>&1
   then
@@ -64,9 +65,9 @@ main ()
 
     mkdir -p /opt
 
-    if is dir /opt/${repo}
+    if is reg ${ssh_config}
     then
-      rm -r -f /opt/${repo}
+      rm -f ${ssh_config}
     fi
 
     if str empty ${http_proxy:-}
@@ -105,12 +106,17 @@ main ()
       pop IFS
     END
 
-    http_proxy=${http_proxy:-} https_proxy=${https_proxy:-} git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
-    git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
-    git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
-    if not str in $(git config --includes --get-all --system safe.directory) /opt/${repo}
+    if is dir ${bot_wd}
     then
-      git config --system --add safe.directory /opt/${repo} > /dev/null 2>&1
+      rm -r -f ${bot_wd}
+    fi
+
+    http_proxy=${http_proxy:-} https_proxy=${https_proxy:-} git clone tiawl-bot:tiawl/modernish_supported_shells.git ${bot_wd} > /dev/null 2>&1
+    git -C ${bot_wd} config user.name 'tiawl-bot' > /dev/null 2>&1
+    git -C ${bot_wd} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
+    if not str in $(git config --includes --get-all --system safe.directory) ${bot_wd}
+    then
+      git config --system --add safe.directory ${bot_wd} > /dev/null 2>&1
     fi
 
     systemctl enable ${repo}-bot.timer
