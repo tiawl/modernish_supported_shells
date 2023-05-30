@@ -1,0 +1,7 @@
+odernish/modernish.git'
+yash_url='https://scm.osdn.net/gitroot/yash/yash.git'
+zsh_url='https://github.com/zsh-users/zsh.git'
+
+readonly repo shells \
+         logs readme \
+         bash_url busybox_url dash_url mksh_url modernish_url yash_url zsh_url

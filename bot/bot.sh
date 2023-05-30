@@ -161,10 +161,10 @@ main ()
   if gt $(stat -c%s ${log}) 1000000
   then
     rev ${log} >| ${REPLY}
-    printf '%.10000000s\n' "$(tac ${REPLY})" >| ${log}
+    printf '%.1000000s\n' "$(tac ${REPLY})" >| ${log}
     tac ${log} >| ${REPLY}
     REPLY=$(rev ${REPLY})
-    printf '[e0] date+%F %T\n%s' "${REPLY#*[e0] date +%F %T}" >| ${log}
+    printf '[e0] date+%F %T\n%s\n' "${REPLY#*[e0] date +%F %T}" >| ${log}
   fi
 }
 
