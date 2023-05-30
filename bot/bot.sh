@@ -153,7 +153,7 @@ main ()
 
   bot "${@}" >> ${log} 2>&1
 
-  mktemp -c -s
+  mktemp -C -s
 
   set +x
 
