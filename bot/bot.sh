@@ -110,7 +110,7 @@ bot ()
 
   mktemp -C -s
 
-  set +x
+  { set +x; } 2> /dev/null
 }
 
 main ()
@@ -127,6 +127,7 @@ main ()
   harden -X pandoc
   harden -X pwd
   harden -X rev
+  harden -X stat
   harden -X wget
 
   if not extern -v -p git > /dev/null 2>&1
@@ -157,8 +158,13 @@ main ()
 
   bot "${@}" >> ${log} 2>&1
 
-  rev ${log} | cut -b -10000000 | rev >| ${REPLY}
-  mv ${REPLY} ${log}
+  if gt $(stat -c%s ${log}) 1000000
+  then
+    rev ${log} >| ${REPLY}
+    cut -b -1000000 ${REPLY} >| ${log}
+    REPLY=$(rev ${log})
+    printf '[e0] date+%F %T\n%s' "${REPLY#*[e0] date +%F %T}" >| ${log}
+  fi
 }
 
 main "${@}"
