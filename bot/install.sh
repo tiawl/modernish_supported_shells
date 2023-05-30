@@ -41,8 +41,12 @@ main ()
   harden -X env
   harden -X envsubst
   harden -X pwd
-  harden -X git
   harden -X systemctl
+
+  if not extern -v -p git > /dev/null 2>&1
+  then
+    die 'This script needs git utility to run bot when using a proxy.'
+  fi
 
   wd=$(_dirname ${ME}; chdir ${REPLY}/..; pwd -P)
   readonly wd
@@ -68,7 +72,7 @@ main ()
     then
       env http_proxy=${http_proxy#http://} envsubst < ${wd}/bot/ssh/proxy.conf >| /etc/ssh/ssh_config.d/tiawl-bot.conf
     else
-      die 'This script nc utility to run bot when using a proxy.'
+      die 'This script needs nc utility to run bot when using a proxy.'
     fi
 
     LOCAL line key _break
@@ -97,9 +101,9 @@ main ()
     http_proxy=${http_proxy:-} https_proxy=${https_proxy:-} git clone tiawl-bot:tiawl/modernish_supported_shells.git /opt/${repo} > /dev/null 2>&1
     git -C /opt/${repo} config user.name 'tiawl-bot' > /dev/null 2>&1
     git -C /opt/${repo} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
-    if not str in $(git config --get-all --global safe.directory) /opt/${repo}
+    if not str in $(git config --get-all --system safe.directory) /opt/${repo}
     then
-      git config --global --add safe.directory /opt/${repo} > /dev/null 2>&1
+      git config --system --add safe.directory /opt/${repo} > /dev/null 2>&1
     fi
 
     systemctl enable ${repo}-bot.timer

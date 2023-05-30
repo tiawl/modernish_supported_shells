@@ -119,10 +119,14 @@ main ()
   harden -X cut
   harden -X date
   harden -X grep
-  harden -X git
   harden -X pandoc
   harden -X pwd
   harden -X wget
+
+  if not extern -v -p git > /dev/null 2>&1
+  then
+    die 'This script needs git utility to run bot when using a proxy.'
+  fi
 
   wd=$(_dirname ${ME}; chdir ${REPLY}/..; pwd -P)
   modernish_wd=/opt/modernish
