@@ -44,15 +44,15 @@ main ()
   harden -X git
   harden -X systemctl
 
-  wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)
+  wd=$(_dirname ${ME}; chdir ${REPLY}; pwd -P)/..
   readonly wd
 
-  . ${wd}/../const.sh
+  . ${wd}/const.sh
 
   if is dir /etc/systemd/system
   then
-    env repo=${repo} envsubst < ${wd}/systemd/bot.timer >| /etc/systemd/system/${repo}-bot.timer
-    env repo=${repo} envsubst < ${wd}/systemd/bot.service >| /etc/systemd/system/${repo}-bot.service
+    env repo=${repo} envsubst < ${wd}/bot/systemd/bot.timer >| /etc/systemd/system/${repo}-bot.timer
+    env repo=${repo} envsubst < ${wd}/bot/systemd/bot.service >| /etc/systemd/system/${repo}-bot.service
 
     mkdir -p /opt
 
@@ -63,10 +63,10 @@ main ()
 
     if str empty ${http_proxy:-}
     then
-      cp -a -f ${wd}/bot/noproxy.conf /etc/ssh/ssh_config.d/tiawl-bot.conf
+      cp -a -f ${wd}/bot/ssh/noproxy.conf /etc/ssh/ssh_config.d/tiawl-bot.conf
     elif extern -v -p nc > /dev/null 2>&1
     then
-      env http_proxy=${http_proxy#http://} envsubst < ${wd}/bot/proxy.conf >| /etc/ssh/ssh_config.d/tiawl-bot.conf
+      env http_proxy=${http_proxy#http://} envsubst < ${wd}/bot/ssh/proxy.conf >| /etc/ssh/ssh_config.d/tiawl-bot.conf
     else
       die 'This script nc utility to run bot when using a proxy.'
     fi
