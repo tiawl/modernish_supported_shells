@@ -165,7 +165,7 @@ main ()
     printf '%.1000000s\n' "$(tac ${REPLY})" >| ${REPLY}
     tac ${REPLY} >| ${log}
     rev ${log} >| ${REPLY}
-    sed '1,/\[e0\] date\+\%F \%T/d' ${REPLY} >| ${log}
+    sed '1,/\[e0\] date +%F %T/d' ${REPLY} >| ${log}
   fi
 }
 
