@@ -1,6 +1,5 @@
 #! /usr/bin/env modernish
 #! use safe
-#! use sys/base/rev
 #! use sys/cmd/harden
 #! use sys/dir/countfiles
 #! use var/arith
@@ -122,6 +121,7 @@ main ()
   harden -X grep
   harden -X pandoc
   harden -X pwd
+  harden -X rev
   harden -X wget
 
   if not extern -v -p git > /dev/null 2>&1
