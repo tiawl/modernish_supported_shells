@@ -62,7 +62,7 @@ main ()
     then
       LOCAL line key _break
       BEGIN
-        while is empty ${_break:-} && read -r line
+        while str empty ${_break:-} && read -r line
         do
           case ${line} in
           ( IdentityFile* ) read -r key < ${line#IdentityFile }
