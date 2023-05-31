@@ -341,7 +341,7 @@ main ()
                 fi
                 shift ;;
 
-    ( * ) putln "Unknow option '${1}' 'Run ${ME} -h" 1>&2
+    ( * ) putln "Unknown option '${1}' 'Run ${ME} -h" 1>&2
           exit 1 ;;
     esac
     shift

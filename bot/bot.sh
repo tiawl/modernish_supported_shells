@@ -80,7 +80,7 @@ bot ()
         ( mksh )    set -- $(env http_proxy=$(git config --includes --get http.proxy) https_proxy=$(git config --includes --get https.proxy) wget -q -O - ${mksh_url} | pandoc -f html -t plain | grep -o 'mksh-R.*gz') ;;
         ( yash )    set -- $(git ls-remote --tags --refs ${yash_url}) ;;
         ( zsh )     set -- $(git ls-remote --tags --refs ${zsh_url} 'refs/tags/zsh-*') ;;
-        ( * )       die "Unknow shell: ${_shell}" ;;
+        ( * )       die "Unknown shell: ${_shell}" ;;
         esac
 
         pop IFS
