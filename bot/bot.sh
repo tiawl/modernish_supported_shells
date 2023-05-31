@@ -159,10 +159,10 @@ main ()
 
   bot "${@}" >> ${log} 2>&1
 
-  if gt $(stat -c%s ${log}) 1000000
+  if gt $(stat -c%s ${log}) 10000000
   then
     rev ${log} >| ${REPLY}
-    printf '%.1000000s\n' "$(tac ${REPLY})" >| ${REPLY}
+    printf '%.10000000s\n' "$(tac ${REPLY})" >| ${REPLY}
     tac ${REPLY} >| ${log}
     rev ${log} >| ${REPLY}
     sed '1,/\[e0\] \/usr\/bin\/date +%F %T/d' ${REPLY} >| ${log}
