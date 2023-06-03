@@ -29,6 +29,18 @@ _dirname ()
   REPLY=${1:-/}
 }
 
+clean ()
+{
+  if is reg ${log} && gt $(stat -c%s ${log}) 10000000
+  then
+    rev ${log} >| ${tmp}
+    printf '%.10000000s\n' "$(tac ${tmp})" >| ${tmp}
+    tac ${tmp} >| ${log}
+    rev ${log} >| ${tmp}
+    sed '1,/\[e0\] \/usr\/bin\/date +%F %T/d' ${tmp} >| ${log}
+  fi
+}
+
 bot ()
 {
   PS4="[e\${?:-0}] "
@@ -108,13 +120,26 @@ bot ()
     git -C ${wd} push > /dev/null 2>&1
   fi
 
-  mktemp -C -s
-
   { set +x; } 2> /dev/null
 }
 
 main ()
 {
+  wd=$(_dirname ${ME}; chdir ${REPLY}/..; put ${PWD:-"$(pwd -P)"})
+  modernish_wd=/opt/modernish
+  readonly wd modernish_wd
+
+  . ${wd}/const.sh
+
+  mktemp -C -s
+  tmp=${REPLY}
+  log_dir=/var/log/${repo}
+  log=${log_dir}/bot.log
+
+  readonly tmp log log_dir
+
+  trap 'clean' DIE EXIT
+
   harden -X mkdir
   harden -X cp
   harden -X mv
@@ -124,7 +149,6 @@ main ()
   harden -X env
   harden -X grep
   harden -X pandoc
-  harden -X pwd
   harden -X rev
   harden -X sed
   harden -X stat
@@ -136,12 +160,6 @@ main ()
     die 'This script needs git utility to run bot when using a proxy.'
   fi
 
-  wd=$(_dirname ${ME}; chdir ${REPLY}/..; pwd -P)
-  modernish_wd=/opt/modernish
-  readonly wd modernish_wd
-
-  . ${wd}/const.sh
-
   if not str in $(git config --includes --system --get-all safe.directory) ${wd}
   then
     git config --system --add safe.directory ${wd} > /dev/null 2>&1
@@ -150,23 +168,9 @@ main ()
   git -C ${wd} clean -f -x -d :/ > /dev/null 2>&1
   git -C ${wd} pull > /dev/null 2>&1
 
-  log_dir=/var/log/bot
-  log=${log_dir}/${repo}.log
-
-  readonly log log_dir
-
   mkdir -p ${log_dir}
 
   bot "${@}" >> ${log} 2>&1
-
-  if gt $(stat -c%s ${log}) 10000000
-  then
-    rev ${log} >| ${REPLY}
-    printf '%.10000000s\n' "$(tac ${REPLY})" >| ${REPLY}
-    tac ${REPLY} >| ${log}
-    rev ${log} >| ${REPLY}
-    sed '1,/\[e0\] \/usr\/bin\/date +%F %T/d' ${REPLY} >| ${log}
-  fi
 }
 
 main "${@}"
