@@ -36,7 +36,7 @@ unset: $RO3 is read-only
 (B[m+ [L1,e0] ':'
 (B[m+ [L150,e0] unalias -a
 (B[m+ [L153,e0] unset -f echo
-(B[m+ [L156,e0] kill -s 0 1417
+(B[m+ [L156,e0] kill -s 0 1418
 (B[m+ [L164,e0] command eval '('
 (B[meval:1: syntax error: `)' is missing
 + [L170,e0] fn
@@ -73,7 +73,7 @@ unset: $RO3 is read-only
 (B[m+ [L283,e0] t2=efg
 (B[m+ [L291,e0] t=''
 (B[m+ [L299,e0] set ' foo -> bar' foo
-(B[m+ [L307,e0] t=1417
+(B[m+ [L307,e0] t=1418
 (B[m+ [L315,e0] t='okok'
 (B[m+ [L336,e0] set '+u' _1_
 (B[m+ [L341,e0] set -u

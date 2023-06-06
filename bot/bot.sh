@@ -150,8 +150,8 @@ main ()
   git -C ${wd} clean -f -x -d :/ > /dev/null 2>&1
   git -C ${wd} pull > /dev/null 2>&1
 
-  log_dir=/var/log/${repo}
-  log=${log_dir}/bot.log
+  log_dir=/var/log/bot
+  log=${log_dir}/${repo}.log
 
   readonly log log_dir
 
