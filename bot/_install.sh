@@ -114,7 +114,7 @@ main ()
     http_proxy=${http_proxy:-} https_proxy=${https_proxy:-} git clone tiawl-bot:tiawl/modernish_supported_shells.git ${bot_wd} > /dev/null 2>&1
     git -C ${bot_wd} config user.name 'tiawl-bot' > /dev/null 2>&1
     git -C ${bot_wd} config user.email 'p.tomas431@laposte.net' > /dev/null 2>&1
-    if not str in $(git config --includes --get-all --system safe.directory) ${bot_wd}
+    if not str in $(git config --includes --get-all --system safe.directory 2> /dev/null) ${bot_wd}
     then
       git config --system --add safe.directory ${bot_wd} > /dev/null 2>&1
     fi
