@@ -133,8 +133,8 @@ main ()
 
   mktemp -C -s
   tmp=${REPLY}
-  log_dir=/var/log/${repo}
-  log=${log_dir}/bot.log
+  log_dir=/var/log/bot
+  log=${log_dir}/${repo}.log
 
   readonly tmp log log_dir
 
