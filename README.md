@@ -342,6 +342,7 @@ _The following tables are generated through script._
 
 |Version|alpine:3.18.0|
 |:---|:---:|
+|yash-2.55|:x:|
 |yash-2.54|:x:|
 |yash-2.53|:x:|
 |yash-2.52|:x:|
