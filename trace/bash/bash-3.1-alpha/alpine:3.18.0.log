@@ -1,1 +1,13 @@
-Installation failed
+Relaunching install.sh with /usr/bin/bash...
+++++ [0s|adj/fatal.sh,L44,e0] command ulimit -c 0
+++++ [0s|adj/fatal.sh,L44,e0] ulimit -c 0
+++++ [0s|adj/fatal.sh,L47,e0] IFS=
+++++ [0s|adj/fatal.sh,L47,e0] set +e -fCu
+++++ [0s|adj/fatal.sh,L55,e0] eval ': || $( : # "
+)'
+/opt/clones/modernish/lib/modernish/adj/fatal.sh: eval: line 55: unexpected EOF while looking for matching `"'
+/opt/clones/modernish/lib/modernish/adj/fatal.sh: eval: line 57: syntax error: unexpected end of file
+++++ [0s|adj/fatal.sh,L55,e1] exit
++++ [0s|adj/fatal.sh,L157,e1] echo fatalbug
+modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
+modernish: Initialisation failed. Aborting.

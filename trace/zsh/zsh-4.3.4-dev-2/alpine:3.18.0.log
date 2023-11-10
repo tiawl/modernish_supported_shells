@@ -1,14 +1,14 @@
 Relaunching install.sh with /usr/bin/zsh...
-/opt/clones/modernish/lib/modernish/aux/std.sh:setopt:48: no such option: POSIX_ARGZERO
+/opt/clones/modernish/lib/modernish/adj/std.sh:setopt:48: no such option: POSIX_ARGZERO
 /opt/clones/modernish/install.sh:69: failed to load module `zsh/rlimits': Error loading shared library /usr/lib/zsh/4.3.4-dev-2/zsh/rlimits.so: No such file or directory
-/opt/clones/modernish/lib/modernish/aux/std.sh:setopt:48: no such option: POSIX_ARGZERO
+/opt/clones/modernish/lib/modernish/adj/std.sh:setopt:48: no such option: POSIX_ARGZERO
 + [${SECONDS:+${SECONDS%????}s|}${ZSH_SUBSHELL:+S$ZSH_SUBSHELL,}${funcfiletrace:+${funcfiletrace#${funcfiletrace%/*/*}/},}${funcstack:+${funcstack#${funcstack%/*/*}/},}${LINENO:+L$LINENO,}e$?] ulimit -c 0
-/opt/clones/modernish/lib/modernish/aux/fatal.sh:44: command not found: ulimit
+/opt/clones/modernish/lib/modernish/adj/fatal.sh:44: command not found: ulimit
 + [${SECONDS:+${SECONDS%????}s|}${ZSH_SUBSHELL:+S$ZSH_SUBSHELL,}${funcfiletrace:+${funcfiletrace#${funcfiletrace%/*/*}/},}${funcstack:+${funcstack#${funcstack%/*/*}/},}${LINENO:+L$LINENO,}e$?] IFS='' 
 + [${SECONDS:+${SECONDS%????}s|}${ZSH_SUBSHELL:+S$ZSH_SUBSHELL,}${funcfiletrace:+${funcfiletrace#${funcfiletrace%/*/*}/},}${funcstack:+${funcstack#${funcstack%/*/*}/},}${LINENO:+L$LINENO,}e$?] set +e -fCu
 + [${SECONDS:+${SECONDS%????}s|}${ZSH_SUBSHELL:+S$ZSH_SUBSHELL,}${funcfiletrace:+${funcfiletrace#${funcfiletrace%/*/*}/},}${funcstack:+${funcstack#${funcstack%/*/*}/},}${LINENO:+L$LINENO,}e$?] eval ': || $( : # "
 )'
-/opt/clones/modernish/lib/modernish/aux/fatal.sh:2: parse error near `$( : # "'
+/opt/clones/modernish/lib/modernish/adj/fatal.sh:2: parse error near `$( : # "'
 + [${SECONDS:+${SECONDS%????}s|}${ZSH_SUBSHELL:+S$ZSH_SUBSHELL,}${funcfiletrace:+${funcfiletrace#${funcfiletrace%/*/*}/},}${funcstack:+${funcstack#${funcstack%/*/*}/},}${LINENO:+L$LINENO,}e$?] exit
 + [${SECONDS:+${SECONDS%????}s|}${ZSH_SUBSHELL:+S$ZSH_SUBSHELL,}${funcfiletrace:+${funcfiletrace#${funcfiletrace%/*/*}/},}${funcstack:+${funcstack#${funcstack%/*/*}/},}${LINENO:+L$LINENO,}e$?] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.

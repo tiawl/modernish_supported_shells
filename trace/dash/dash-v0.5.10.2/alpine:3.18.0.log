@@ -33,7 +33,7 @@ do :; done
 + [L1,e0] :
 + [L150,e0] unalias -a
 + [L153,e0] unset -f echo
-+ [L156,e0] kill -s 0 1509
++ [L156,e0] kill -s 0 1510
 + [L164,e0] command eval (
 /opt/clones/modernish/install.sh: 1: eval: Syntax error: end of file unexpected (expecting ")")
 + [L170,e0] fn
@@ -71,7 +71,7 @@ do :; done
 + [L283,e0] t2=efg
 + [L291,e0] t=
 + [L299,e0] set  foo -> bar foo
-+ [L307,e0] t=1509
++ [L307,e0] t=1510
 + [L315,e0] t=okok
 + [L336,e0] set +u _1_
 + [L341,e0] set -u
@@ -146,7 +146,7 @@ do :; done
 + :
 + unalias -a
 + unset -f echo
-+ kill -s 0 1603
++ kill -s 0 1604
 + command eval (
 /usr/bin/dash: 1: eval: Syntax error: end of file unexpected (expecting ")")
 + fn
@@ -184,7 +184,7 @@ do :; done
 + t2=efg
 + t=
 + set  foo -> bar foo
-+ t=1603
++ t=1604
 + t=okok
 + set +u _1_
 + set -u
@@ -221,13 +221,13 @@ esac
 + command :
 + t=0
 + trap echo $PPID 0
-+ echo 1509
++ echo 1510
 * Modernish version 0.17.23-dev, now running on /usr/bin/dash.
 * This is a POSIX-compliant shell without a known version identifier variable.
   Modernish detected the following bugs, quirks and/or extra features on it:
-  BUG_ALIASCSHD   BUG_LOOPRET2	  BUG_SCLOSEDFD   LINENO	  QRK_EVALNOOPT
-  BUG_CSUBRMLF	  BUG_PP_MDIGIT   BUG_TRAPSUB0	  LOCALVARS	  QRK_LOCALINH
-  BUG_LNNONEG
+  BUG_ALIASCSHD   BUG_LOOPRET2	  BUG_TRAPSUB0	  LOCALVARS	  QRK_GLOBDOTS
+  BUG_CSUBRMLF	  BUG_PP_MDIGIT   LINENO	  QRK_EVALNOOPT   QRK_LOCALINH
+  BUG_LNNONEG	  BUG_SCLOSEDFD
 * Running regression test suite on /usr/bin/dash ...
 + [L44,e0] command ulimit -c 0
 + [L47,e0] IFS=
@@ -263,7 +263,7 @@ do :; done
 + [L1,e0] :
 + [L150,e0] unalias -a
 + [L153,e0] unset -f echo
-+ [L156,e0] kill -s 0 1684
++ [L156,e0] kill -s 0 1686
 + [L164,e0] command eval (
 /opt/clones/modernish/bin/modernish: 1: eval: Syntax error: end of file unexpected (expecting ")")
 + [L170,e0] fn
@@ -301,7 +301,7 @@ do :; done
 + [L283,e0] t2=efg
 + [L291,e0] t=
 + [L299,e0] set  foo -> bar foo
-+ [L307,e0] t=1684
++ [L307,e0] t=1686
 + [L315,e0] t=okok
 + [L336,e0] set +u _1_
 + [L341,e0] set -u
@@ -338,9 +338,9 @@ esac
 + [L2,e0] command :
 + [L541,e0] t=0
 + [L561,e0] trap echo $PPID 0
-+ [L1,e0] echo 1509
-Out of 382 tests:
-- 357 succeeded
++ [L1,e0] echo 1510
+Out of 384 tests:
+- 359 succeeded
 - 15 were skipped
 - 0 produced warnings
 - 10 failed expectedly
@@ -406,27 +406,27 @@ Out of 382 tests:
 - Installed: /usr/local/lib/modernish/mdl/var/loop/for.mm
 - Installed: /usr/local/lib/modernish/mdl/var/loop/find.mm
 - Installed: /usr/local/lib/modernish/mdl/var/loop/repeat.mm
-(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/aux(B[m
-- Installed: /usr/local/lib/modernish/aux/ematch.awk (hashbang path: /usr/bin/awk -f)
-- Installed: /usr/local/lib/modernish/aux/id.sh
-- Installed: /usr/local/lib/modernish/aux/fatal.sh
-(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/aux/sys/cmd(B[m
-- Installed: /usr/local/lib/modernish/aux/sys/cmd/mapr.awk
-(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/aux/sys/base(B[m
-- Installed: /usr/local/lib/modernish/aux/sys/base/tac.awk
-- Installed: /usr/local/lib/modernish/aux/std.sh
-(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/aux/var/loop(B[m
-- Installed: /usr/local/lib/modernish/aux/var/loop/find-ask.sh
-- Installed: /usr/local/lib/modernish/aux/var/loop/find.awk
-- Installed: /usr/local/lib/modernish/aux/var/loop/find.sh
-- Installed: /usr/local/lib/modernish/aux/var/loop/find-path.sh
-- Installed: /usr/local/lib/modernish/aux/var/loop/find-exec.sh
-- Installed: /usr/local/lib/modernish/aux/var/loop/find-ok.sh
-(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/aux/cap(B[m
-- Installed: /usr/local/lib/modernish/aux/cap/BUG_TRAPFNEXI.sh
-- Installed: /usr/local/lib/modernish/aux/cap/DOTARG.sh
-- Installed: /usr/local/lib/modernish/aux/cap/BUG_LNNONEG.sh
-- Installed: /usr/local/lib/modernish/aux/cap/BUG_LOOPRET3.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj(B[m
+- Installed: /usr/local/lib/modernish/adj/ematch.awk (hashbang path: /usr/bin/awk -f)
+- Installed: /usr/local/lib/modernish/adj/id.sh
+- Installed: /usr/local/lib/modernish/adj/fatal.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/sys/cmd(B[m
+- Installed: /usr/local/lib/modernish/adj/sys/cmd/mapr.awk
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/sys/base(B[m
+- Installed: /usr/local/lib/modernish/adj/sys/base/tac.awk
+- Installed: /usr/local/lib/modernish/adj/std.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/var/loop(B[m
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-ask.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find.awk
+- Installed: /usr/local/lib/modernish/adj/var/loop/find.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-path.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-exec.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-ok.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/cap(B[m
+- Installed: /usr/local/lib/modernish/adj/cap/BUG_TRAPFNEXI.sh
+- Installed: /usr/local/lib/modernish/adj/cap/DOTARG.sh
+- Installed: /usr/local/lib/modernish/adj/cap/BUG_LNNONEG.sh
+- Installed: /usr/local/lib/modernish/adj/cap/BUG_LOOPRET3.sh
 (B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/tst(B[m
 - Installed: /usr/local/lib/modernish/tst/local.t
 - Installed: /usr/local/lib/modernish/tst/io.t
@@ -530,6 +530,7 @@ Out of 382 tests:
 - Installed: /usr/local/lib/modernish/cap/BUG_SPCBILOC.t
 - Installed: /usr/local/lib/modernish/cap/TRAPPRSUBSH.t
 - Installed: /usr/local/lib/modernish/cap/KSH93FUNC.t
+- Installed: /usr/local/lib/modernish/cap/QRK_GLOBDOTS.t
 - Installed: /usr/local/lib/modernish/cap/BUG_LOOPRET3.t
 - Installed: /usr/local/lib/modernish/cap/ARITHCMD.t
 - Installed: /usr/local/lib/modernish/cap/BUG_DQGLOB.t

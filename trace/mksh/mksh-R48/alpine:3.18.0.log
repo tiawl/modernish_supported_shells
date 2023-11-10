@@ -1,22 +1,22 @@
 Relaunching install.sh with /usr/bin/mksh...
-+ [156.272451s|P1559,L44,e0] ulimit -c 0
-+ [156.272519s|P1559,L47,e0] IFS= 
-+ [156.272567s|P1559,L47,e0] set +e -fCu
-+ [156.272612s|P1559,L54,e0] eval $': || $( : # "\n)'
-+ [156.272653s|P1559,L0,e0] :
-+ [156.272711s|P1559,L59,e0] eval $': || for i;\ndo :; done'
-+ [156.272757s|P1559,L0,e0] :
-+ [156.272830s|P1559,L77,e0] t=ok 
-+ [156.273103s|P1559,L78,e0] t=bug command -@
-/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[78]: command: -@: unknown option
-+ [156.273835s|P1559,L87,e0] :
-+ [156.274057s|P1559,L113,e0] PATH=/dev/null 
-+ [156.274126s|P1559,L113,e0] >/dev/null 
-+ [156.274185s|P1559,L114,e0] t=x 
-+ [156.274217s|P1559,L115,e0] command -v unset
-+ [156.274249s|P1559,L116,e0] command -V unset
-+ [156.274338s|P1559,L117,e0] command -v if
-+ [156.274528s|P1559,L120,e1] exit
-+ [156.274564s|P1559,L120,e1] echo fatalbug
++ [433.846331s|P1558,L44,e0] ulimit -c 0
++ [433.846403s|P1558,L47,e0] IFS= 
++ [433.846452s|P1558,L47,e0] set +e -fCu
++ [433.847152s|P1558,L54,e0] eval $': || $( : # "\n)'
++ [433.847214s|P1558,L0,e0] :
++ [433.847282s|P1558,L59,e0] eval $': || for i;\ndo :; done'
++ [433.847331s|P1558,L0,e0] :
++ [433.847412s|P1558,L77,e0] t=ok 
++ [433.847455s|P1558,L78,e0] t=bug command -@
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[78]: command: -@: unknown option
++ [433.847556s|P1558,L87,e0] :
++ [433.847672s|P1558,L113,e0] PATH=/dev/null 
++ [433.847745s|P1558,L113,e0] >/dev/null 
++ [433.847805s|P1558,L114,e0] t=x 
++ [433.847848s|P1558,L115,e0] command -v unset
++ [433.847889s|P1558,L116,e0] command -V unset
++ [433.847922s|P1558,L117,e0] command -v if
++ [433.847983s|P1558,L120,e1] exit
++ [433.848019s|P1558,L120,e1] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.

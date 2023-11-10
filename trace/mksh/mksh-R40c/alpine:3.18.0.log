@@ -11,7 +11,7 @@ do :; done
 + [L77,e0] t=ok
 + [L78,e0] command -@
 + [L78,e0] t=bug
-/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/aux/fatal.sh[78]: command: -@: unknown option
+/opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[78]: command: -@: unknown option
 + [L87,e0] :
 + [L113,e0] PATH=/dev/null
 + [L113,e0] >/dev/null 
