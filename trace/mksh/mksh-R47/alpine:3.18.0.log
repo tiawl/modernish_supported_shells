@@ -1,22 +1,22 @@
 Relaunching install.sh with /usr/bin/mksh...
-+ [466.692158s|P1558,L44,e0] ulimit -c 0
-+ [466.692203s|P1558,L47,e0] IFS= 
-+ [466.692227s|P1558,L47,e0] set +e -fCu
-+ [466.692259s|P1558,L54,e0] eval $': || $( : # "\n)'
-+ [466.692287s|P1558,L0,e0] :
-+ [466.692315s|P1558,L59,e0] eval $': || for i;\ndo :; done'
-+ [466.692344s|P1558,L0,e0] :
-+ [466.692394s|P1558,L77,e0] t=ok 
-+ [466.692424s|P1558,L78,e0] t=bug command -@
++ [882.749635s|P1558,L44,e0] ulimit -c 0
++ [882.749687s|P1558,L47,e0] IFS= 
++ [882.749721s|P1558,L47,e0] set +e -fCu
++ [882.749762s|P1558,L54,e0] eval $': || $( : # "\n)'
++ [882.749793s|P1558,L0,e0] :
++ [882.749831s|P1558,L59,e0] eval $': || for i;\ndo :; done'
++ [882.749862s|P1558,L0,e0] :
++ [882.749919s|P1558,L77,e0] t=ok 
++ [882.749950s|P1558,L78,e0] t=bug command -@
 /opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[78]: command: -@: unknown option
-+ [466.692497s|P1558,L87,e0] :
-+ [466.692592s|P1558,L113,e0] PATH=/dev/null 
-+ [466.692649s|P1558,L113,e0] >/dev/null 
-+ [466.692691s|P1558,L114,e0] t=x 
-+ [466.692721s|P1558,L115,e0] command -v unset
-+ [466.692751s|P1558,L116,e0] command -V unset
-+ [466.692779s|P1558,L117,e0] command -v if
-+ [466.692823s|P1558,L120,e1] exit
-+ [466.692853s|P1558,L120,e1] echo fatalbug
++ [882.750036s|P1558,L87,e0] :
++ [882.750124s|P1558,L113,e0] PATH=/dev/null 
++ [882.750179s|P1558,L113,e0] >/dev/null 
++ [882.750220s|P1558,L114,e0] t=x 
++ [882.750254s|P1558,L115,e0] command -v unset
++ [882.750283s|P1558,L116,e0] command -V unset
++ [882.750312s|P1558,L117,e0] command -v if
++ [882.750354s|P1558,L120,e1] exit
++ [882.750384s|P1558,L120,e1] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.

@@ -74,8 +74,6 @@ ash: 1XX: bad number
 + [e0] set  foo -> bar foo
 + [e0] t=10424
 + [e0] t=okok
-+ [e0] set +u _1_
-+ [e0] set -u
 + [e0] t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
 + [e0] IFS=: 
 + [e0] set --   \on\e \tw'o \th\'re\e \\'fo\u\r  

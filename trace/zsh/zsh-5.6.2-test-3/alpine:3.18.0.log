@@ -1,150 +1,147 @@
 Relaunching install.sh with /usr/bin/zsh...
-+ [0.013227s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
-+ [0.013469s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
-+ [0.013535s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
-+ [0.013661s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval $': || $( : # "\n)'
-+ [0.013745s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] :
-+ [0.013848s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] eval $': || for i;\ndo :; done'
-+ [0.013912s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] :
-+ [0.014042s|S1,bin/modernish:157,adj/fatal.sh,L64,e0] case foo\
++ [0.015116s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
++ [0.015374s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
++ [0.015479s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
++ [0.015645s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval $': || $( : # "\n)'
++ [0.015741s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] :
++ [0.015877s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] eval $': || for i;\ndo :; done'
++ [0.015967s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] :
++ [0.016114s|S1,bin/modernish:157,adj/fatal.sh,L64,e0] case foo\
 bar (foo\\$'\n'bar)
-+ [0.014170s|S1,bin/modernish:157,adj/fatal.sh,L77,e0] t=ok 
-+ [0.014540s|S2,bin/modernish:157,adj/fatal.sh,L78,e0] t=bug -@
++ [0.016253s|S1,bin/modernish:157,adj/fatal.sh,L77,e0] t=ok 
++ [0.016651s|S2,bin/modernish:157,adj/fatal.sh,L78,e0] t=bug -@
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:78: command not found: -@
-+ [0.015005s|S1,bin/modernish:157,adj/fatal.sh,L79,e127] case ok (ok)
-+ [0.015171s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] :
-+ [0.015260s|S1,bin/modernish:157,adj/fatal.sh,L87,e1] case x (x)
-+ [0.015435s|S1,bin/modernish:157,adj/fatal.sh,L93,e1] case  (4.[34].*)
-+ [0.015577s|S1,bin/modernish:157,adj/fatal.sh,L103,e0] case 16854 ( | 0* | *[!0123456789]*)
-+ [0.015738s|S1,bin/modernish:157,adj/fatal.sh,L113,e0] PATH=/dev/null 
-+ [0.015912s|S1,bin/modernish:157,adj/fatal.sh,L114,e0] t=x 
-+ [0.015995s|S1,bin/modernish:157,adj/fatal.sh,L115,e0] command -v unset
-+ [0.016098s|S1,bin/modernish:157,adj/fatal.sh,L116,e0] command -V unset
-+ [0.016224s|S1,bin/modernish:157,adj/fatal.sh,L117,e0] command -v if
-+ [0.016338s|S1,bin/modernish:157,adj/fatal.sh,L118,e0] unset t
-+ [0.016438s|S1,bin/modernish:157,adj/fatal.sh,L119,e0] case  (s)
-+ [0.016557s|S1,bin/modernish:157,adj/fatal.sh,L121,e0] PATH=/bin:/usr/bin 
-+ [0.016689s|S1,bin/modernish:157,adj/fatal.sh,L125,e0] readonly CC01=$'\C-A' CC7F=$'\C-?' RO=ok
-+ [0.016812s|S1,bin/modernish:157,adj/fatal.sh,L126,e0] case ,,ok,,,ok (,,ok,,,ok)
-+ [0.016916s|S1,bin/modernish:157,adj/fatal.sh,L132,e0] RO1=1 RO2=2 RO3=3 
-+ [0.017023s|S1,bin/modernish:157,adj/fatal.sh,L133,e0] readonly RO1 RO2 RO3
-+ [0.017141s|S1,bin/modernish:157,adj/fatal.sh,L137,e0] set +o braceexpand
-+ [0.017272s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] PATH=/dev/null + [0.017340s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] command -v typeset
++ [0.017075s|S1,bin/modernish:157,adj/fatal.sh,L79,e127] case ok (ok)
++ [0.017229s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] :
++ [0.017314s|S1,bin/modernish:157,adj/fatal.sh,L87,e1] case x (x)
++ [0.017483s|S1,bin/modernish:157,adj/fatal.sh,L93,e1] case  (4.[34].*)
++ [0.017620s|S1,bin/modernish:157,adj/fatal.sh,L103,e0] case 16854 ( | 0* | *[!0123456789]*)
++ [0.017758s|S1,bin/modernish:157,adj/fatal.sh,L113,e0] PATH=/dev/null 
++ [0.017934s|S1,bin/modernish:157,adj/fatal.sh,L114,e0] t=x 
++ [0.018019s|S1,bin/modernish:157,adj/fatal.sh,L115,e0] command -v unset
++ [0.018122s|S1,bin/modernish:157,adj/fatal.sh,L116,e0] command -V unset
++ [0.018240s|S1,bin/modernish:157,adj/fatal.sh,L117,e0] command -v if
++ [0.018382s|S1,bin/modernish:157,adj/fatal.sh,L118,e0] unset t
++ [0.018488s|S1,bin/modernish:157,adj/fatal.sh,L119,e0] case  (s)
++ [0.018613s|S1,bin/modernish:157,adj/fatal.sh,L121,e0] PATH=/bin:/usr/bin 
++ [0.018756s|S1,bin/modernish:157,adj/fatal.sh,L125,e0] readonly CC01=$'\C-A' CC7F=$'\C-?' RO=ok
++ [0.018894s|S1,bin/modernish:157,adj/fatal.sh,L126,e0] case ,,ok,,,ok (,,ok,,,ok)
++ [0.019003s|S1,bin/modernish:157,adj/fatal.sh,L132,e0] RO1=1 RO2=2 RO3=3 
++ [0.019123s|S1,bin/modernish:157,adj/fatal.sh,L133,e0] readonly RO1 RO2 RO3
++ [0.019254s|S1,bin/modernish:157,adj/fatal.sh,L137,e0] set +o braceexpand
++ [0.019390s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] PATH=/dev/null + [0.019471s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] command -v typeset
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:typeset:138: bad option: -@
-+ [0.017495s|S1,bin/modernish:157,adj/fatal.sh,L139,e1] unset -v RO1 RO2 RO3
++ [0.019639s|S1,bin/modernish:157,adj/fatal.sh,L139,e1] unset -v RO1 RO2 RO3
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:139: read-only variable: RO1
-+ [0.017616s|S1,bin/modernish:157,adj/fatal.sh,L142,e1] alias 'test=test'
-+ [0.017730s|S1,bin/modernish:157,adj/fatal.sh,L146,e0] alias 'fn=:'
-+ [0.017821s|S1,bin/modernish:157,adj/fatal.sh,L147,e0] eval fn
-+ [0.017893s|S1,bin/modernish:157,adj/fatal.sh,L147,e0] :
-+ [0.018007s|S1,bin/modernish:157,adj/fatal.sh,L150,e0] unalias -a
-+ [0.018119s|S1,bin/modernish:157,adj/fatal.sh,L153,e0] unset -f echo
-+ [0.018224s|S1,bin/modernish:157,adj/fatal.sh,L156,e0] kill -s 0 16860
-+ [0.018723s|S2,bin/modernish:157,adj/fatal.sh,L164,e0] eval '('
++ [0.019787s|S1,bin/modernish:157,adj/fatal.sh,L142,e1] alias 'test=test'
++ [0.019913s|S1,bin/modernish:157,adj/fatal.sh,L146,e0] alias 'fn=:'
++ [0.020018s|S1,bin/modernish:157,adj/fatal.sh,L147,e0] eval fn
++ [0.020106s|S1,bin/modernish:157,adj/fatal.sh,L147,e0] :
++ [0.020230s|S1,bin/modernish:157,adj/fatal.sh,L150,e0] unalias -a
++ [0.020359s|S1,bin/modernish:157,adj/fatal.sh,L153,e0] unset -f echo
++ [0.020541s|S1,bin/modernish:157,adj/fatal.sh,L156,e0] kill -s 0 16860
++ [0.021037s|S2,bin/modernish:157,adj/fatal.sh,L164,e0] eval '('
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:1: parse error near `('
-+ [0.019172s|S1,bin/modernish:157,adj/fatal.sh,L170,e0] fn
-+ [0.019311s|S1,adj/fatal.sh:170,fn,L0,e0] :
-+ [0.019476s|S1,adj/fatal.sh:170,fn,L0,e0] eval 'return 0'
-+ [0.019590s|S1,adj/fatal.sh:170,fn,L0,e0] return 0
-+ [0.019839s|S1,bin/modernish:157,adj/fatal.sh,L179,e0] _Msh_test=1
-+ [0.019930s|S1,bin/modernish:157,adj/fatal.sh,L180,e0] eval $'command continue\n\t\texit'
-+ [0.020022s|S1,bin/modernish:157,adj/fatal.sh,L180,e0] continue
-+ [0.020150s|S1,bin/modernish:157,adj/fatal.sh,L183,e0] _Msh_test=1
-+ [0.020236s|S1,bin/modernish:157,adj/fatal.sh,L184,e0] eval $'command break\n\t\texit'
-+ [0.020331s|S1,bin/modernish:157,adj/fatal.sh,L184,e0] break
-+ [0.020536s|S1,bin/modernish:157,adj/fatal.sh,L196,e0] unset -v FTL_UNSETFAIL_D7CDE27B_C03A_4B45_8050_30A9292BDE74
-+ [0.020693s|S1,bin/modernish:157,adj/fatal.sh,L204,e0] unset -f FTL_UNSFNFAIL_574C63CD_8D52_4DCF_AD22_00B9AC29AFF7
-+ [0.020809s|S1,bin/modernish:157,adj/fatal.sh,L209,e0] test foo '=~' bar
-+ [0.021059s|S1,bin/modernish:157,adj/fatal.sh,L213,e1] test 123 -eq 1XX
++ [0.021414s|S1,bin/modernish:157,adj/fatal.sh,L170,e0] fn
++ [0.021516s|S1,adj/fatal.sh:170,fn,L0,e0] :
++ [0.021612s|S1,adj/fatal.sh:170,fn,L0,e0] eval 'return 0'
++ [0.021709s|S1,adj/fatal.sh:170,fn,L0,e0] return 0
++ [0.021973s|S1,bin/modernish:157,adj/fatal.sh,L179,e0] _Msh_test=1
++ [0.022105s|S1,bin/modernish:157,adj/fatal.sh,L180,e0] eval $'command continue\n\t\texit'
++ [0.022249s|S1,bin/modernish:157,adj/fatal.sh,L180,e0] continue
++ [0.022423s|S1,bin/modernish:157,adj/fatal.sh,L183,e0] _Msh_test=1
++ [0.022548s|S1,bin/modernish:157,adj/fatal.sh,L184,e0] eval $'command break\n\t\texit'
++ [0.022816s|S1,bin/modernish:157,adj/fatal.sh,L184,e0] break
++ [0.023117s|S1,bin/modernish:157,adj/fatal.sh,L196,e0] unset -v FTL_UNSETFAIL_D7CDE27B_C03A_4B45_8050_30A9292BDE74
++ [0.023384s|S1,bin/modernish:157,adj/fatal.sh,L204,e0] unset -f FTL_UNSFNFAIL_574C63CD_8D52_4DCF_AD22_00B9AC29AFF7
++ [0.023604s|S1,bin/modernish:157,adj/fatal.sh,L209,e0] test foo '=~' bar
++ [0.023961s|S1,bin/modernish:157,adj/fatal.sh,L213,e1] test 123 -eq 1XX
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:test:213: integer expression expected: 1XX
-+ [0.021213s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] PATH=/dev/null + [0.021284s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] command -v let
++ [0.024322s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] PATH=/dev/null + [0.024409s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] command -v let
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:let:216: not enough arguments
-+ [0.021462s|S1,bin/modernish:157,adj/fatal.sh,L223,e1] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
-+ [0.021553s|S1,bin/modernish:157,adj/fatal.sh,L224,e0] IFS='' 
-+ [0.021646s|S1,bin/modernish:157,adj/fatal.sh,L225,e0] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
-+ [0.021761s|S1,bin/modernish:157,adj/fatal.sh,L226,e0] case 4 (4)
-+ [0.021953s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set -u --
-+ [0.022041s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set --
-+ [0.022119s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] t='' 
-+ [0.022231s|S1,bin/modernish:157,adj/fatal.sh,L247,e0] t='1 2 3' 
-+ [0.022308s|S1,bin/modernish:157,adj/fatal.sh,L248,e0] IFS='x ' 
-+ [0.022383s|S1,bin/modernish:157,adj/fatal.sh,L249,e0] t='1 2 3 4 5' 
-+ [0.022460s|S1,bin/modernish:157,adj/fatal.sh,L250,e0] IFS='' 
-+ [0.022558s|S1,bin/modernish:157,adj/fatal.sh,L251,e0] case 1 2 3 4 5 (1\ 2\ 3\ 4\ 5)
-+ [0.022686s|S1,bin/modernish:157,adj/fatal.sh,L263,e0] t=barbarfoo 
-+ [0.022790s|S1,bin/modernish:157,adj/fatal.sh,L264,e0] case / (/)
-+ [0.022896s|S1,bin/modernish:157,adj/fatal.sh,L272,e0] t='a${t2=BUG}' 
-+ [0.023004s|S1,bin/modernish:157,adj/fatal.sh,L273,e0] unset -v t2
-+ [0.023105s|S1,bin/modernish:157,adj/fatal.sh,L274,e0] t=a 
-+ [0.023230s|S1,bin/modernish:157,adj/fatal.sh,L275,e0] case a,, (a,,)
-+ [0.023347s|S1,bin/modernish:157,adj/fatal.sh,L282,e0] t=abcdefghij 
-+ [0.023448s|S1,bin/modernish:157,adj/fatal.sh,L283,e0] t2=efg 
-+ [0.023556s|S1,bin/modernish:157,adj/fatal.sh,L284,e0] case hij (hij)
-+ [0.023643s|S1,bin/modernish:157,adj/fatal.sh,L291,e0] t='' 
-+ [0.023726s|S1,bin/modernish:157,adj/fatal.sh,L292,e0] case foo (foo)
-+ [0.023830s|S1,bin/modernish:157,adj/fatal.sh,L299,e0] set ' foo -> bar' foo
-+ [0.023926s|S1,bin/modernish:157,adj/fatal.sh,L300,e0] case bar (bar)
-+ [0.024017s|S1,bin/modernish:157,adj/fatal.sh,L307,e0] t=16860 
-+ [0.024114s|S1,bin/modernish:157,adj/fatal.sh,L308,e0] case 216860,2 (216860,2)
-+ [0.024209s|S1,bin/modernish:157,adj/fatal.sh,L315,e0] t=$'ok\C-A\C-?ok' 
-+ [0.024310s|S1,bin/modernish:157,adj/fatal.sh,L316,e0] case 6 (6)
-+ [0.024456s|S1,bin/modernish:157,adj/fatal.sh,L322,e0] case  (*.[Uu][Tt][Ff]8 | *.[Uu][Tt][Ff]-8)
-+ [0.024588s|S1,bin/modernish:157,adj/fatal.sh,L336,e0] set +u _1_
-+ [0.024696s|S1,bin/modernish:157,adj/fatal.sh,L337,e0] case 0,0,3,OK (0,0,3,OK)
-+ [0.024789s|S1,bin/modernish:157,adj/fatal.sh,L341,e0] set -u
-+ [0.024966s|S1,bin/modernish:157,adj/fatal.sh,L354,e0] t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  ' 
-+ [0.025041s|S1,bin/modernish:157,adj/fatal.sh,L355,e0] IFS=': ' 
-+ [0.025142s|S1,bin/modernish:157,adj/fatal.sh,L356,e0] set -- '' '' '\on\e' '\tw'\''o' '\th\'\''re\e' '\\'\''fo\u\r' '' '' ''
-+ [0.025228s|S1,bin/modernish:157,adj/fatal.sh,L357,e0] IFS='' 
-+ [0.025305s|S1,bin/modernish:157,adj/fatal.sh,L358,e0] t='9,,,\on\e,\tw'\''o,\th\'\''re\e,\\'\''fo\u\r,,,,U,U,U' 
-+ [0.025453s|S1,bin/modernish:157,adj/fatal.sh,L359,e0] case 9,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,,U,U,U (8,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,U,U,U,U | 9,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,,U,U,U)
-+ [0.025567s|S1,bin/modernish:157,adj/fatal.sh,L367,e0] case /root (/*)
-+ [0.025636s|S1,bin/modernish:157,adj/fatal.sh,L371,e0] IFS=/ 
-+ [0.025726s|S1,bin/modernish:157,adj/fatal.sh,L372,e0] set -- /root
-+ [0.025817s|S1,bin/modernish:157,adj/fatal.sh,L373,e0] IFS='' 
-+ [0.025921s|S1,bin/modernish:157,adj/fatal.sh,L374,e0] case 1,/root (1,/*)
-+ [0.026040s|S1,bin/modernish:157,adj/fatal.sh,L384,e0] i=7 
-+ [0.026110s|S1,bin/modernish:157,adj/fatal.sh,L385,e0] j=0 
-+ [0.026222s|S1,bin/modernish:157,adj/fatal.sh,L386,e0] case 12 (12)
-+ [0.026318s|S1,bin/modernish:157,adj/fatal.sh,L390,e0] case 42 (42)
-+ [0.026459s|S1,bin/modernish:157,adj/fatal.sh,L399,e0] case 44 (44)
-+ [0.026600s|S1,bin/modernish:157,adj/fatal.sh,L410,e0] unset -v t2
-+ [0.026731s|S1,bin/modernish:157,adj/fatal.sh,L411,e0] command -v typeset
-+ [0.026824s|S1,bin/modernish:157,adj/fatal.sh,L411,e0] typeset -i t2
-+ [0.026916s|S1,bin/modernish:157,adj/fatal.sh,L412,e0] t2=1000005 
-+ [0.026995s|S1,bin/modernish:157,adj/fatal.sh,L413,e0] t='foo\bar' 
-+ [0.027096s|S1,bin/modernish:157,adj/fatal.sh,L414,e0] : 1000005
-+ [0.027211s|S1,bin/modernish:157,adj/fatal.sh,L415,e0] case 1000005,1000001,1000005,1000005 (1000005,1000001,1000005,1000005)
-+ [0.027304s|S1,bin/modernish:157,adj/fatal.sh,L419,e0] unset -v t2
-+ [0.027462s|S1,bin/modernish:157,adj/fatal.sh,L426,e0] unset -v t
-+ [0.027559s|S1,bin/modernish:157,adj/fatal.sh,L427,e0] : 1
-+ [0.027657s|S1,bin/modernish:157,adj/fatal.sh,L428,e0] t=128/32 
-+ [0.027776s|S1,bin/modernish:157,adj/fatal.sh,L429,e0] case 128/32 (128/32)
-+ [0.027972s|S1,bin/modernish:157,adj/fatal.sh,L439,e0] eval $'case \'ab\C-Ac\C-?d\' in\n( \\a\\b\\\C-A\\c\\\C-?\\d ) ;;\n( * )\texit ;;\nesac'
-+ [0.028092s|S1,bin/modernish:157,adj/fatal.sh,L439,e0] case abcd (abcd)
-+ [0.028250s|S1,bin/modernish:157,adj/fatal.sh,L447,e0] _Msh_test_1234=x 
-+ [0.028365s|S1,bin/modernish:157,adj/fatal.sh,L448,e0] case x ([x])
-+ [0.028500s|S1,bin/modernish:157,adj/fatal.sh,L460,e0] t='ab]cd' 
-+ [0.028619s|S1,bin/modernish:157,adj/fatal.sh,L461,e0] case c (*[ab\]cd]*)
-+ [0.028706s|S1,bin/modernish:157,adj/fatal.sh,L463,e0] case e (*[!ab\]cd]*)
-+ [0.028839s|S1,bin/modernish:157,adj/fatal.sh,L472,e0] case e ([a-] | [a-d] | [-a])
-+ [0.028995s|S1,bin/modernish:157,adj/fatal.sh,L479,e0] case XaYöb (X*Y*)
-+ [0.029101s|S1,bin/modernish:157,adj/fatal.sh,L485,e0] case \z (\\z)
-+ [0.029195s|S1,bin/modernish:157,adj/fatal.sh,L491,e0] set -- '\'
-+ [0.029287s|S1,bin/modernish:157,adj/fatal.sh,L492,e0] case ab\cd (*\\*)
-+ [0.029390s|S1,bin/modernish:157,adj/fatal.sh,L500,e0] t='' 
-+ [0.029473s|S1,bin/modernish:157,adj/fatal.sh,L501,e0] case abc ([] | [!a-z]*)
-+ [0.029572s|S1,bin/modernish:157,adj/fatal.sh,L508,e0] case a-b (*-*-*)
-+ [0.029674s|S1,bin/modernish:157,adj/fatal.sh,L512,e0] case ρ (ρ)
-+ [0.029789s|S1,bin/modernish:157,adj/fatal.sh,L523,e0] set -C
-+ [0.029895s|S1,bin/modernish:157,adj/fatal.sh,L524,e0] :
-+ [0.030045s|S1,bin/modernish:157,adj/fatal.sh,L531,e0] fn
-+ [0.030143s|S1,adj/fatal.sh:531,fn,L1,e0] :
-+ [0.030312s|S1,bin/modernish:157,adj/fatal.sh,L541,e0] t=0 
-+ [0.030418s|S1,bin/modernish:157,adj/fatal.sh,L542,e0] case 5.6.2-test-3 (5.[0123].*)
-+ [0.030555s|S1,bin/modernish:157,adj/fatal.sh,L549,e0] case 1 (2)
-+ [0.030690s|S1,bin/modernish:157,adj/fatal.sh,L561,e0] trap 'echo $PPID' 0
-+ [0.030855s|S1,modernish/install.sh:143,bin/modernish,L157,e0] echo 16854
++ [0.024710s|S1,bin/modernish:157,adj/fatal.sh,L223,e1] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
++ [0.024807s|S1,bin/modernish:157,adj/fatal.sh,L224,e0] IFS='' 
++ [0.024922s|S1,bin/modernish:157,adj/fatal.sh,L225,e0] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
++ [0.025049s|S1,bin/modernish:157,adj/fatal.sh,L226,e0] case 4 (4)
++ [0.025261s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set -u --
++ [0.025350s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set --
++ [0.025427s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] t='' 
++ [0.025544s|S1,bin/modernish:157,adj/fatal.sh,L247,e0] t='1 2 3' 
++ [0.025631s|S1,bin/modernish:157,adj/fatal.sh,L248,e0] IFS='x ' 
++ [0.025720s|S1,bin/modernish:157,adj/fatal.sh,L249,e0] t='1 2 3 4 5' 
++ [0.025811s|S1,bin/modernish:157,adj/fatal.sh,L250,e0] IFS='' 
++ [0.025919s|S1,bin/modernish:157,adj/fatal.sh,L251,e0] case 1 2 3 4 5 (1\ 2\ 3\ 4\ 5)
++ [0.026062s|S1,bin/modernish:157,adj/fatal.sh,L263,e0] t=barbarfoo 
++ [0.026169s|S1,bin/modernish:157,adj/fatal.sh,L264,e0] case / (/)
++ [0.026279s|S1,bin/modernish:157,adj/fatal.sh,L272,e0] t='a${t2=BUG}' 
++ [0.026375s|S1,bin/modernish:157,adj/fatal.sh,L273,e0] unset -v t2
++ [0.026470s|S1,bin/modernish:157,adj/fatal.sh,L274,e0] t=a 
++ [0.026595s|S1,bin/modernish:157,adj/fatal.sh,L275,e0] case a,, (a,,)
++ [0.026702s|S1,bin/modernish:157,adj/fatal.sh,L282,e0] t=abcdefghij 
++ [0.026787s|S1,bin/modernish:157,adj/fatal.sh,L283,e0] t2=efg 
++ [0.026903s|S1,bin/modernish:157,adj/fatal.sh,L284,e0] case hij (hij)
++ [0.027025s|S1,bin/modernish:157,adj/fatal.sh,L291,e0] t='' 
++ [0.027136s|S1,bin/modernish:157,adj/fatal.sh,L292,e0] case foo (foo)
++ [0.027260s|S1,bin/modernish:157,adj/fatal.sh,L299,e0] set ' foo -> bar' foo
++ [0.027380s|S1,bin/modernish:157,adj/fatal.sh,L300,e0] case bar (bar)
++ [0.027500s|S1,bin/modernish:157,adj/fatal.sh,L307,e0] t=16860 
++ [0.027627s|S1,bin/modernish:157,adj/fatal.sh,L308,e0] case 216860,2 (216860,2)
++ [0.027737s|S1,bin/modernish:157,adj/fatal.sh,L315,e0] t=$'ok\C-A\C-?ok' 
++ [0.027853s|S1,bin/modernish:157,adj/fatal.sh,L316,e0] case 6 (6)
++ [0.028025s|S1,bin/modernish:157,adj/fatal.sh,L322,e0] case  (*.[Uu][Tt][Ff]8 | *.[Uu][Tt][Ff]-8)
++ [0.028221s|S1,bin/modernish:157,adj/fatal.sh,L342,e0] t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  ' 
++ [0.028303s|S1,bin/modernish:157,adj/fatal.sh,L343,e0] IFS=': ' 
++ [0.028491s|S1,bin/modernish:157,adj/fatal.sh,L344,e0] set -- '' '' '\on\e' '\tw'\''o' '\th\'\''re\e' '\\'\''fo\u\r' '' '' ''
++ [0.028594s|S1,bin/modernish:157,adj/fatal.sh,L345,e0] IFS='' 
++ [0.028693s|S1,bin/modernish:157,adj/fatal.sh,L346,e0] t='9,,,\on\e,\tw'\''o,\th\'\''re\e,\\'\''fo\u\r,,,,U,U,U' 
++ [0.028867s|S1,bin/modernish:157,adj/fatal.sh,L347,e0] case 9,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,,U,U,U (8,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,U,U,U,U | 9,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,,U,U,U)
++ [0.029018s|S1,bin/modernish:157,adj/fatal.sh,L355,e0] case /root (/*)
++ [0.029101s|S1,bin/modernish:157,adj/fatal.sh,L359,e0] IFS=/ 
++ [0.029207s|S1,bin/modernish:157,adj/fatal.sh,L360,e0] set -- /root
++ [0.029312s|S1,bin/modernish:157,adj/fatal.sh,L361,e0] IFS='' 
++ [0.029432s|S1,bin/modernish:157,adj/fatal.sh,L362,e0] case 1,/root (1,/*)
++ [0.029562s|S1,bin/modernish:157,adj/fatal.sh,L372,e0] i=7 
++ [0.029640s|S1,bin/modernish:157,adj/fatal.sh,L373,e0] j=0 
++ [0.029764s|S1,bin/modernish:157,adj/fatal.sh,L374,e0] case 12 (12)
++ [0.029875s|S1,bin/modernish:157,adj/fatal.sh,L378,e0] case 42 (42)
++ [0.030031s|S1,bin/modernish:157,adj/fatal.sh,L387,e0] case 44 (44)
++ [0.030189s|S1,bin/modernish:157,adj/fatal.sh,L398,e0] unset -v t2
++ [0.030333s|S1,bin/modernish:157,adj/fatal.sh,L399,e0] command -v typeset
++ [0.030443s|S1,bin/modernish:157,adj/fatal.sh,L399,e0] typeset -i t2
++ [0.030544s|S1,bin/modernish:157,adj/fatal.sh,L400,e0] t2=1000005 
++ [0.030640s|S1,bin/modernish:157,adj/fatal.sh,L401,e0] t='foo\bar' 
++ [0.030750s|S1,bin/modernish:157,adj/fatal.sh,L402,e0] : 1000005
++ [0.030877s|S1,bin/modernish:157,adj/fatal.sh,L403,e0] case 1000005,1000001,1000005,1000005 (1000005,1000001,1000005,1000005)
++ [0.030979s|S1,bin/modernish:157,adj/fatal.sh,L407,e0] unset -v t2
++ [0.031164s|S1,bin/modernish:157,adj/fatal.sh,L414,e0] unset -v t
++ [0.031263s|S1,bin/modernish:157,adj/fatal.sh,L415,e0] : 1
++ [0.031383s|S1,bin/modernish:157,adj/fatal.sh,L416,e0] t=128/32 
++ [0.031510s|S1,bin/modernish:157,adj/fatal.sh,L417,e0] case 128/32 (128/32)
++ [0.031686s|S1,bin/modernish:157,adj/fatal.sh,L427,e0] eval $'case \'ab\C-Ac\C-?d\' in\n( \\a\\b\\\C-A\\c\\\C-?\\d ) ;;\n( * )\texit ;;\nesac'
++ [0.031789s|S1,bin/modernish:157,adj/fatal.sh,L427,e0] case abcd (abcd)
++ [0.031929s|S1,bin/modernish:157,adj/fatal.sh,L435,e0] _Msh_test_1234=x 
++ [0.032036s|S1,bin/modernish:157,adj/fatal.sh,L436,e0] case x ([x])
++ [0.032191s|S1,bin/modernish:157,adj/fatal.sh,L448,e0] t='ab]cd' 
++ [0.032322s|S1,bin/modernish:157,adj/fatal.sh,L449,e0] case c (*[ab\]cd]*)
++ [0.032418s|S1,bin/modernish:157,adj/fatal.sh,L451,e0] case e (*[!ab\]cd]*)
++ [0.032561s|S1,bin/modernish:157,adj/fatal.sh,L460,e0] case e ([a-] | [a-d] | [-a])
++ [0.032694s|S1,bin/modernish:157,adj/fatal.sh,L467,e0] case XaYöb (X*Y*)
++ [0.032805s|S1,bin/modernish:157,adj/fatal.sh,L473,e0] case \z (\\z)
++ [0.032920s|S1,bin/modernish:157,adj/fatal.sh,L479,e0] set -- '\'
++ [0.033029s|S1,bin/modernish:157,adj/fatal.sh,L480,e0] case ab\cd (*\\*)
++ [0.033149s|S1,bin/modernish:157,adj/fatal.sh,L488,e0] t='' 
++ [0.033246s|S1,bin/modernish:157,adj/fatal.sh,L489,e0] case abc ([] | [!a-z]*)
++ [0.033364s|S1,bin/modernish:157,adj/fatal.sh,L496,e0] case a-b (*-*-*)
++ [0.033494s|S1,bin/modernish:157,adj/fatal.sh,L500,e0] case ρ (ρ)
++ [0.033634s|S1,bin/modernish:157,adj/fatal.sh,L511,e0] set -C
++ [0.033760s|S1,bin/modernish:157,adj/fatal.sh,L512,e0] :
++ [0.033925s|S1,bin/modernish:157,adj/fatal.sh,L519,e0] fn
++ [0.034027s|S1,adj/fatal.sh:519,fn,L1,e0] :
++ [0.034206s|S1,bin/modernish:157,adj/fatal.sh,L529,e0] t=0 
++ [0.034322s|S1,bin/modernish:157,adj/fatal.sh,L530,e0] case 5.6.2-test-3 (5.[0123].*)
++ [0.034466s|S1,bin/modernish:157,adj/fatal.sh,L537,e0] case 1 (2)
++ [0.034606s|S1,bin/modernish:157,adj/fatal.sh,L549,e0] trap 'echo $PPID' 0
++ [0.034780s|S1,modernish/install.sh:143,bin/modernish,L157,e0] echo 16854
 var/loop/find:	Warning: using non-POSIX-compliant '/usr/bin/find'.
 		Performance will degrade and breakage cannot be ruled out.
 		Recommend installing sfind or GNU find somewhere in $PATH.
@@ -238,9 +235,6 @@ bar (foo\\$'\n'bar)
 +%N:%i> t=$'ok\C-A\C-?ok' 
 +%N:%i> case 6 (6)
 +%N:%i> case  (*.[Uu][Tt][Ff]8 | *.[Uu][Tt][Ff]-8)
-+%N:%i> set +u _1_
-+%N:%i> case 0,0,3,OK (0,0,3,OK)
-+%N:%i> set -u
 +%N:%i> t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  ' 
 +%N:%i> IFS=': ' 
 +%N:%i> set -- '' '' '\on\e' '\tw'\''o' '\th\'\''re\e' '\\'\''fo\u\r' '' '' ''
@@ -306,159 +300,450 @@ bar (foo\\$'\n'bar)
   BUG_ARITHSPLT   BUG_ZSHNAMES	  KSHARRAY	  QRK_BCDANGER	  TRAPZERR
   BUG_ASGNLOCAL   CESCQUOT	  LEPIPEMAIN	  QRK_IFSFINAL
 * Running regression test suite on /usr/bin/zsh ...
-+ [0.007151s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
-+ [0.007373s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
-+ [0.007454s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
-+ [0.007607s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval $': || $( : # "\n)'
-+ [0.007700s|S1,adj/fatal.sh:54,(eval),L1,e0] :
-+ [0.007837s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] eval $': || for i;\ndo :; done'
-+ [0.007924s|S1,adj/fatal.sh:59,(eval),L1,e0] :
-+ [0.008061s|S1,bin/modernish:157,adj/fatal.sh,L64,e0] case foo\
++ [0.033790s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
++ [0.034009s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
++ [0.034108s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
++ [0.034277s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval $': || $( : # "\n)'
++ [0.034375s|S1,adj/fatal.sh:54,(eval),L1,e0] :
++ [0.034514s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] eval $': || for i;\ndo :; done'
++ [0.034609s|S1,adj/fatal.sh:59,(eval),L1,e0] :
++ [0.034768s|S1,bin/modernish:157,adj/fatal.sh,L64,e0] case foo\
 bar (foo\\$'\n'bar)
-+ [0.008203s|S1,bin/modernish:157,adj/fatal.sh,L77,e0] t=ok 
-+ [0.008646s|S2,bin/modernish:157,adj/fatal.sh,L78,e0] t=bug -@
++ [0.034897s|S1,bin/modernish:157,adj/fatal.sh,L77,e0] t=ok 
++ [0.035295s|S2,bin/modernish:157,adj/fatal.sh,L78,e0] t=bug -@
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:78: command not found: -@
-+ [0.009089s|S1,bin/modernish:157,adj/fatal.sh,L79,e127] case ok (ok)
-+ [0.009248s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] :
-+ [0.009337s|S1,bin/modernish:157,adj/fatal.sh,L87,e1] case x (x)
-+ [0.009494s|S1,bin/modernish:157,adj/fatal.sh,L93,e1] case  (4.[34].*)
-+ [0.009619s|S1,bin/modernish:157,adj/fatal.sh,L103,e0] case 16860 ( | 0* | *[!0123456789]*)
-+ [0.009744s|S1,bin/modernish:157,adj/fatal.sh,L113,e0] PATH=/dev/null 
-+ [0.009895s|S1,bin/modernish:157,adj/fatal.sh,L114,e0] t=x 
-+ [0.009969s|S1,bin/modernish:157,adj/fatal.sh,L115,e0] command -v unset
-+ [0.010064s|S1,bin/modernish:157,adj/fatal.sh,L116,e0] command -V unset
-+ [0.010167s|S1,bin/modernish:157,adj/fatal.sh,L117,e0] command -v if
-+ [0.010261s|S1,bin/modernish:157,adj/fatal.sh,L118,e0] unset t
-+ [0.010346s|S1,bin/modernish:157,adj/fatal.sh,L119,e0] case  (s)
-+ [0.010437s|S1,bin/modernish:157,adj/fatal.sh,L121,e0] PATH=/bin:/usr/bin 
-+ [0.010560s|S1,bin/modernish:157,adj/fatal.sh,L125,e0] readonly $'CC01=\C-A' $'CC7F=\C-?' 'RO=ok'
-+ [0.010684s|S1,bin/modernish:157,adj/fatal.sh,L126,e0] case ,,ok,,,ok (,,ok,,,ok)
-+ [0.010777s|S1,bin/modernish:157,adj/fatal.sh,L132,e0] RO1=1 RO2=2 RO3=3 
-+ [0.010875s|S1,bin/modernish:157,adj/fatal.sh,L133,e0] readonly RO1 RO2 RO3
-+ [0.010995s|S1,bin/modernish:157,adj/fatal.sh,L137,e0] set +o braceexpand
-+ [0.011115s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] PATH=/dev/null + [0.011173s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] command -v typeset
++ [0.035755s|S1,bin/modernish:157,adj/fatal.sh,L79,e127] case ok (ok)
++ [0.035891s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] :
++ [0.035970s|S1,bin/modernish:157,adj/fatal.sh,L87,e1] case x (x)
++ [0.036110s|S1,bin/modernish:157,adj/fatal.sh,L93,e1] case  (4.[34].*)
++ [0.036227s|S1,bin/modernish:157,adj/fatal.sh,L103,e0] case 16860 ( | 0* | *[!0123456789]*)
++ [0.036354s|S1,bin/modernish:157,adj/fatal.sh,L113,e0] PATH=/dev/null 
++ [0.036505s|S1,bin/modernish:157,adj/fatal.sh,L114,e0] t=x 
++ [0.036581s|S1,bin/modernish:157,adj/fatal.sh,L115,e0] command -v unset
++ [0.036709s|S1,bin/modernish:157,adj/fatal.sh,L116,e0] command -V unset
++ [0.036822s|S1,bin/modernish:157,adj/fatal.sh,L117,e0] command -v if
++ [0.036927s|S1,bin/modernish:157,adj/fatal.sh,L118,e0] unset t
++ [0.037020s|S1,bin/modernish:157,adj/fatal.sh,L119,e0] case  (s)
++ [0.037124s|S1,bin/modernish:157,adj/fatal.sh,L121,e0] PATH=/bin:/usr/bin 
++ [0.037250s|S1,bin/modernish:157,adj/fatal.sh,L125,e0] readonly $'CC01=\C-A' $'CC7F=\C-?' 'RO=ok'
++ [0.037373s|S1,bin/modernish:157,adj/fatal.sh,L126,e0] case ,,ok,,,ok (,,ok,,,ok)
++ [0.037470s|S1,bin/modernish:157,adj/fatal.sh,L132,e0] RO1=1 RO2=2 RO3=3 
++ [0.037570s|S1,bin/modernish:157,adj/fatal.sh,L133,e0] readonly RO1 RO2 RO3
++ [0.037698s|S1,bin/modernish:157,adj/fatal.sh,L137,e0] set +o braceexpand
++ [0.037834s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] PATH=/dev/null + [0.037894s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] command -v typeset
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:typeset:138: bad option: -@
-+ [0.011881s|S1,bin/modernish:157,adj/fatal.sh,L139,e1] unset -v RO1 RO2 RO3
++ [0.038062s|S1,bin/modernish:157,adj/fatal.sh,L139,e1] unset -v RO1 RO2 RO3
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:139: read-only variable: RO1
-+ [0.012009s|S1,bin/modernish:157,adj/fatal.sh,L142,e1] alias 'test=test'
-+ [0.012129s|S1,bin/modernish:157,adj/fatal.sh,L146,e0] alias 'fn=:'
-+ [0.012237s|S1,bin/modernish:157,adj/fatal.sh,L147,e0] eval fn
-+ [0.012350s|S1,adj/fatal.sh:147,(eval),L1,e0] :
-+ [0.012467s|S1,bin/modernish:157,adj/fatal.sh,L150,e0] unalias -a
-+ [0.012593s|S1,bin/modernish:157,adj/fatal.sh,L153,e0] unset -f echo
-+ [0.012712s|S1,bin/modernish:157,adj/fatal.sh,L156,e0] kill -s 0 17029
-+ [0.013154s|S2,bin/modernish:157,adj/fatal.sh,L164,e0] eval '('
++ [0.038192s|S1,bin/modernish:157,adj/fatal.sh,L142,e1] alias 'test=test'
++ [0.038313s|S1,bin/modernish:157,adj/fatal.sh,L146,e0] alias 'fn=:'
++ [0.038409s|S1,bin/modernish:157,adj/fatal.sh,L147,e0] eval fn
++ [0.038515s|S1,adj/fatal.sh:147,(eval),L1,e0] :
++ [0.038636s|S1,bin/modernish:157,adj/fatal.sh,L150,e0] unalias -a
++ [0.038752s|S1,bin/modernish:157,adj/fatal.sh,L153,e0] unset -f echo
++ [0.038874s|S1,bin/modernish:157,adj/fatal.sh,L156,e0] kill -s 0 17029
++ [0.039361s|S2,bin/modernish:157,adj/fatal.sh,L164,e0] eval '('
 (eval):1: parse error near `('
-+ [0.013507s|S1,bin/modernish:157,adj/fatal.sh,L170,e0] fn
-+ [0.013601s|S1,adj/fatal.sh:170,fn,L0,e0] :
-+ [0.013706s|S1,adj/fatal.sh:170,fn,L0,e0] eval 'return 0'
-+ [0.013786s|S1,adj/fatal.sh:169,(eval),L1,e0] return 0
-+ [0.013982s|S1,bin/modernish:157,adj/fatal.sh,L179,e0] _Msh_test=1
-+ [0.014053s|S1,bin/modernish:157,adj/fatal.sh,L180,e0] eval $'command continue\n\t\texit'
-+ [0.014154s|S1,adj/fatal.sh:180,(eval),L1,e0] continue
-+ [0.014268s|S1,bin/modernish:157,adj/fatal.sh,L183,e0] _Msh_test=1
-+ [0.014343s|S1,bin/modernish:157,adj/fatal.sh,L184,e0] eval $'command break\n\t\texit'
-+ [0.014435s|S1,adj/fatal.sh:184,(eval),L1,e0] break
-+ [0.014606s|S1,bin/modernish:157,adj/fatal.sh,L196,e0] unset -v FTL_UNSETFAIL_D7CDE27B_C03A_4B45_8050_30A9292BDE74
-+ [0.014759s|S1,bin/modernish:157,adj/fatal.sh,L204,e0] unset -f FTL_UNSFNFAIL_574C63CD_8D52_4DCF_AD22_00B9AC29AFF7
-+ [0.014873s|S1,bin/modernish:157,adj/fatal.sh,L209,e0] test foo '=~' bar
-+ [0.015127s|S1,bin/modernish:157,adj/fatal.sh,L213,e1] test 123 -eq 1XX
++ [0.039751s|S1,bin/modernish:157,adj/fatal.sh,L170,e0] fn
++ [0.039853s|S1,adj/fatal.sh:170,fn,L0,e0] :
++ [0.039981s|S1,adj/fatal.sh:170,fn,L0,e0] eval 'return 0'
++ [0.040073s|S1,adj/fatal.sh:169,(eval),L1,e0] return 0
++ [0.040305s|S1,bin/modernish:157,adj/fatal.sh,L179,e0] _Msh_test=1
++ [0.040382s|S1,bin/modernish:157,adj/fatal.sh,L180,e0] eval $'command continue\n\t\texit'
++ [0.040496s|S1,adj/fatal.sh:180,(eval),L1,e0] continue
++ [0.040635s|S1,bin/modernish:157,adj/fatal.sh,L183,e0] _Msh_test=1
++ [0.040725s|S1,bin/modernish:157,adj/fatal.sh,L184,e0] eval $'command break\n\t\texit'
++ [0.040835s|S1,adj/fatal.sh:184,(eval),L1,e0] break
++ [0.041020s|S1,bin/modernish:157,adj/fatal.sh,L196,e0] unset -v FTL_UNSETFAIL_D7CDE27B_C03A_4B45_8050_30A9292BDE74
++ [0.041185s|S1,bin/modernish:157,adj/fatal.sh,L204,e0] unset -f FTL_UNSFNFAIL_574C63CD_8D52_4DCF_AD22_00B9AC29AFF7
++ [0.041308s|S1,bin/modernish:157,adj/fatal.sh,L209,e0] test foo '=~' bar
++ [0.041599s|S1,bin/modernish:157,adj/fatal.sh,L213,e1] test 123 -eq 1XX
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:test:213: integer expression expected: 1XX
-+ [0.015319s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] PATH=/dev/null + [0.015380s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] command -v let
++ [0.041778s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] PATH=/dev/null + [0.041842s|S1,bin/modernish:157,adj/fatal.sh,L216,e2] command -v let
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:let:216: not enough arguments
-+ [0.015557s|S1,bin/modernish:157,adj/fatal.sh,L223,e1] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
-+ [0.015639s|S1,bin/modernish:157,adj/fatal.sh,L224,e0] IFS='' 
-+ [0.015729s|S1,bin/modernish:157,adj/fatal.sh,L225,e0] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
-+ [0.015837s|S1,bin/modernish:157,adj/fatal.sh,L226,e0] case 4 (4)
-+ [0.016026s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set -u --
-+ [0.016102s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set --
-+ [0.016175s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] t='' 
-+ [0.016276s|S1,bin/modernish:157,adj/fatal.sh,L247,e0] t='1 2 3' 
-+ [0.016356s|S1,bin/modernish:157,adj/fatal.sh,L248,e0] IFS='x ' 
-+ [0.016439s|S1,bin/modernish:157,adj/fatal.sh,L249,e0] t='1 2 3 4 5' 
-+ [0.016520s|S1,bin/modernish:157,adj/fatal.sh,L250,e0] IFS='' 
-+ [0.016625s|S1,bin/modernish:157,adj/fatal.sh,L251,e0] case 1 2 3 4 5 (1\ 2\ 3\ 4\ 5)
-+ [0.016754s|S1,bin/modernish:157,adj/fatal.sh,L263,e0] t=barbarfoo 
-+ [0.016850s|S1,bin/modernish:157,adj/fatal.sh,L264,e0] case / (/)
-+ [0.016979s|S1,bin/modernish:157,adj/fatal.sh,L272,e0] t='a${t2=BUG}' 
-+ [0.017063s|S1,bin/modernish:157,adj/fatal.sh,L273,e0] unset -v t2
-+ [0.017145s|S1,bin/modernish:157,adj/fatal.sh,L274,e0] t=a 
-+ [0.017249s|S1,bin/modernish:157,adj/fatal.sh,L275,e0] case a,, (a,,)
-+ [0.017343s|S1,bin/modernish:157,adj/fatal.sh,L282,e0] t=abcdefghij 
-+ [0.017418s|S1,bin/modernish:157,adj/fatal.sh,L283,e0] t2=efg 
-+ [0.017531s|S1,bin/modernish:157,adj/fatal.sh,L284,e0] case hij (hij)
-+ [0.017630s|S1,bin/modernish:157,adj/fatal.sh,L291,e0] t='' 
-+ [0.017719s|S1,bin/modernish:157,adj/fatal.sh,L292,e0] case foo (foo)
-+ [0.017847s|S1,bin/modernish:157,adj/fatal.sh,L299,e0] set ' foo -> bar' foo
-+ [0.017957s|S1,bin/modernish:157,adj/fatal.sh,L300,e0] case bar (bar)
-+ [0.018059s|S1,bin/modernish:157,adj/fatal.sh,L307,e0] t=17029 
-+ [0.018163s|S1,bin/modernish:157,adj/fatal.sh,L308,e0] case 217029,2 (217029,2)
-+ [0.018266s|S1,bin/modernish:157,adj/fatal.sh,L315,e0] t=$'ok\C-A\C-?ok' 
-+ [0.018369s|S1,bin/modernish:157,adj/fatal.sh,L316,e0] case 6 (6)
-+ [0.018513s|S1,bin/modernish:157,adj/fatal.sh,L322,e0] case  (*.[Uu][Tt][Ff]8 | *.[Uu][Tt][Ff]-8)
-+ [0.018662s|S1,bin/modernish:157,adj/fatal.sh,L336,e0] set +u _1_
-+ [0.018764s|S1,bin/modernish:157,adj/fatal.sh,L337,e0] case 0,0,3,OK (0,0,3,OK)
-+ [0.018841s|S1,bin/modernish:157,adj/fatal.sh,L341,e0] set -u
-+ [0.019049s|S1,bin/modernish:157,adj/fatal.sh,L354,e0] t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  ' 
-+ [0.019119s|S1,bin/modernish:157,adj/fatal.sh,L355,e0] IFS=': ' 
-+ [0.019222s|S1,bin/modernish:157,adj/fatal.sh,L356,e0] set -- '' '' '\on\e' '\tw'\''o' '\th\'\''re\e' '\\'\''fo\u\r' '' '' ''
-+ [0.019329s|S1,bin/modernish:157,adj/fatal.sh,L357,e0] IFS='' 
-+ [0.019417s|S1,bin/modernish:157,adj/fatal.sh,L358,e0] t='9,,,\on\e,\tw'\''o,\th\'\''re\e,\\'\''fo\u\r,,,,U,U,U' 
-+ [0.019548s|S1,bin/modernish:157,adj/fatal.sh,L359,e0] case 9,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,,U,U,U (8,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,U,U,U,U | 9,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,,U,U,U)
-+ [0.019653s|S1,bin/modernish:157,adj/fatal.sh,L367,e0] case /root (/*)
-+ [0.019726s|S1,bin/modernish:157,adj/fatal.sh,L371,e0] IFS=/ 
-+ [0.019816s|S1,bin/modernish:157,adj/fatal.sh,L372,e0] set -- /root
-+ [0.019899s|S1,bin/modernish:157,adj/fatal.sh,L373,e0] IFS='' 
-+ [0.020002s|S1,bin/modernish:157,adj/fatal.sh,L374,e0] case 1,/root (1,/*)
-+ [0.020137s|S1,bin/modernish:157,adj/fatal.sh,L384,e0] i=7 
-+ [0.020213s|S1,bin/modernish:157,adj/fatal.sh,L385,e0] j=0 
-+ [0.020317s|S1,bin/modernish:157,adj/fatal.sh,L386,e0] case 12 (12)
-+ [0.020414s|S1,bin/modernish:157,adj/fatal.sh,L390,e0] case 42 (42)
-+ [0.020553s|S1,bin/modernish:157,adj/fatal.sh,L399,e0] case 44 (44)
-+ [0.020691s|S1,bin/modernish:157,adj/fatal.sh,L410,e0] unset -v t2
-+ [0.020819s|S1,bin/modernish:157,adj/fatal.sh,L411,e0] command -v typeset
-+ [0.020905s|S1,bin/modernish:157,adj/fatal.sh,L411,e0] typeset -i t2
-+ [0.020992s|S1,bin/modernish:157,adj/fatal.sh,L412,e0] t2=1000005 
-+ [0.021070s|S1,bin/modernish:157,adj/fatal.sh,L413,e0] t='foo\bar' 
-+ [0.021159s|S1,bin/modernish:157,adj/fatal.sh,L414,e0] : 1000005
-+ [0.021275s|S1,bin/modernish:157,adj/fatal.sh,L415,e0] case 1000005,1000001,1000005,1000005 (1000005,1000001,1000005,1000005)
-+ [0.021366s|S1,bin/modernish:157,adj/fatal.sh,L419,e0] unset -v t2
-+ [0.021511s|S1,bin/modernish:157,adj/fatal.sh,L426,e0] unset -v t
-+ [0.021602s|S1,bin/modernish:157,adj/fatal.sh,L427,e0] : 1
-+ [0.021685s|S1,bin/modernish:157,adj/fatal.sh,L428,e0] t=128/32 
-+ [0.021783s|S1,bin/modernish:157,adj/fatal.sh,L429,e0] case 128/32 (128/32)
-+ [0.021927s|S1,bin/modernish:157,adj/fatal.sh,L439,e0] eval $'case \'ab\C-Ac\C-?d\' in\n( \\a\\b\\\C-A\\c\\\C-?\\d ) ;;\n( * )\texit ;;\nesac'
-+ [0.022029s|S1,adj/fatal.sh:439,(eval),L1,e0] case abcd (abcd)
-+ [0.022157s|S1,bin/modernish:157,adj/fatal.sh,L447,e0] _Msh_test_1234=x 
-+ [0.022248s|S1,bin/modernish:157,adj/fatal.sh,L448,e0] case x ([x])
-+ [0.022380s|S1,bin/modernish:157,adj/fatal.sh,L460,e0] t='ab]cd' 
-+ [0.022493s|S1,bin/modernish:157,adj/fatal.sh,L461,e0] case c (*[ab\]cd]*)
-+ [0.022556s|S1,bin/modernish:157,adj/fatal.sh,L463,e0] case e (*[!ab\]cd]*)
-+ [0.022682s|S1,bin/modernish:157,adj/fatal.sh,L472,e0] case e ([a-] | [a-d] | [-a])
-+ [0.022809s|S1,bin/modernish:157,adj/fatal.sh,L479,e0] case XaYöb (X*Y*)
-+ [0.022917s|S1,bin/modernish:157,adj/fatal.sh,L485,e0] case \z (\\z)
-+ [0.023018s|S1,bin/modernish:157,adj/fatal.sh,L491,e0] set -- '\'
-+ [0.023121s|S1,bin/modernish:157,adj/fatal.sh,L492,e0] case ab\cd (*\\*)
-+ [0.023237s|S1,bin/modernish:157,adj/fatal.sh,L500,e0] t='' 
-+ [0.023345s|S1,bin/modernish:157,adj/fatal.sh,L501,e0] case abc ([] | [!a-z]*)
-+ [0.023458s|S1,bin/modernish:157,adj/fatal.sh,L508,e0] case a-b (*-*-*)
-+ [0.023572s|S1,bin/modernish:157,adj/fatal.sh,L512,e0] case ρ (ρ)
-+ [0.023700s|S1,bin/modernish:157,adj/fatal.sh,L523,e0] set -C
-+ [0.023820s|S1,bin/modernish:157,adj/fatal.sh,L524,e0] :
-+ [0.023979s|S1,bin/modernish:157,adj/fatal.sh,L531,e0] fn
-+ [0.024086s|S1,adj/fatal.sh:531,fn,L1,e0] :
-+ [0.024265s|S1,bin/modernish:157,adj/fatal.sh,L541,e0] t=0 
-+ [0.024371s|S1,bin/modernish:157,adj/fatal.sh,L542,e0] case 5.6.2-test-3 (5.[0123].*)
-+ [0.024497s|S1,bin/modernish:157,adj/fatal.sh,L549,e0] case 1 (2)
-+ [0.024626s|S1,bin/modernish:157,adj/fatal.sh,L561,e0] trap 'echo $PPID' 0
-+ [0.024789s|S1,L157,e0] echo 16860
-* [1mlib/modernish/tst/[1m[31mtrap(B[m[1m.t(B[m 
-  006: 'trap' can output ERR traps              - [1m[31mFAIL(B[m
-Out of 384 tests:
-- 360 succeeded
++ [0.042032s|S1,bin/modernish:157,adj/fatal.sh,L223,e1] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
++ [0.042122s|S1,bin/modernish:157,adj/fatal.sh,L224,e0] IFS='' 
++ [0.042220s|S1,bin/modernish:157,adj/fatal.sh,L225,e0] set -- '   \on\e' '\tw'\''o' ' \th\'\''re\e' ' \'\''fo\u\r '
++ [0.042333s|S1,bin/modernish:157,adj/fatal.sh,L226,e0] case 4 (4)
++ [0.042524s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set -u --
++ [0.042606s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] set --
++ [0.042683s|S1,bin/modernish:157,adj/fatal.sh,L243,e0] t='' 
++ [0.042791s|S1,bin/modernish:157,adj/fatal.sh,L247,e0] t='1 2 3' 
++ [0.042869s|S1,bin/modernish:157,adj/fatal.sh,L248,e0] IFS='x ' 
++ [0.042954s|S1,bin/modernish:157,adj/fatal.sh,L249,e0] t='1 2 3 4 5' 
++ [0.043038s|S1,bin/modernish:157,adj/fatal.sh,L250,e0] IFS='' 
++ [0.043135s|S1,bin/modernish:157,adj/fatal.sh,L251,e0] case 1 2 3 4 5 (1\ 2\ 3\ 4\ 5)
++ [0.043268s|S1,bin/modernish:157,adj/fatal.sh,L263,e0] t=barbarfoo 
++ [0.043363s|S1,bin/modernish:157,adj/fatal.sh,L264,e0] case / (/)
++ [0.043480s|S1,bin/modernish:157,adj/fatal.sh,L272,e0] t='a${t2=BUG}' 
++ [0.043563s|S1,bin/modernish:157,adj/fatal.sh,L273,e0] unset -v t2
++ [0.043652s|S1,bin/modernish:157,adj/fatal.sh,L274,e0] t=a 
++ [0.043763s|S1,bin/modernish:157,adj/fatal.sh,L275,e0] case a,, (a,,)
++ [0.043866s|S1,bin/modernish:157,adj/fatal.sh,L282,e0] t=abcdefghij 
++ [0.043943s|S1,bin/modernish:157,adj/fatal.sh,L283,e0] t2=efg 
++ [0.044053s|S1,bin/modernish:157,adj/fatal.sh,L284,e0] case hij (hij)
++ [0.044151s|S1,bin/modernish:157,adj/fatal.sh,L291,e0] t='' 
++ [0.044251s|S1,bin/modernish:157,adj/fatal.sh,L292,e0] case foo (foo)
++ [0.044387s|S1,bin/modernish:157,adj/fatal.sh,L299,e0] set ' foo -> bar' foo
++ [0.044502s|S1,bin/modernish:157,adj/fatal.sh,L300,e0] case bar (bar)
++ [0.044602s|S1,bin/modernish:157,adj/fatal.sh,L307,e0] t=17029 
++ [0.044726s|S1,bin/modernish:157,adj/fatal.sh,L308,e0] case 217029,2 (217029,2)
++ [0.044847s|S1,bin/modernish:157,adj/fatal.sh,L315,e0] t=$'ok\C-A\C-?ok' 
++ [0.044964s|S1,bin/modernish:157,adj/fatal.sh,L316,e0] case 6 (6)
++ [0.045118s|S1,bin/modernish:157,adj/fatal.sh,L322,e0] case  (*.[Uu][Tt][Ff]8 | *.[Uu][Tt][Ff]-8)
++ [0.045338s|S1,bin/modernish:157,adj/fatal.sh,L342,e0] t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  ' 
++ [0.045412s|S1,bin/modernish:157,adj/fatal.sh,L343,e0] IFS=': ' 
++ [0.045515s|S1,bin/modernish:157,adj/fatal.sh,L344,e0] set -- '' '' '\on\e' '\tw'\''o' '\th\'\''re\e' '\\'\''fo\u\r' '' '' ''
++ [0.045614s|S1,bin/modernish:157,adj/fatal.sh,L345,e0] IFS='' 
++ [0.045706s|S1,bin/modernish:157,adj/fatal.sh,L346,e0] t='9,,,\on\e,\tw'\''o,\th\'\''re\e,\\'\''fo\u\r,,,,U,U,U' 
++ [0.045843s|S1,bin/modernish:157,adj/fatal.sh,L347,e0] case 9,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,,U,U,U (8,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,U,U,U,U | 9,,,\\on\\e,\\tw'o,\\th\\'re\\e,\\\\'fo\\u\\r,,,,U,U,U)
++ [0.045973s|S1,bin/modernish:157,adj/fatal.sh,L355,e0] case /root (/*)
++ [0.046053s|S1,bin/modernish:157,adj/fatal.sh,L359,e0] IFS=/ 
++ [0.046149s|S1,bin/modernish:157,adj/fatal.sh,L360,e0] set -- /root
++ [0.046240s|S1,bin/modernish:157,adj/fatal.sh,L361,e0] IFS='' 
++ [0.046350s|S1,bin/modernish:157,adj/fatal.sh,L362,e0] case 1,/root (1,/*)
++ [0.046486s|S1,bin/modernish:157,adj/fatal.sh,L372,e0] i=7 
++ [0.046564s|S1,bin/modernish:157,adj/fatal.sh,L373,e0] j=0 
++ [0.046671s|S1,bin/modernish:157,adj/fatal.sh,L374,e0] case 12 (12)
++ [0.046776s|S1,bin/modernish:157,adj/fatal.sh,L378,e0] case 42 (42)
++ [0.046917s|S1,bin/modernish:157,adj/fatal.sh,L387,e0] case 44 (44)
++ [0.047072s|S1,bin/modernish:157,adj/fatal.sh,L398,e0] unset -v t2
++ [0.047208s|S1,bin/modernish:157,adj/fatal.sh,L399,e0] command -v typeset
++ [0.047301s|S1,bin/modernish:157,adj/fatal.sh,L399,e0] typeset -i t2
++ [0.047393s|S1,bin/modernish:157,adj/fatal.sh,L400,e0] t2=1000005 
++ [0.047479s|S1,bin/modernish:157,adj/fatal.sh,L401,e0] t='foo\bar' 
++ [0.047585s|S1,bin/modernish:157,adj/fatal.sh,L402,e0] : 1000005
++ [0.047704s|S1,bin/modernish:157,adj/fatal.sh,L403,e0] case 1000005,1000001,1000005,1000005 (1000005,1000001,1000005,1000005)
++ [0.047806s|S1,bin/modernish:157,adj/fatal.sh,L407,e0] unset -v t2
++ [0.047959s|S1,bin/modernish:157,adj/fatal.sh,L414,e0] unset -v t
++ [0.048060s|S1,bin/modernish:157,adj/fatal.sh,L415,e0] : 1
++ [0.048149s|S1,bin/modernish:157,adj/fatal.sh,L416,e0] t=128/32 
++ [0.048260s|S1,bin/modernish:157,adj/fatal.sh,L417,e0] case 128/32 (128/32)
++ [0.048422s|S1,bin/modernish:157,adj/fatal.sh,L427,e0] eval $'case \'ab\C-Ac\C-?d\' in\n( \\a\\b\\\C-A\\c\\\C-?\\d ) ;;\n( * )\texit ;;\nesac'
++ [0.048536s|S1,adj/fatal.sh:427,(eval),L1,e0] case abcd (abcd)
++ [0.048710s|S1,bin/modernish:157,adj/fatal.sh,L435,e0] _Msh_test_1234=x 
++ [0.048812s|S1,bin/modernish:157,adj/fatal.sh,L436,e0] case x ([x])
++ [0.048953s|S1,bin/modernish:157,adj/fatal.sh,L448,e0] t='ab]cd' 
++ [0.049065s|S1,bin/modernish:157,adj/fatal.sh,L449,e0] case c (*[ab\]cd]*)
++ [0.049135s|S1,bin/modernish:157,adj/fatal.sh,L451,e0] case e (*[!ab\]cd]*)
++ [0.049267s|S1,bin/modernish:157,adj/fatal.sh,L460,e0] case e ([a-] | [a-d] | [-a])
++ [0.049391s|S1,bin/modernish:157,adj/fatal.sh,L467,e0] case XaYöb (X*Y*)
++ [0.049513s|S1,bin/modernish:157,adj/fatal.sh,L473,e0] case \z (\\z)
++ [0.049625s|S1,bin/modernish:157,adj/fatal.sh,L479,e0] set -- '\'
++ [0.049737s|S1,bin/modernish:157,adj/fatal.sh,L480,e0] case ab\cd (*\\*)
++ [0.049858s|S1,bin/modernish:157,adj/fatal.sh,L488,e0] t='' 
++ [0.049957s|S1,bin/modernish:157,adj/fatal.sh,L489,e0] case abc ([] | [!a-z]*)
++ [0.050076s|S1,bin/modernish:157,adj/fatal.sh,L496,e0] case a-b (*-*-*)
++ [0.050195s|S1,bin/modernish:157,adj/fatal.sh,L500,e0] case ρ (ρ)
++ [0.050338s|S1,bin/modernish:157,adj/fatal.sh,L511,e0] set -C
++ [0.050464s|S1,bin/modernish:157,adj/fatal.sh,L512,e0] :
++ [0.050638s|S1,bin/modernish:157,adj/fatal.sh,L519,e0] fn
++ [0.050749s|S1,adj/fatal.sh:519,fn,L1,e0] :
++ [0.050937s|S1,bin/modernish:157,adj/fatal.sh,L529,e0] t=0 
++ [0.051047s|S1,bin/modernish:157,adj/fatal.sh,L530,e0] case 5.6.2-test-3 (5.[0123].*)
++ [0.051193s|S1,bin/modernish:157,adj/fatal.sh,L537,e0] case 1 (2)
++ [0.051334s|S1,bin/modernish:157,adj/fatal.sh,L549,e0] trap 'echo $PPID' 0
++ [0.051508s|S1,L157,e0] echo 16860
+Out of 385 tests:
+- 362 succeeded
 - 8 were skipped
 - 0 produced warnings
 - 15 failed expectedly
-[1m[31m- 1 failed unexpectedly(B[m
-* ERROR: modernish has some bug(s) in combination with this shell.
-         Add the '-f' option to install with this shell anyway.
+- 0 failed unexpectedly
+* Tests passed. No bugs in modernish were detected.
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/bin(B[m
+- Installed sh symlink: /usr/local/lib/modernish/bin/sh -> /usr/bin/zsh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/share/doc/modernish(B[m
+- Installed: /usr/local/share/doc/modernish/README.md
+- Installed: /usr/local/share/doc/modernish/EXAMPLES.md
+- Installed: /usr/local/bin/modernish (hashbang path: /usr/local/lib/modernish/bin/sh)
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl(B[m
+- Installed: /usr/local/lib/modernish/mdl/safe.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/_IN(B[m
+- Installed: /usr/local/lib/modernish/mdl/_IN/sig.mm
+- Installed: /usr/local/lib/modernish/mdl/_IN/opt.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/sys/term(B[m
+- Installed: /usr/local/lib/modernish/mdl/sys/term/readkey.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/term/putr.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/sys/cmd(B[m
+- Installed: /usr/local/lib/modernish/mdl/sys/cmd/procsubst.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/cmd/source.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/cmd/harden.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/cmd/mapr.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/cmd/extern.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/sys/base(B[m
+- Installed: /usr/local/lib/modernish/mdl/sys/base/which.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/base/tac.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/base/rev.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/base/readlink.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/base/mktemp.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/base/shuf.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/base/seq.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/base/yes.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/sys/dir(B[m
+- Installed: /usr/local/lib/modernish/mdl/sys/dir/countfiles.mm
+- Installed: /usr/local/lib/modernish/mdl/sys/dir/mkcd.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/var(B[m
+- Installed: /usr/local/lib/modernish/mdl/var/local.mm
+- Installed: /usr/local/lib/modernish/mdl/var/genoptparser.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/var/stack/extra(B[m
+- Installed: /usr/local/lib/modernish/mdl/var/stack/extra/stacksize.mm
+- Installed: /usr/local/lib/modernish/mdl/var/stack/extra/clearstack.mm
+- Installed: /usr/local/lib/modernish/mdl/var/stack/extra/printstack.mm
+- Installed: /usr/local/lib/modernish/mdl/var/stack/extra/stackempty.mm
+- Installed: /usr/local/lib/modernish/mdl/var/stack/trap.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/var/arith(B[m
+- Installed: /usr/local/lib/modernish/mdl/var/arith/cmp.mm
+- Installed: /usr/local/lib/modernish/mdl/var/arith/ops.mm
+- Installed: /usr/local/lib/modernish/mdl/var/readf.mm
+- Installed: /usr/local/lib/modernish/mdl/var/loop.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/var/string(B[m
+- Installed: /usr/local/lib/modernish/mdl/var/string/trim.mm
+- Installed: /usr/local/lib/modernish/mdl/var/string/append.mm
+- Installed: /usr/local/lib/modernish/mdl/var/string/touplow.mm
+- Installed: /usr/local/lib/modernish/mdl/var/string/replacein.mm
+- Installed: /usr/local/lib/modernish/mdl/var/shellquote.mm
+- Installed: /usr/local/lib/modernish/mdl/var/mapr.mm
+- Installed: /usr/local/lib/modernish/mdl/var/unexport.mm
+- Installed: /usr/local/lib/modernish/mdl/var/assign.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/mdl/var/loop(B[m
+- Installed: /usr/local/lib/modernish/mdl/var/loop/select.mm
+- Installed: /usr/local/lib/modernish/mdl/var/loop/for.mm
+- Installed: /usr/local/lib/modernish/mdl/var/loop/find.mm
+- Installed: /usr/local/lib/modernish/mdl/var/loop/repeat.mm
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj(B[m
+- Installed: /usr/local/lib/modernish/adj/ematch.awk (hashbang path: /usr/bin/awk -f)
+- Installed: /usr/local/lib/modernish/adj/id.sh
+- Installed: /usr/local/lib/modernish/adj/fatal.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/sys/cmd(B[m
+- Installed: /usr/local/lib/modernish/adj/sys/cmd/mapr.awk
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/sys/base(B[m
+- Installed: /usr/local/lib/modernish/adj/sys/base/tac.awk
+- Installed: /usr/local/lib/modernish/adj/std.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/var/loop(B[m
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-ask.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find.awk
+- Installed: /usr/local/lib/modernish/adj/var/loop/find.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-path.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-exec.sh
+- Installed: /usr/local/lib/modernish/adj/var/loop/find-ok.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/adj/cap(B[m
+- Installed: /usr/local/lib/modernish/adj/cap/BUG_TRAPFNEXI.sh
+- Installed: /usr/local/lib/modernish/adj/cap/DOTARG.sh
+- Installed: /usr/local/lib/modernish/adj/cap/BUG_LNNONEG.sh
+- Installed: /usr/local/lib/modernish/adj/cap/BUG_LOOPRET3.sh
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/tst(B[m
+- Installed: /usr/local/lib/modernish/tst/local.t
+- Installed: /usr/local/lib/modernish/tst/io.t
+- Installed: /usr/local/lib/modernish/tst/run.sh
+- Installed: /usr/local/lib/modernish/tst/var.t
+- Installed: /usr/local/lib/modernish/tst/trap.t
+- Installed: /usr/local/lib/modernish/tst/@sanitychecks.t
+- Installed: /usr/local/lib/modernish/tst/is.t
+- Installed: /usr/local/lib/modernish/tst/match.t
+- Installed: /usr/local/lib/modernish/tst/builtin.t
+- Installed: /usr/local/lib/modernish/tst/arith.t
+- Installed: /usr/local/lib/modernish/tst/stack.t
+- Installed: /usr/local/lib/modernish/tst/isset.t
+- Installed: /usr/local/lib/modernish/tst/sys.t
+- Installed: /usr/local/lib/modernish/tst/string.t
+- Installed: /usr/local/lib/modernish/tst/posparam_spc.t
+- Installed: /usr/local/lib/modernish/tst/shellquote.t
+- Installed: /usr/local/lib/modernish/tst/loop_cond.t
+- Installed: /usr/local/lib/modernish/tst/posparam.t
+- Installed: /usr/local/lib/modernish/tst/process.t
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/lib/modernish/cap(B[m
+- Installed: /usr/local/lib/modernish/cap/BUG_SHIFTERR0.t
+- Installed: /usr/local/lib/modernish/cap/QRK_FNRDREXIT.t
+- Installed: /usr/local/lib/modernish/cap/QRK_IFSFINAL.t
+- Installed: /usr/local/lib/modernish/cap/BUG_SETOUTVAR.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PUTIOERR.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CSUBSTDO.t
+- Installed: /usr/local/lib/modernish/cap/README.md
+- Installed: /usr/local/lib/modernish/cap/BUG_READWHSP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_10.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_1ARG.t
+- Installed: /usr/local/lib/modernish/cap/TESTO.t
+- Installed: /usr/local/lib/modernish/cap/DOTARG.t
+- Installed: /usr/local/lib/modernish/cap/BUG_IFSGLOBC.t
+- Installed: /usr/local/lib/modernish/cap/BUG_REDIRPOS.t
+- Installed: /usr/local/lib/modernish/cap/ROFUNC.t
+- Installed: /usr/local/lib/modernish/cap/QRK_ARITHWHSP.t
+- Installed: /usr/local/lib/modernish/cap/NONFORKSUBSH.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ASGNLOCAL.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ZSHNAMES2.t
+- Installed: /usr/local/lib/modernish/cap/BUG_FORLOCAL.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TRAPRETIR.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_08.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBASNCC.t
+- Installed: /usr/local/lib/modernish/cap/ADDASSIGN.t
+- Installed: /usr/local/lib/modernish/cap/BUG_NOEXPRO.t
+- Installed: /usr/local/lib/modernish/cap/ARITHPP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_03A.t
+- Installed: /usr/local/lib/modernish/cap/BUG_KUNSETIFS.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBSQHD.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ARITHSPLT.t
+- Installed: /usr/local/lib/modernish/cap/KSH88FUNC.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CMDPV.t
+- Installed: /usr/local/lib/modernish/cap/QRK_LOCALUNS2.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TRAPEMPT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CMDOPTEXP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TESTILNUM.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBNEWLN.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TRAPFNEXI.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CMDEXEC.t
+- Installed: /usr/local/lib/modernish/cap/BUG_UNSETUNXP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBBKSL1.t
+- Installed: /usr/local/lib/modernish/cap/QRK_ANDORBG.t
+- Installed: /usr/local/lib/modernish/cap/ANONFUNC.t
+- Installed: /usr/local/lib/modernish/cap/WRN_NOSIGPIPE.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ZSHNAMES.t
+- Installed: /usr/local/lib/modernish/cap/QRK_BCDANGER.t
+- Installed: /usr/local/lib/modernish/cap/BUG_LOOPRET1.t
+- Installed: /usr/local/lib/modernish/cap/BUG_DOLRCSUB.t
+- Installed: /usr/local/lib/modernish/cap/BUG_DEVTTY.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ARITHNAN.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_07A.t
+- Installed: /usr/local/lib/modernish/cap/QRK_ARITHEMPT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_05.t
+- Installed: /usr/local/lib/modernish/cap/QRK_OPTABBR.t
+- Installed: /usr/local/lib/modernish/cap/BUG_IFSISSET.t
+- Installed: /usr/local/lib/modernish/cap/BUG_BRACQUOT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TRAPEXIT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_04_S.t
+- Installed: /usr/local/lib/modernish/cap/VARPREFIX.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CASELIT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_SCLOSEDFD.t
+- Installed: /usr/local/lib/modernish/cap/PRINTFV.t
+- Installed: /usr/local/lib/modernish/cap/BUG_IFSCC01PP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_03B.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBEMPT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_OPTNOLOG.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_07.t
+- Installed: /usr/local/lib/modernish/cap/QRK_LOCALUNS.t
+- Installed: /usr/local/lib/modernish/cap/WRN_EREMBYTE.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CMDSPASGN.t
+- Installed: /usr/local/lib/modernish/cap/QRK_SPCBIXP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_KBGPID.t
+- Installed: /usr/local/lib/modernish/cap/HERESTR.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_01.t
+- Installed: /usr/local/lib/modernish/cap/KSHARRAY.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CMDSETPP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_03C.t
+- Installed: /usr/local/lib/modernish/cap/QRK_OPTDASH.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ISSETLOOP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_SPCBILOC.t
+- Installed: /usr/local/lib/modernish/cap/TRAPPRSUBSH.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_MDLEN.t
+- Installed: /usr/local/lib/modernish/cap/KSH93FUNC.t
+- Installed: /usr/local/lib/modernish/cap/QRK_GLOBDOTS.t
+- Installed: /usr/local/lib/modernish/cap/BUG_LOOPRET3.t
+- Installed: /usr/local/lib/modernish/cap/ARITHCMD.t
+- Installed: /usr/local/lib/modernish/cap/BUG_DQGLOB.t
+- Installed: /usr/local/lib/modernish/cap/BUG_LNNONEG.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CDPCANON.t
+- Installed: /usr/local/lib/modernish/cap/TESTERE.t
+- Installed: /usr/local/lib/modernish/cap/BUG_MULTIBIFS.t
+- Installed: /usr/local/lib/modernish/cap/QRK_EVALNOOPT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ASGNCC01.t
+- Installed: /usr/local/lib/modernish/cap/LEPIPEMAIN.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_04E.t
+- Installed: /usr/local/lib/modernish/cap/BUG_LOOPRET2.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBIFSNW.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CMDSPEXIT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_REDIRIO.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CSUBBTQUOT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_02.t
+- Installed: /usr/local/lib/modernish/cap/PSREPLACE.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBEMIFS.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_06A.t
+- Installed: /usr/local/lib/modernish/cap/DBLBRACKETV.t
+- Installed: /usr/local/lib/modernish/cap/QRK_UNSETF.t
+- Installed: /usr/local/lib/modernish/cap/QRK_OPTCASE.t
+- Installed: /usr/local/lib/modernish/cap/RANDOM.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TESTERR1A.t
+- Installed: /usr/local/lib/modernish/cap/BUG_IFSGLOBP.t
+- Installed: /usr/local/lib/modernish/cap/BUG_EXPORTUNS.t
+- Installed: /usr/local/lib/modernish/cap/CESCQUOT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ALIASPOSX.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CASEEMPT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TRAPUNSRE.t
+- Installed: /usr/local/lib/modernish/cap/QRK_HDPARQUOT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_HDOCMASK.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PSUBSQUOT.t
+- Installed: /usr/local/lib/modernish/cap/QRK_PPIPEMAIN.t
+- Installed: /usr/local/lib/modernish/cap/QRK_LOCALINH.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_08B.t
+- Installed: /usr/local/lib/modernish/cap/QRK_EXECFNBI.t
+- Installed: /usr/local/lib/modernish/cap/BUG_FNSUBSH.t
+- Installed: /usr/local/lib/modernish/cap/PROCSUBST.t
+- Installed: /usr/local/lib/modernish/cap/DBLBRACKET.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CSNHDBKSL.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ARITHINIT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_HDOCBKSL.t
+- Installed: /usr/local/lib/modernish/cap/BUG_GETOPTSMA.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CASESTAT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ALIASCSHD.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CSUBRMLF.t
+- Installed: /usr/local/lib/modernish/cap/QRK_LOCALSET.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_MDIGIT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CSUBLNCONT.t
+- Installed: /usr/local/lib/modernish/cap/QRK_EMPTPPWRD.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CASEPAREN.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_09.t
+- Installed: /usr/local/lib/modernish/cap/QRK_OPTULINE.t
+- Installed: /usr/local/lib/modernish/cap/QRK_EMPTPPFLD.t
+- Installed: /usr/local/lib/modernish/cap/QRK_OPTNOPRFX.t
+- Installed: /usr/local/lib/modernish/cap/BUG_ARITHLNNO.t
+- Installed: /usr/local/lib/modernish/cap/BUG_IFSGLOBS.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_10A.t
+- Installed: /usr/local/lib/modernish/cap/DBLBRACKETERE.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TRAPSUB0.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CDNOLOGIC.t
+- Installed: /usr/local/lib/modernish/cap/QRK_32BIT.t
+- Installed: /usr/local/lib/modernish/cap/BUG_VARPREFIX.t
+- Installed: /usr/local/lib/modernish/cap/LINENO.t
+- Installed: /usr/local/lib/modernish/cap/ARITHFOR.t
+- Installed: /usr/local/lib/modernish/cap/WRN_MULTIBYTE.t
+- Installed: /usr/local/lib/modernish/cap/BUG_NOCHCLASS.t
+- Installed: /usr/local/lib/modernish/cap/PROCREDIR.t
+- Installed: /usr/local/lib/modernish/cap/BUG_TESTONEG.t
+- Installed: /usr/local/lib/modernish/cap/QRK_LOCALSET2.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_03.t
+- Installed: /usr/local/lib/modernish/cap/TRAPZERR.t
+- Installed: /usr/local/lib/modernish/cap/BUG_CMDEXPAN.t
+- Installed: /usr/local/lib/modernish/cap/LOCALVARS.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_04A.t
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/share/doc/modernish/utils(B[m
+- Installed: /usr/local/share/doc/modernish/utils/git-restore-timestamps.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/utils/README
+- Installed: /usr/local/share/doc/modernish/utils/testshells.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/utils/mktoc.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/utils/modules-unalias-update.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/utils/showTODO.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/utils/bundle-diff-update.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/CODINGSTYLE
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/share/doc/modernish/examples(B[m
+- Installed: /usr/local/share/doc/modernish/examples/dice.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/examples/copy-timestamps.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/examples/README
+- Installed: /usr/local/share/doc/modernish/examples/get-firefox.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/examples/sort-music.sh (hashbang path: /usr/bin/env modernish)
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/share/doc/modernish/examples/resurrectjoe(B[m
+- Installed: /usr/local/share/doc/modernish/examples/resurrectjoe/resurrectjoe.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/examples/resurrectjoe/SAMPLE_DEADJOE
+- Installed: /usr/local/share/doc/modernish/examples/procsubst.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/examples/morse.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/examples/findloop.sh (hashbang path: /usr/bin/env modernish)
+(B[m[33m[(B[m[31mmkdir(B[m[33m]> (B[m[34m[1m/bin/mkdir -p /usr/local/share/doc/modernish/tests(B[m
+- Installed: /usr/local/share/doc/modernish/tests/die-bg-test.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/tests/README
+- Installed: /usr/local/share/doc/modernish/tests/local-test.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/tests/harden-test.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/tests/shellquote-test.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/tests/mktemp-stresstest.sh (hashbang path: /usr/bin/env modernish)
+- Installed: /usr/local/share/doc/modernish/HELP
+- Installed: /usr/local/share/doc/modernish/DESIGN.md
+- Installed: /usr/local/share/doc/modernish/LICENSE
+
+Modernish 0.17.23-dev installed successfully with default shell /usr/local/lib/modernish/bin/sh.
+Be sure /usr/local/bin is in your $PATH before starting.

@@ -1,44 +1,44 @@
 Relaunching install.sh with /usr/bin/zsh...
 /opt/clones/modernish/lib/modernish/adj/std.sh:setopt:48: no such option: POSIX_ARGZERO
 /opt/clones/modernish/lib/modernish/adj/std.sh:setopt:48: no such option: POSIX_ARGZERO
-+ [0.026093s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
-+ [0.026373s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
-+ [0.026479s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
-+ [0.026616s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval ': || $( : # "
++ [0.021557s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
++ [0.021766s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
++ [0.021847s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
++ [0.021964s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval ': || $( : # "
 )'
-+ [0.026689s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] :
-+ [0.026814s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] eval ': || for i;
++ [0.022035s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] :
++ [0.022125s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] eval ': || for i;
 do :; done'
-+ [0.026903s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] :
-+ [0.027013s|S1,bin/modernish:157,adj/fatal.sh,L64,e0] case foo\
++ [0.022196s|S1,bin/modernish:157,adj/fatal.sh,L59,e0] :
++ [0.022281s|S1,bin/modernish:157,adj/fatal.sh,L64,e0] case foo\
 bar (foo\\
 bar)
-+ [0.027117s|S1,bin/modernish:157,adj/fatal.sh,L77,e0] t=ok 
-+ [0.027521s|S2,bin/modernish:157,adj/fatal.sh,L78,e0] t=bug -@
++ [0.022389s|S1,bin/modernish:157,adj/fatal.sh,L77,e0] t=ok 
++ [0.022709s|S2,bin/modernish:157,adj/fatal.sh,L78,e0] t=bug -@
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:78: command not found: -@
-+ [0.027953s|S1,bin/modernish:157,adj/fatal.sh,L79,e0] case ok (ok)
-+ [0.028090s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] :
-+ [0.028179s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] case x (x)
-+ [0.028472s|S1,bin/modernish:157,adj/fatal.sh,L93,e0] case  (4.[34].*)
-+ [0.028589s|S1,bin/modernish:157,adj/fatal.sh,L103,e0] case 13475 (|0*|*[!0123456789]*)
-+ [0.028710s|S1,bin/modernish:157,adj/fatal.sh,L113,e0] PATH=/dev/null 
-+ [0.028860s|S1,bin/modernish:157,adj/fatal.sh,L114,e0] t=x 
-+ [0.028951s|S1,bin/modernish:157,adj/fatal.sh,L115,e0] command -v unset
-+ [0.029060s|S1,bin/modernish:157,adj/fatal.sh,L116,e0] command -V unset
-+ [0.029171s|S1,bin/modernish:157,adj/fatal.sh,L117,e0] command -v if
-+ [0.029289s|S1,bin/modernish:157,adj/fatal.sh,L118,e0] unset t
-+ [0.029384s|S1,bin/modernish:157,adj/fatal.sh,L119,e0] case  (s)
-+ [0.029499s|S1,bin/modernish:157,adj/fatal.sh,L121,e0] PATH=/bin:/usr/bin 
-+ [0.029615s|S1,bin/modernish:157,adj/fatal.sh,L125,e0] readonly 'CC01=' 'CC7F=' 'RO=ok'
-+ [0.029735s|S1,bin/modernish:157,adj/fatal.sh,L126,e0] case ,,ok,,,ok (,,ok,,,ok)
-+ [0.029832s|S1,bin/modernish:157,adj/fatal.sh,L132,e0] RO1=1 RO2=2 RO3=3 
-+ [0.029932s|S1,bin/modernish:157,adj/fatal.sh,L133,e0] readonly RO1 RO2 RO3
-+ [0.030052s|S1,bin/modernish:157,adj/fatal.sh,L137,e0] set +o braceexpand
-+ [0.030184s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] PATH=/dev/null + [0.030262s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] command -v typeset
++ [0.023069s|S1,bin/modernish:157,adj/fatal.sh,L79,e0] case ok (ok)
++ [0.023182s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] :
++ [0.023256s|S1,bin/modernish:157,adj/fatal.sh,L87,e0] case x (x)
++ [0.023369s|S1,bin/modernish:157,adj/fatal.sh,L93,e0] case  (4.[34].*)
++ [0.023457s|S1,bin/modernish:157,adj/fatal.sh,L103,e0] case 13475 (|0*|*[!0123456789]*)
++ [0.023548s|S1,bin/modernish:157,adj/fatal.sh,L113,e0] PATH=/dev/null 
++ [0.023668s|S1,bin/modernish:157,adj/fatal.sh,L114,e0] t=x 
++ [0.023742s|S1,bin/modernish:157,adj/fatal.sh,L115,e0] command -v unset
++ [0.023822s|S1,bin/modernish:157,adj/fatal.sh,L116,e0] command -V unset
++ [0.023909s|S1,bin/modernish:157,adj/fatal.sh,L117,e0] command -v if
++ [0.023999s|S1,bin/modernish:157,adj/fatal.sh,L118,e0] unset t
++ [0.024075s|S1,bin/modernish:157,adj/fatal.sh,L119,e0] case  (s)
++ [0.024161s|S1,bin/modernish:157,adj/fatal.sh,L121,e0] PATH=/bin:/usr/bin 
++ [0.024257s|S1,bin/modernish:157,adj/fatal.sh,L125,e0] readonly 'CC01=' 'CC7F=' 'RO=ok'
++ [0.024351s|S1,bin/modernish:157,adj/fatal.sh,L126,e0] case ,,ok,,,ok (,,ok,,,ok)
++ [0.024424s|S1,bin/modernish:157,adj/fatal.sh,L132,e0] RO1=1 RO2=2 RO3=3 
++ [0.024508s|S1,bin/modernish:157,adj/fatal.sh,L133,e0] readonly RO1 RO2 RO3
++ [0.024605s|S1,bin/modernish:157,adj/fatal.sh,L137,e0] set +o braceexpand
++ [0.024710s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] PATH=/dev/null + [0.024765s|S1,bin/modernish:157,adj/fatal.sh,L138,e0] command -v typeset
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:138: bad option: -@
-+ [0.030412s|S1,bin/modernish:157,adj/fatal.sh,L139,e1] unset -v RO1 RO2 RO3
++ [0.024891s|S1,bin/modernish:157,adj/fatal.sh,L139,e1] unset -v RO1 RO2 RO3
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:139: read-only variable: RO1
-+ [0.030556s|S1,modernish/install.sh:143,bin/modernish,L157,e126] echo BUG
-+ [0.030656s|S1,modernish/install.sh:143,bin/modernish,L157,e0] echo fatalbug
++ [0.025003s|S1,modernish/install.sh:143,bin/modernish,L157,e126] echo BUG
++ [0.025080s|S1,modernish/install.sh:143,bin/modernish,L157,e0] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.

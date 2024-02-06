@@ -72,17 +72,15 @@ test: 1: Illegal number: 1XX
 + [L299,e0] set  foo -> bar foo
 + [L307,e0] t=1395
 + [L315,e0] t=okok
-+ [L336,e0] set +u _1_
-+ [L341,e0] set -u
-+ [L354,e0] t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
-+ [L355,e0] IFS=: 
-+ [L356,e0] set --   \on\e \tw'o \th\'re\e \\'fo\u\r  
-+ [L357,e0] IFS=
-+ [L358,e0] t=8,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,U,U,U,U
-+ [L371,e0] IFS=/
-+ [L372,e0] set --  root
-+ [L373,e0] IFS=
-+ [L377,e0] exit
-+ [L377,e0] echo fatalbug
++ [L342,e0] t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
++ [L343,e0] IFS=: 
++ [L344,e0] set --   \on\e \tw'o \th\'re\e \\'fo\u\r  
++ [L345,e0] IFS=
++ [L346,e0] t=8,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,U,U,U,U
++ [L359,e0] IFS=/
++ [L360,e0] set --  root
++ [L361,e0] IFS=
++ [L365,e0] exit
++ [L365,e0] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.

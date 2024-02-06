@@ -75,34 +75,32 @@ ash: 1XX: bad number
 + [L299,e0] set ' foo -> bar' foo
 + [L307,e0] t=7817
 + [L315,e0] t='okok'
-+ [L336,e0] set +u _1_
-+ [L341,e0] set -u
-+ [L354,e0] t='  ::  \on\e :\tw'"'"'o \th\'"'"'re\e :\\'"'"'fo\u\r:   : :  '
-+ [L355,e0] IFS=': '
-+ [L356,e0] set --   '\on\e' '\tw'"'"'o' '\th\'"'"'re\e' '\\'"'"'fo\u\r'  
-+ [L357,e0] IFS=
-+ [L358,e0] t='8,,,\on\e,\tw'"'"'o,\th\'"'"'re\e,\\'"'"'fo\u\r,,,U,U,U,U'
-+ [L371,e0] IFS=/
-+ [L372,e0] set -- /root
-+ [L373,e0] IFS=
-+ [L384,e0] i=7
-+ [L385,e0] j=0
-+ [L410,e0] unset -v t2
-+ [L411,e0] command -v typeset
-+ [L412,e127] t2=1000005
-+ [L413,e0] t='foo\bar'
-+ [L414,e0] : 1000005
-+ [L419,e0] unset -v t2
-+ [L426,e0] unset -v t
-+ [L427,e0] : 1
-+ [L428,e0] t=128/32
-+ [L439,e0] eval 'case '"'"'abcd'"'"' in
++ [L342,e0] t='  ::  \on\e :\tw'"'"'o \th\'"'"'re\e :\\'"'"'fo\u\r:   : :  '
++ [L343,e0] IFS=': '
++ [L344,e0] set --   '\on\e' '\tw'"'"'o' '\th\'"'"'re\e' '\\'"'"'fo\u\r'  
++ [L345,e0] IFS=
++ [L346,e0] t='8,,,\on\e,\tw'"'"'o,\th\'"'"'re\e,\\'"'"'fo\u\r,,,U,U,U,U'
++ [L359,e0] IFS=/
++ [L360,e0] set -- /root
++ [L361,e0] IFS=
++ [L372,e0] i=7
++ [L373,e0] j=0
++ [L398,e0] unset -v t2
++ [L399,e0] command -v typeset
++ [L400,e127] t2=1000005
++ [L401,e0] t='foo\bar'
++ [L402,e0] : 1000005
++ [L407,e0] unset -v t2
++ [L414,e0] unset -v t
++ [L415,e0] : 1
++ [L416,e0] t=128/32
++ [L427,e0] eval 'case '"'"'abcd'"'"' in
 ( \a\b\\c\\d ) ;;
 ( * )	exit ;;
 esac'
-+ [L447,e0] _Msh_test_1234=x
-+ [L460,e0] t=ab]cd
-+ [L467,e0] exit
++ [L435,e0] _Msh_test_1234=x
++ [L448,e0] t=ab]cd
++ [L455,e0] exit
 + [L1,e0] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.

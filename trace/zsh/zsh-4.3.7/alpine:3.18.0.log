@@ -1,13 +1,13 @@
 Relaunching install.sh with /usr/bin/zsh...
 /opt/clones/modernish/lib/modernish/adj/std.sh:setopt:48: no such option: POSIX_ARGZERO
 /opt/clones/modernish/lib/modernish/adj/std.sh:setopt:48: no such option: POSIX_ARGZERO
-+ [0.015860s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
-+ [0.016119s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
-+ [0.016221s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
-+ [0.016357s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval ': || $( : # "
++ [0.035643s|S1,bin/modernish:157,adj/fatal.sh,L44,e0] ulimit -c 0
++ [0.035845s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] IFS='' 
++ [0.035923s|S1,bin/modernish:157,adj/fatal.sh,L47,e0] set +e -fCu
++ [0.036030s|S1,bin/modernish:157,adj/fatal.sh,L54,e0] eval ': || $( : # "
 )'
 /opt/clones/modernish/lib/modernish/adj/fatal.sh:2: parse error near `$( : # "'
-+ [0.016474s|S1,bin/modernish:157,adj/fatal.sh,L55,e1] exit
-+ [0.016561s|S1,bin/modernish:157,adj/fatal.sh,L55,e1] echo fatalbug
++ [0.036123s|S1,bin/modernish:157,adj/fatal.sh,L55,e1] exit
++ [0.036189s|S1,bin/modernish:157,adj/fatal.sh,L55,e1] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.

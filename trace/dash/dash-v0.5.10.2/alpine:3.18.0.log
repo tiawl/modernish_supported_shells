@@ -33,7 +33,7 @@ do :; done
 + [L1,e0] :
 + [L150,e0] unalias -a
 + [L153,e0] unset -f echo
-+ [L156,e0] kill -s 0 1510
++ [L156,e0] kill -s 0 1508
 + [L164,e0] command eval (
 /opt/clones/modernish/install.sh: 1: eval: Syntax error: end of file unexpected (expecting ")")
 + [L170,e0] fn
@@ -71,44 +71,42 @@ do :; done
 + [L283,e0] t2=efg
 + [L291,e0] t=
 + [L299,e0] set  foo -> bar foo
-+ [L307,e0] t=1510
++ [L307,e0] t=1508
 + [L315,e0] t=okok
-+ [L336,e0] set +u _1_
-+ [L341,e0] set -u
-+ [L354,e0] t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
-+ [L355,e0] IFS=: 
-+ [L356,e0] set --   \on\e \tw'o \th\'re\e \\'fo\u\r  
-+ [L357,e0] IFS=
-+ [L358,e0] t=8,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,U,U,U,U
-+ [L371,e0] IFS=/
-+ [L372,e0] set -- /root
-+ [L373,e0] IFS=
-+ [L384,e0] i=7
-+ [L385,e0] j=0
-+ [L410,e0] unset -v t2
-+ [L411,e0] command -v typeset
-+ [L412,e127] t2=1000005
-+ [L413,e0] t=foo\bar
-+ [L414,e0] : 1000005
-+ [L419,e0] unset -v t2
-+ [L426,e0] unset -v t
-+ [L427,e0] : 1
-+ [L428,e0] t=128/32
-+ [L439,e0] eval case 'abcd' in
++ [L342,e0] t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
++ [L343,e0] IFS=: 
++ [L344,e0] set --   \on\e \tw'o \th\'re\e \\'fo\u\r  
++ [L345,e0] IFS=
++ [L346,e0] t=8,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,U,U,U,U
++ [L359,e0] IFS=/
++ [L360,e0] set -- /root
++ [L361,e0] IFS=
++ [L372,e0] i=7
++ [L373,e0] j=0
++ [L398,e0] unset -v t2
++ [L399,e0] command -v typeset
++ [L400,e127] t2=1000005
++ [L401,e0] t=foo\bar
++ [L402,e0] : 1000005
++ [L407,e0] unset -v t2
++ [L414,e0] unset -v t
++ [L415,e0] : 1
++ [L416,e0] t=128/32
++ [L427,e0] eval case 'abcd' in
 ( \a\b\\c\\d ) ;;
 ( * )	exit ;;
 esac
-+ [L447,e0] _Msh_test_1234=x
-+ [L460,e0] t=ab]cd
-+ [L491,e0] set -- \
-+ [L500,e0] t=
-+ [L523,e0] set -C
-+ [L524,e0] :
-+ [L531,e0] fn
++ [L435,e0] _Msh_test_1234=x
++ [L448,e0] t=ab]cd
++ [L479,e0] set -- \
++ [L488,e0] t=
++ [L511,e0] set -C
++ [L512,e0] :
++ [L519,e0] fn
 + [L2,e0] command :
-+ [L541,e0] t=0
-+ [L561,e0] trap echo $PPID 0
-+ [L1,e0] echo 1503
++ [L529,e0] t=0
++ [L549,e0] trap echo $PPID 0
++ [L1,e0] echo 1502
 var/loop/find:	Warning: using non-POSIX-compliant '/usr/bin/find'.
 		Performance will degrade and breakage cannot be ruled out.
 		Recommend installing sfind or GNU find somewhere in $PATH.
@@ -186,8 +184,6 @@ do :; done
 + set  foo -> bar foo
 + t=1604
 + t=okok
-+ set +u _1_
-+ set -u
 + t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
 + IFS=: 
 + set --   \on\e \tw'o \th\'re\e \\'fo\u\r  
@@ -221,7 +217,7 @@ esac
 + command :
 + t=0
 + trap echo $PPID 0
-+ echo 1510
++ echo 1508
 * Modernish version 0.17.23-dev, now running on /usr/bin/dash.
 * This is a POSIX-compliant shell without a known version identifier variable.
   Modernish detected the following bugs, quirks and/or extra features on it:
@@ -303,44 +299,42 @@ do :; done
 + [L299,e0] set  foo -> bar foo
 + [L307,e0] t=1686
 + [L315,e0] t=okok
-+ [L336,e0] set +u _1_
-+ [L341,e0] set -u
-+ [L354,e0] t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
-+ [L355,e0] IFS=: 
-+ [L356,e0] set --   \on\e \tw'o \th\'re\e \\'fo\u\r  
-+ [L357,e0] IFS=
-+ [L358,e0] t=8,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,U,U,U,U
-+ [L371,e0] IFS=/
-+ [L372,e0] set -- /root
-+ [L373,e0] IFS=
-+ [L384,e0] i=7
-+ [L385,e0] j=0
-+ [L410,e0] unset -v t2
-+ [L411,e0] command -v typeset
-+ [L412,e127] t2=1000005
-+ [L413,e0] t=foo\bar
-+ [L414,e0] : 1000005
-+ [L419,e0] unset -v t2
-+ [L426,e0] unset -v t
-+ [L427,e0] : 1
-+ [L428,e0] t=128/32
-+ [L439,e0] eval case 'abcd' in
++ [L342,e0] t=  ::  \on\e :\tw'o \th\'re\e :\\'fo\u\r:   : :  
++ [L343,e0] IFS=: 
++ [L344,e0] set --   \on\e \tw'o \th\'re\e \\'fo\u\r  
++ [L345,e0] IFS=
++ [L346,e0] t=8,,,\on\e,\tw'o,\th\'re\e,\\'fo\u\r,,,U,U,U,U
++ [L359,e0] IFS=/
++ [L360,e0] set -- /root
++ [L361,e0] IFS=
++ [L372,e0] i=7
++ [L373,e0] j=0
++ [L398,e0] unset -v t2
++ [L399,e0] command -v typeset
++ [L400,e127] t2=1000005
++ [L401,e0] t=foo\bar
++ [L402,e0] : 1000005
++ [L407,e0] unset -v t2
++ [L414,e0] unset -v t
++ [L415,e0] : 1
++ [L416,e0] t=128/32
++ [L427,e0] eval case 'abcd' in
 ( \a\b\\c\\d ) ;;
 ( * )	exit ;;
 esac
-+ [L447,e0] _Msh_test_1234=x
-+ [L460,e0] t=ab]cd
-+ [L491,e0] set -- \
-+ [L500,e0] t=
-+ [L523,e0] set -C
-+ [L524,e0] :
-+ [L531,e0] fn
++ [L435,e0] _Msh_test_1234=x
++ [L448,e0] t=ab]cd
++ [L479,e0] set -- \
++ [L488,e0] t=
++ [L511,e0] set -C
++ [L512,e0] :
++ [L519,e0] fn
 + [L2,e0] command :
-+ [L541,e0] t=0
-+ [L561,e0] trap echo $PPID 0
-+ [L1,e0] echo 1510
-Out of 384 tests:
-- 359 succeeded
++ [L529,e0] t=0
++ [L549,e0] trap echo $PPID 0
++ [L1,e0] echo 1508
+Out of 385 tests:
+- 360 succeeded
 - 15 were skipped
 - 0 produced warnings
 - 10 failed expectedly
@@ -529,6 +523,7 @@ Out of 384 tests:
 - Installed: /usr/local/lib/modernish/cap/BUG_ISSETLOOP.t
 - Installed: /usr/local/lib/modernish/cap/BUG_SPCBILOC.t
 - Installed: /usr/local/lib/modernish/cap/TRAPPRSUBSH.t
+- Installed: /usr/local/lib/modernish/cap/BUG_PP_MDLEN.t
 - Installed: /usr/local/lib/modernish/cap/KSH93FUNC.t
 - Installed: /usr/local/lib/modernish/cap/QRK_GLOBDOTS.t
 - Installed: /usr/local/lib/modernish/cap/BUG_LOOPRET3.t

@@ -58,7 +58,7 @@ typeset: usage: typeset [-afFirtx] [-p] name[=value] ...
 +++++ [0s|adj/fatal.sh,L147,e0] :
 ++++ [0s|adj/fatal.sh,L150,e0] unalias -a
 ++++ [0s|adj/fatal.sh,L153,e0] unset -f echo
-++++ [0s|adj/fatal.sh,L156,e0] kill -s 0 14766
+++++ [0s|adj/fatal.sh,L156,e0] kill -s 0 10829
 ++++ [0s|adj/fatal.sh,L164,e0] command eval '('
 ++++ [0s|adj/fatal.sh,L164,e0] eval '('
 /opt/clones/modernish/lib/modernish/adj/fatal.sh: eval: line 165: syntax error: unexpected end of file
@@ -113,48 +113,45 @@ typeset: usage: typeset [-afFirtx] [-p] name[=value] ...
 ++++ [0s|adj/fatal.sh,L292,e0] case foo${t:-} in
 ++++ [0s|adj/fatal.sh,L299,e0] set ' foo -> bar' foo
 ++++ [0s|adj/fatal.sh,L300,e0] case ${1#" $2 -> "} in
-++++ [0s|adj/fatal.sh,L307,e0] t=14766
+++++ [0s|adj/fatal.sh,L307,e0] t=10829
 ++++ [0s|adj/fatal.sh,L308,e0] case $#${t},$(($#-1+1)) in
 ++++ [0s|adj/fatal.sh,L315,e0] t=$'ok\001\177ok'
 ++++ [0s|adj/fatal.sh,L316,e0] case ${#t} in
 ++++ [0s|adj/fatal.sh,L322,e0] case ${LC_ALL:-${LC_CTYPE:-${LANG:-}}} in
-++++ [0s|adj/fatal.sh,L336,e0] set +u _1_
-++++ [0s|adj/fatal.sh,L337,e0] case ${#13},${#234},${#1},OK in
-++++ [0s|adj/fatal.sh,L341,e0] set -u
-++++ [0s|adj/fatal.sh,L354,e0] t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  '
-++++ [0s|adj/fatal.sh,L355,e0] IFS=': '
-++++ [0s|adj/fatal.sh,L356,e0] set -- '' '' '\on\e' '\tw'\''o' '\th\'\''re\e' '\\'\''fo\u\r' '' ''
-++++ [0s|adj/fatal.sh,L357,e0] IFS=
-++++ [0s|adj/fatal.sh,L358,e0] t='8,,,\on\e,\tw'\''o,\th\'\''re\e,\\'\''fo\u\r,,,U,U,U,U'
-++++ [0s|adj/fatal.sh,L359,e0] case ${t} in
-++++ [0s|adj/fatal.sh,L367,e0] case ${HOME-} in
-++++ [0s|adj/fatal.sh,L371,e0] IFS=/
-++++ [0s|adj/fatal.sh,L372,e0] set -- /root
-++++ [0s|adj/fatal.sh,L373,e0] IFS=
-++++ [0s|adj/fatal.sh,L374,e0] case ${#},${1-} in
-++++ [0s|adj/fatal.sh,L384,e0] i=7
-++++ [0s|adj/fatal.sh,L385,e0] j=0
-++++ [0s|adj/fatal.sh,L386,e0] case $(( ((j+=6*i)==0x2A)>0 ? 014 : 015 )) in
-++++ [0s|adj/fatal.sh,L390,e0] case $j in
-++++ [0s|adj/fatal.sh,L399,e0] case $((37-16%7+9)) in
-++++ [0s|adj/fatal.sh,L410,e0] unset -v t2
-++++ [0s|adj/fatal.sh,L411,e0] command -v typeset
-++++ [0s|adj/fatal.sh,L411,e0] typeset -i t2
-++++ [0s|adj/fatal.sh,L412,e0] t2=1000005
-++++ [0s|adj/fatal.sh,L413,e0] t='foo\bar'
-++++ [0s|adj/fatal.sh,L414,e0] : 1000005
-++++ [0s|adj/fatal.sh,L415,e0] case "${t2},$((1000001)),$((1000005)),${t}" in
-++++ [0s|adj/fatal.sh,L419,e0] unset -v t2
-++++ [0s|adj/fatal.sh,L426,e0] unset -v t
-++++ [0s|adj/fatal.sh,L427,e0] : 1
-++++ [0s|adj/fatal.sh,L428,e0] t=128/32
-++++ [0s|adj/fatal.sh,L429,e0] case $t in
-++++ [0s|adj/fatal.sh,L442,e0] eval 'case '\''abcd'\'' in
+++++ [0s|adj/fatal.sh,L342,e0] t='  ::  \on\e :\tw'\''o \th\'\''re\e :\\'\''fo\u\r:   : :  '
+++++ [0s|adj/fatal.sh,L343,e0] IFS=': '
+++++ [0s|adj/fatal.sh,L344,e0] set -- '' '' '\on\e' '\tw'\''o' '\th\'\''re\e' '\\'\''fo\u\r' '' ''
+++++ [0s|adj/fatal.sh,L345,e0] IFS=
+++++ [0s|adj/fatal.sh,L346,e0] t='8,,,\on\e,\tw'\''o,\th\'\''re\e,\\'\''fo\u\r,,,U,U,U,U'
+++++ [0s|adj/fatal.sh,L347,e0] case ${t} in
+++++ [0s|adj/fatal.sh,L355,e0] case ${HOME-} in
+++++ [0s|adj/fatal.sh,L359,e0] IFS=/
+++++ [0s|adj/fatal.sh,L360,e0] set -- /root
+++++ [0s|adj/fatal.sh,L361,e0] IFS=
+++++ [0s|adj/fatal.sh,L362,e0] case ${#},${1-} in
+++++ [0s|adj/fatal.sh,L372,e0] i=7
+++++ [0s|adj/fatal.sh,L373,e0] j=0
+++++ [0s|adj/fatal.sh,L374,e0] case $(( ((j+=6*i)==0x2A)>0 ? 014 : 015 )) in
+++++ [0s|adj/fatal.sh,L378,e0] case $j in
+++++ [0s|adj/fatal.sh,L387,e0] case $((37-16%7+9)) in
+++++ [0s|adj/fatal.sh,L398,e0] unset -v t2
+++++ [0s|adj/fatal.sh,L399,e0] command -v typeset
+++++ [0s|adj/fatal.sh,L399,e0] typeset -i t2
+++++ [0s|adj/fatal.sh,L400,e0] t2=1000005
+++++ [0s|adj/fatal.sh,L401,e0] t='foo\bar'
+++++ [0s|adj/fatal.sh,L402,e0] : 1000005
+++++ [0s|adj/fatal.sh,L403,e0] case "${t2},$((1000001)),$((1000005)),${t}" in
+++++ [0s|adj/fatal.sh,L407,e0] unset -v t2
+++++ [0s|adj/fatal.sh,L414,e0] unset -v t
+++++ [0s|adj/fatal.sh,L415,e0] : 1
+++++ [0s|adj/fatal.sh,L416,e0] t=128/32
+++++ [0s|adj/fatal.sh,L417,e0] case $t in
+++++ [0s|adj/fatal.sh,L430,e0] eval 'case '\''abcd'\'' in
 ( \a\b\\c\\d ) ;;
 ( * )	exit ;;
 esac'
-+++++ [0s|adj/fatal.sh,L442,e0] case 'abcd' in
-+++++ [0s|adj/fatal.sh,L444,e0] exit
++++++ [0s|adj/fatal.sh,L430,e0] case 'abcd' in
++++++ [0s|adj/fatal.sh,L432,e0] exit
 +++ [0s|adj/fatal.sh,L157,e0] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.

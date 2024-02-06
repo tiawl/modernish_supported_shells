@@ -1,52 +1,52 @@
 Relaunching install.sh with /usr/bin/mksh...
-+ [964.239186s|P2842,L44,e0] ulimit -c 0
-+ [964.239252s|P2842,L47,e0] IFS= 
-+ [964.239294s|P2842,L47,e0] set +e -fCu
-+ [964.239386s|P2842,L54,e0] eval $': || $( : # "\n)'
-+ [964.239614s|P2842,L0,e0] :
-+ [964.239667s|P2842,L59,e0] eval $': || for i;\ndo :; done'
-+ [964.239831s|P2842,L0,e0] :
-+ [964.240030s|P2842,L77,e0] t=ok 
-+ [964.240254s|P2842,L78,e0] t=bug command -@
++ [427.551486s|P2842,L44,e0] ulimit -c 0
++ [427.551542s|P2842,L47,e0] IFS= 
++ [427.551578s|P2842,L47,e0] set +e -fCu
++ [427.551623s|P2842,L54,e0] eval $': || $( : # "\n)'
++ [427.551694s|P2842,L0,e0] :
++ [427.551760s|P2842,L59,e0] eval $': || for i;\ndo :; done'
++ [427.551804s|P2842,L0,e0] :
++ [427.551919s|P2842,L77,e0] t=ok 
++ [427.551958s|P2842,L78,e0] t=bug command -@
 /opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[78]: command: -@: unknown option
-+ [964.240388s|P2842,L87,e0] :
-+ [964.240525s|P2842,L113,e0] PATH=/dev/null 
-+ [964.240785s|P2842,L113,e0] >/dev/null 
-+ [964.241233s|P2842,L114,e0] t=x 
-+ [964.241693s|P2842,L115,e0] command -v unset
-+ [964.242083s|P2842,L116,e0] command -V unset
-+ [964.242463s|P2842,L117,e0] command -v if
-+ [964.242870s|P2842,L118,e0] unset t
-+ [964.243259s|P2842,L121,e0] PATH=/bin:/usr/bin 
-+ [964.243664s|P2842,L125,e0] readonly $'CC01=\001' 'CC7F=' 'RO=ok'
-+ [964.244071s|P2842,L132,e0] RO1=1 RO2=2 RO3=3 
-+ [964.244520s|P2842,L133,e0] readonly RO1 RO2 RO3
-+ [964.244785s|P2842,L137,e0] set +o braceexpand
-+ [964.245058s|P2842,L138,e0] >|/dev/null 
-+ [964.245326s|P2842,L138,e0] PATH=/dev/null command -v typeset
-+ [964.245608s|P2842,L138,e0] typeset -@ foo
++ [427.552093s|P2842,L87,e0] :
++ [427.552250s|P2842,L113,e0] PATH=/dev/null 
++ [427.552341s|P2842,L113,e0] >/dev/null 
++ [427.552391s|P2842,L114,e0] t=x 
++ [427.552474s|P2842,L115,e0] command -v unset
++ [427.552558s|P2842,L116,e0] command -V unset
++ [427.552612s|P2842,L117,e0] command -v if
++ [427.552663s|P2842,L118,e0] unset t
++ [427.552708s|P2842,L121,e0] PATH=/bin:/usr/bin 
++ [427.552802s|P2842,L125,e0] readonly $'CC01=\001' 'CC7F=' 'RO=ok'
++ [427.552883s|P2842,L132,e0] RO1=1 RO2=2 RO3=3 
++ [427.552949s|P2842,L133,e0] readonly RO1 RO2 RO3
++ [427.553015s|P2842,L137,e0] set +o braceexpand
++ [427.553058s|P2842,L138,e0] >|/dev/null 
++ [427.553131s|P2842,L138,e0] PATH=/dev/null command -v typeset
++ [427.553215s|P2842,L138,e0] typeset -@ foo
 /opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[138]: typeset: -@: unknown option
-+ [964.246273s|P2842,L139,e1] unset -v RO1 RO2 RO3
++ [427.553324s|P2842,L139,e1] unset -v RO1 RO2 RO3
 /opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[139]: read-only: RO1
 /opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[139]: read-only: RO2
 /opt/clones/modernish/install.sh: /opt/clones/modernish/lib/modernish/adj/fatal.sh[139]: read-only: RO3
-+ [964.246974s|P2842,L142,e1] alias 'test=test'
-+ [964.247245s|P2842,L146,e0] alias 'fn=:'
-+ [964.247509s|P2842,L147,e0] eval fn
-+ [964.247753s|P2842,L0,e0] :
-+ [964.248022s|P2842,L150,e0] unalias -a
-+ [964.248290s|P2842,L153,e0] unset -f echo
-+ [964.248570s|P2842,L156,e0] kill -s 0 2830
-+ [964.249128s|P2843,L164,e0] eval '('
++ [427.553521s|P2842,L142,e1] alias 'test=test'
++ [427.553620s|P2842,L146,e0] alias 'fn=:'
++ [427.553701s|P2842,L147,e0] eval fn
++ [427.553773s|P2842,L0,e0] :
++ [427.553863s|P2842,L150,e0] unalias -a
++ [427.553956s|P2842,L153,e0] unset -f echo
++ [427.554053s|P2842,L156,e0] kill -s 0 2830
++ [427.554536s|P2843,L164,e0] eval '('
 /opt/clones/modernish/install.sh: syntax error: '(' unmatched
-+ [964.249520s|P2842,L170,e0] fn
-+ [964.250580s|P2842,L169,e0] :
-+ [964.250625s|P2842,L169,e0] eval 'return 0'
-+ [964.250670s|P2842,L0,e0] return 0
-+ [964.250754s|P2842,L180,e0] eval $'command continue\n\t\texit'
-+ [964.250793s|P2842,L0,e0] continue
++ [427.555184s|P2842,L170,e0] fn
++ [427.555412s|P2842,L169,e0] :
++ [427.555666s|P2842,L169,e0] eval 'return 0'
++ [427.555971s|P2842,L0,e0] return 0
++ [427.556316s|P2842,L180,e0] eval $'command continue\n\t\texit'
++ [427.556879s|P2842,L0,e0] continue
 /opt/clones/modernish/install.sh: continue: can't continue
-+ [964.250835s|P2842,L0,e0] exit
-+ [964.250871s|P2842,L0,e0] echo fatalbug
++ [427.557789s|P2842,L0,e0] exit
++ [427.558277s|P2842,L0,e0] echo fatalbug
 modernish: Fatal shell bug(s) detected; this shell cannot run modernish.
 modernish: Initialisation failed. Aborting.
